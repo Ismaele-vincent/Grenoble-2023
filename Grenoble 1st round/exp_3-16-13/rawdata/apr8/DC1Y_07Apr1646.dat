@@ -1,0 +1,26 @@
+* begin:	07/04/2023 16:46:21
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\DC1Y.cfg
+*
+[STANDARD]
+		
+[DC1Y]
+	created 31/03/2023   13:55
+[CURRENT]
+	AO_DC1Z	Amps	4.430000	
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC1Y	21	Amps	-5.000000	5.000000	0.500000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[CURRENT]
+	AO_DC1Y	Amps	0.000000	
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-5.0000000	6.0	161	515	61777	802	3763723592	676	0.0000000	0.0000000
+* stopped by user: 07/04/2023 16:46:33

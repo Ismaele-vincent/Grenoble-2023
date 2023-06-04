@@ -1,0 +1,7 @@
+START	standard		
+CALL	setDCpi2.sc
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+E
+CALL	setDCoff.sc
+END

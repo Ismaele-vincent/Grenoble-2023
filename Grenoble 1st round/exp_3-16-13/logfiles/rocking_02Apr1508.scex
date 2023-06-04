@@ -1,0 +1,106 @@
+START	standard		
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.dat
+R	room to enter remarks
+M	S18.axis2.piezo rotation	deg	1.672200	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672250	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672300	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672350	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672400	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672450	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672500	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672550	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672600	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672650	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672700	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672750	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672800	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672850	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672900	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.672950	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673000	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673050	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673100	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673150	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673200	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673250	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673300	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673350	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673400	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673450	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673500	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673550	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673600	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673650	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673700	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673750	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673800	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673850	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673900	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.673950	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674000	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674050	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674100	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674150	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674200	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674250	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674300	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674350	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674400	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674450	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674500	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674550	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674600	FALSE
+C	time	1.000000
+M	S18.axis2.piezo rotation	deg	1.674650	FALSE
+C	time	1.000000
+E
+MS	S18.axis2.piezo rotation	1	deg	FIT	SUM	PEAK30
+END

@@ -1,0 +1,19 @@
+01/04/2023 16:02:21:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.sc	 DONE
+01/04/2023 16:02:22:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+01/04/2023 16:02:23:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+01/04/2023 16:02:24:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+01/04/2023 16:02:25:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+01/04/2023 16:02:26:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z_01Apr1602.dat	 DONE
+room to enter remarks DONE
+01/04/2023 16:02:28:	move motor	AO_S1Z to 0.000000mm	 DONE
+01/04/2023 16:02:31:	1	count	time	100.000000s/cts	O Det=1073	H Det=7540	Mon Det=1084101	Aux Det=17	O+H=8613	 DONE
+01/04/2023 16:04:14:	move motor	AO_S1Z to 0.100000mm	 DONE
+01/04/2023 16:04:17:	2	count	time	100.000000s/cts	O Det=1058	H Det=7552	Mon Det=1089382	Aux Det=10	O+H=8610	 DONE
+01/04/2023 16:06:01:	move motor	AO_S1Z to 0.200000mm	 DONE
+01/04/2023 16:06:04:	3	count	time	100.000000s/cts	O Det=1096	H Det=7525	Mon Det=1082252	Aux Det=18	O+H=8621	 DONE
+01/04/2023 16:07:47:	move motor	AO_S1Z to 0.300000mm	 DONE
+01/04/2023 16:07:50:	4	count	time	100.000000s/cts	O Det=1123	H Det=7640	Mon Det=1086097	Aux Det=16	O+H=8763	 DONE
+01/04/2023 16:09:33:	move motor	AO_S1Z to 0.400000mm	 DONE
+01/04/2023 16:09:36:	5	count	time	100.000000s/cts	O Det=1055	H Det=7585	Mon Det=1056853	Aux Det=20	O+H=8640	 DONE
+01/04/2023 16:11:19:	move motor	AO_S1Z to 0.500000mm	 DONE
+01/04/2023 16:11:22:	6	count	time	100.000000s/cts	O Det=30	H Det=246	Mon Det=33973	Aux Det=0	O+H=276	STOPPED BY USER	01/04/2023 16:11:28:	close file and end scan	 DONE

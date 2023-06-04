@@ -1,0 +1,24 @@
+* begin:	14/04/2023 16:39:01
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\moveDC2.cfg
+*
+[STANDARD]
+		
+[moveDC2]
+	created 08/04/2023   13:42
+[CALL]
+	setDCpi2.sc
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.auxiliary.LinearBlue	20	mm	0.000000	95.000000	5.000000	0.000000	FALSE	time	100.000000			
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+1	0.0000000	10.7	210	1204	125084	1355	3764327969	1414	0.0000000	0.0000000
+* stopped by user: 14/04/2023 16:39:30

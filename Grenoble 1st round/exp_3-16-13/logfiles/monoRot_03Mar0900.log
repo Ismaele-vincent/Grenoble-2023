@@ -1,0 +1,6 @@
+03/03/2023 09:00:56:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot.sc	 DONE
+03/03/2023 09:00:57:	move motor	S18.mono.MonoRot to 32.100000deg	 DONE
+03/03/2023 09:01:01:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0901.dat	 DONE
+room to enter remarks DONE
+03/03/2023 09:01:03:	move motor	S18.mono.MonoRot to 32.200000deg	 DONE
+03/03/2023 09:01:07:	1	count	time	5.000000s/cts	O Det=1	H Det=1	Mon Det=64550	Aux Det=1	O+H=55162	

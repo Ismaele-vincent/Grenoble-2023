@@ -1,0 +1,70 @@
+START	standard		
+M	S18.axis2.phase shifter	deg	106.700000	FALSE
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.axis2.phase shifter	deg	106.800000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	106.875000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	106.950000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.025000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.100000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.175000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.250000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.325000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.400000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.475000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.550000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.625000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.700000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.775000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.850000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	107.925000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.000000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.075000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.150000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.225000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.300000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.375000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.450000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.525000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.600000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.675000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.750000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.825000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.900000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	108.975000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	109.050000	FALSE
+C	time	30.000000
+M	S18.axis2.phase shifter	deg	109.125000	FALSE
+C	time	30.000000
+E
+END

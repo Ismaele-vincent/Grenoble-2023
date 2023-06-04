@@ -1,0 +1,178 @@
+* begin:	31/03/2023 15:17:04
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\DC2Yrocker2.cfg
+*
+[STANDARD]
+		
+[DC2Yrocker2]
+	created 31/03/2023   15:06
+[CURRENT]
+	AO_DC2Z	Amps	1.000000	
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-6.00000				
+[SCAN]
+	file path	.
+	name		rocker2_0
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-5.00000				
+[SCAN]
+	file path	.
+	name		rocker2_1
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-4.00000				
+[SCAN]
+	file path	.
+	name		rocker2_2
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-3.00000				
+[SCAN]
+	file path	.
+	name		rocker2_3
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-2.00000				
+[SCAN]
+	file path	.
+	name		rocker2_4
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-1.00000				
+[SCAN]
+	file path	.
+	name		rocker2_5
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	0.00000				
+[SCAN]
+	file path	.
+	name		rocker2_6
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	1.00000				
+[SCAN]
+	file path	.
+	name		rocker2_7
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	2.00000				
+[SCAN]
+	file path	.
+	name		rocker2_8
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	3.00000				
+[SCAN]
+	file path	.
+	name		rocker2_9
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	4.00000				
+[SCAN]
+	file path	.
+	name		rocker2_10
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	5.00000				
+[SCAN]
+	file path	.
+	name		rocker2_11
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	6.00000				
+[SCAN]
+	file path	.
+	name		rocker2_12
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	21	Amps	-1.800000	1.800000	0.200000	0.000000	0	time	10.000000			
+[ENDSCAN]
+[CURRENT]
+	AO_DC2Y	Amps	0.000000	
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-1.8000000	10.0	29	544	108847	1206	3763113440	573	0.0000000	0.0000000
+0	-1.6000000	10.0	78	616	108082	1270	3763113454	694	0.0000000	0.0000000
+0	-1.4000000	10.0	116	628	109054	1296	3763113470	744	0.0000000	0.0000000
+0	-1.2000000	10.0	101	610	108657	1250	3763113484	711	0.0000000	0.0000000
+0	-1.0000000	10.0	121	623	107696	1286	3763113498	744	0.0000000	0.0000000
+0	-0.8000000	10.0	121	633	108400	1337	3763113513	754	0.0000000	0.0000000
+0	-0.6000000	10.0	100	617	108216	1300	3763113527	717	0.0000000	0.0000000
+0	-0.4000000	10.0	57	630	107868	1276	3763113541	687	0.0000000	0.0000000
+0	-0.2000000	10.0	24	619	107185	1274	3763113555	643	0.0000000	0.0000000
+0	0.0000000	10.0	3	591	107830	1298	3763113569	594	0.0000000	0.0000000
+0	0.2000000	10.0	2	614	109326	1266	3763113584	616	0.0000000	0.0000000
+0	0.4000000	10.0	20	578	108250	1293	3763113598	598	0.0000000	0.0000000
+0	0.6000000	10.0	44	596	106178	1254	3763113612	640	0.0000000	0.0000000
+0	0.8000000	10.0	81	599	106657	1272	3763113626	680	0.0000000	0.0000000
+0	1.0000000	10.0	100	587	107874	1281	3763113640	687	0.0000000	0.0000000
+0	1.2000000	10.0	117	593	108135	1269	3763113655	710	0.0000000	0.0000000
+0	1.4000000	10.0	105	628	108186	1279	3763113669	733	0.0000000	0.0000000
+0	1.6000000	10.0	89	639	108549	1313	3763113683	728	0.0000000	0.0000000
+0	1.8000000	10.0	51	618	108499	1286	3763113697	669	0.0000000	0.0000000
+* end: 31/03/2023 15:21:38

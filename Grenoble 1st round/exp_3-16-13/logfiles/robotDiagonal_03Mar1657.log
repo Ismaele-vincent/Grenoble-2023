@@ -1,0 +1,12 @@
+03/03/2023 16:57:24:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotDiagonal.sc	 DONE
+03/03/2023 16:57:25:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotDiagonal_03Mar1657.dat	 DONE
+room to enter remarks DONE
+03/03/2023 16:57:27:	move motor	S18.auxiliary.Robot Diagonal to -5000.000000um	 DONE
+03/03/2023 16:57:36:	1	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=1152	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:57:41:	move motor	S18.auxiliary.Robot Diagonal to -4000.000000um	 DONE
+03/03/2023 16:57:48:	2	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=1105	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:57:53:	move motor	S18.auxiliary.Robot Diagonal to -3000.000000um	 DONE
+03/03/2023 16:58:00:	3	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=1087	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:58:05:	move motor	S18.auxiliary.Robot Diagonal to -2000.000000um	 DONE
+03/03/2023 16:58:12:	close file and end scan	 DONE
+03/03/2023 16:58:13:	END OF SCRIPT	 DONE

@@ -1,0 +1,15 @@
+02/04/2023 13:37:17:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.sc	 DONE
+02/04/2023 13:37:18:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+02/04/2023 13:37:19:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+02/04/2023 13:37:20:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+02/04/2023 13:37:21:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+call of setDCpi2.sc DONE
+02/04/2023 13:37:23:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z_02Apr1337.dat	 DONE
+room to enter remarks DONE
+02/04/2023 13:37:25:	close file and end scan	 DONE
+02/04/2023 13:37:26:	set AO_DC2Z (PXIDAQ2/ao0) to 0.000000Amps 0.000V DONE
+02/04/2023 13:37:27:	set AO_DC2Y (PXIDAQ2/ao2) to 0.000000Amps 0.000V DONE
+02/04/2023 13:37:28:	set AO_DC1Z (PXIDAQ2/ao1) to 0.000000Amps 0.000V DONE
+02/04/2023 13:37:29:	set AO_DC1Y (6229/ao1) to 0.000000Amps 0.000V DONE
+call of setDCoff.sc DONE
+02/04/2023 13:37:31:	END OF SCRIPT	 DONE

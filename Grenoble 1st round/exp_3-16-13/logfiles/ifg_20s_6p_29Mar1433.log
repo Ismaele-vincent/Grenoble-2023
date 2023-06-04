@@ -1,0 +1,5 @@
+29/03/2023 14:33:54:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_20s_6p.sc	 DONE
+29/03/2023 14:33:55:	move motor	S18.axis2.phase shifter to 106.700000deg	 DONE
+29/03/2023 14:34:06:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_20s_6p_29Mar1434.dat	 DONE
+29/03/2023 14:34:07:	close file and end scan	 DONE
+29/03/2023 14:34:08:	END OF SCRIPT	 DONE

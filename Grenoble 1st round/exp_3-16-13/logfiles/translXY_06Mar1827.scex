@@ -1,0 +1,168 @@
+START	standard		
+M	S18.auxiliary.TranslationBoth	mm	9.900000	FALSE
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.auxiliary.TranslationBoth	mm	10.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	11.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	12.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	13.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	14.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	15.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	16.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	17.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	18.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	19.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	20.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	21.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	22.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	23.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	24.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	25.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	26.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	27.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	28.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	29.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	30.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	31.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	32.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	33.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	34.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	35.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	36.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	37.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	38.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	39.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	40.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	41.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	42.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	43.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	44.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	45.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	46.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	47.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	48.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	49.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	50.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	51.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	52.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	53.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	54.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	55.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	56.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	57.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	58.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	59.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	60.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	61.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	62.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	63.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	64.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	65.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	66.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	67.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	68.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	69.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	70.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	71.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	72.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	73.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	74.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	75.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	76.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	77.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	78.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	79.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	80.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	81.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	82.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	83.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	84.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	85.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	86.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	87.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	88.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	89.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationBoth	mm	90.000000	FALSE
+C	time	10.000000
+E
+END

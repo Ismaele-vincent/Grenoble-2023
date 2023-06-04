@@ -1,0 +1,12 @@
+06/03/2023 18:54:59:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX.sc	 DONE
+06/03/2023 18:55:00:	move motor	S18.auxiliary.TranslationX to 4.900000mm	 DONE
+06/03/2023 18:55:06:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX_06Mar1855.dat	 DONE
+room to enter remarks DONE
+06/03/2023 18:55:08:	move motor	S18.auxiliary.TranslationX to 5.000000mm	 DONE
+06/03/2023 18:55:12:	1	count	time	10.000000s/cts	O Det=0	H Det=462	Mon Det=140508	Aux Det=981	O+H=462	 DONE
+06/03/2023 18:55:25:	move motor	S18.auxiliary.TranslationX to 6.000000mm	 DONE
+06/03/2023 18:55:29:	2	count	time	10.000000s/cts	O Det=0	H Det=500	Mon Det=166596	Aux Det=1082	O+H=500	 DONE
+06/03/2023 18:55:42:	move motor	S18.auxiliary.TranslationX to 7.000000mm	 DONE
+06/03/2023 18:55:46:	3	count	time	10.000000s/cts	O Det=0	H Det=495	Mon Det=167424	Aux Det=1010	O+H=495	 DONE
+06/03/2023 18:55:59:	move motor	S18.auxiliary.TranslationX to 8.000000mm	 DONE
+06/03/2023 18:56:03:	4	count	time	10.000000s/cts	O Det=0	H Det=234	Mon Det=85263	Aux Det=514	O+H=234	STOPPED BY USER	

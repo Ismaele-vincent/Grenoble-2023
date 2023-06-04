@@ -1,0 +1,6 @@
+02/04/2023 15:30:34:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.sc	 DONE
+02/04/2023 15:30:35:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking_02Apr1530.dat	 DONE
+room to enter remarks DONE
+02/04/2023 15:30:37:	close file and end scan	 DONE
+02/04/2023 15:30:38:	move motor	S18.axis2.piezo rotation to fit O PEAK30	1.674098reached 1.67409  DONE
+02/04/2023 15:30:42:	END OF SCRIPT	 DONE

@@ -1,0 +1,40 @@
+29/03/2023 14:05:23:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotRot.sc	 DONE
+29/03/2023 14:05:24:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotRot_29Mar1405.dat	 DONE
+room to enter remarks DONE
+29/03/2023 14:05:26:	move motor	S18.auxiliary.Robot rot big to 25.000000deg	 DONE
+29/03/2023 14:05:31:	1	count	time	20.000000s/cts	O Det=289	H Det=94	Mon Det=238437	Aux Det=1866	O+H=383	 DONE
+29/03/2023 14:05:55:	move motor	S18.auxiliary.Robot rot big to 25.500000deg	 DONE
+29/03/2023 14:05:59:	2	count	time	20.000000s/cts	O Det=272	H Det=96	Mon Det=238471	Aux Det=1905	O+H=368	 DONE
+29/03/2023 14:06:22:	move motor	S18.auxiliary.Robot rot big to 26.000000deg	 DONE
+29/03/2023 14:06:26:	3	count	time	20.000000s/cts	O Det=279	H Det=92	Mon Det=239844	Aux Det=1937	O+H=371	 DONE
+29/03/2023 14:06:49:	move motor	S18.auxiliary.Robot rot big to 26.500000deg	 DONE
+29/03/2023 14:06:53:	4	count	time	20.000000s/cts	O Det=293	H Det=118	Mon Det=239500	Aux Det=1886	O+H=411	 DONE
+29/03/2023 14:07:16:	move motor	S18.auxiliary.Robot rot big to 27.000000deg	 DONE
+29/03/2023 14:07:20:	5	count	time	20.000000s/cts	O Det=247	H Det=100	Mon Det=239415	Aux Det=1900	O+H=347	 DONE
+29/03/2023 14:07:44:	move motor	S18.auxiliary.Robot rot big to 27.500000deg	 DONE
+29/03/2023 14:07:48:	6	count	time	20.000000s/cts	O Det=252	H Det=105	Mon Det=240946	Aux Det=1899	O+H=357	 DONE
+29/03/2023 14:08:11:	move motor	S18.auxiliary.Robot rot big to 28.000000deg	 DONE
+29/03/2023 14:08:15:	7	count	time	20.000000s/cts	O Det=277	H Det=101	Mon Det=238842	Aux Det=1864	O+H=378	 DONE
+29/03/2023 14:08:38:	move motor	S18.auxiliary.Robot rot big to 28.500000deg	 DONE
+29/03/2023 14:08:42:	8	count	time	20.000000s/cts	O Det=269	H Det=112	Mon Det=242111	Aux Det=1874	O+H=381	 DONE
+29/03/2023 14:09:05:	move motor	S18.auxiliary.Robot rot big to 29.000000deg	 DONE
+29/03/2023 14:09:09:	9	count	time	20.000000s/cts	O Det=264	H Det=94	Mon Det=240862	Aux Det=1882	O+H=358	 DONE
+29/03/2023 14:09:32:	move motor	S18.auxiliary.Robot rot big to 29.500000deg	 DONE
+29/03/2023 14:09:37:	10	count	time	20.000000s/cts	O Det=281	H Det=89	Mon Det=238900	Aux Det=1929	O+H=370	 DONE
+29/03/2023 14:10:00:	move motor	S18.auxiliary.Robot rot big to 30.000000deg	 DONE
+29/03/2023 14:10:04:	11	count	time	20.000000s/cts	O Det=292	H Det=93	Mon Det=240007	Aux Det=1861	O+H=385	 DONE
+29/03/2023 14:10:27:	move motor	S18.auxiliary.Robot rot big to 30.500000deg	 DONE
+29/03/2023 14:10:31:	12	count	time	20.000000s/cts	O Det=265	H Det=80	Mon Det=239860	Aux Det=1926	O+H=345	 DONE
+29/03/2023 14:10:54:	move motor	S18.auxiliary.Robot rot big to 31.000000deg	 DONE
+29/03/2023 14:10:58:	13	count	time	20.000000s/cts	O Det=263	H Det=124	Mon Det=239078	Aux Det=1898	O+H=387	 DONE
+29/03/2023 14:11:21:	move motor	S18.auxiliary.Robot rot big to 31.500000deg	 DONE
+29/03/2023 14:11:26:	14	count	time	20.000000s/cts	O Det=234	H Det=103	Mon Det=237345	Aux Det=1939	O+H=337	 DONE
+29/03/2023 14:11:49:	move motor	S18.auxiliary.Robot rot big to 32.000000deg	 DONE
+29/03/2023 14:11:53:	15	count	time	20.000000s/cts	O Det=271	H Det=101	Mon Det=239314	Aux Det=1937	O+H=372	 DONE
+29/03/2023 14:12:16:	move motor	S18.auxiliary.Robot rot big to 32.500000deg	 DONE
+29/03/2023 14:12:20:	16	count	time	20.000000s/cts	O Det=254	H Det=108	Mon Det=238614	Aux Det=1896	O+H=362	 DONE
+29/03/2023 14:12:43:	move motor	S18.auxiliary.Robot rot big to 33.000000deg	 DONE
+29/03/2023 14:12:47:	17	count	time	20.000000s/cts	O Det=263	H Det=110	Mon Det=240263	Aux Det=1879	O+H=373	 DONE
+29/03/2023 14:13:11:	paused
+29/03/2023 14:13:12:	close file and end scan	 DONE
+29/03/2023 14:13:13:	END OF SCRIPT	 DONE

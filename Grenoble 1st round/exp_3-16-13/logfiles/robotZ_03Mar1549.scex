@@ -1,0 +1,48 @@
+START	standard		
+M	S18.auxiliary.Robot Z	um	274999.950000	FALSE
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.auxiliary.Robot Z	um	275000.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275000.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275001.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275001.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275002.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275002.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275003.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275003.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275004.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275004.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275005.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275005.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275006.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275006.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275007.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275007.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275008.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275008.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275009.000000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275009.500000	FALSE
+C	time	5.000000
+M	S18.auxiliary.Robot Z	um	275010.000000	FALSE
+C	time	5.000000
+E
+END

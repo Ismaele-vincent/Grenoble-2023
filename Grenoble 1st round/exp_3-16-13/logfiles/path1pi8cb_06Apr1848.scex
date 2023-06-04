@@ -1,0 +1,73 @@
+START	standard
+;CALL	rocking.sc
+
+CALL	setDCpi2.sc
+MS	S18.axis2.phase shifter	1	deg	107.900000	FALSE
+MS	S18.axis2.phase shifter	1	deg	108.000000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.075000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.150000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.225000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.300000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.375000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.450000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.525000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.600000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.675000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.750000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.825000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.900000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	108.975000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.050000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.125000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.200000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.275000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.350000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.425000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.500000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.575000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.650000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.725000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.800000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.875000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	109.950000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	110.025000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	110.100000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	110.175000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	110.250000	FALSE
+CALL	betaS1pi8on.sc
+MS	S18.axis2.phase shifter	1	deg	110.325000	FALSE
+CALL	betaS1pi8on.sc
+
+CALL	setDCpi2.sc
+CALL	setDC2pos.sc
+END

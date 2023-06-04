@@ -1,0 +1,20 @@
+06/04/2023 18:33:04:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.sc	 DONE
+06/04/2023 18:33:05:	set AO_S1Z (6229/ao0) to 0.000000Amps 0.000V DONE
+call of setS1Zoff.sc DONE
+06/04/2023 18:33:07:	set AO_S2Z (PXIDAQ1/ao3) to 0.000000Amps 0.000V DONE
+call of setS2Zoff.sc DONE
+06/04/2023 18:33:09:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+06/04/2023 18:33:10:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+06/04/2023 18:33:11:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+06/04/2023 18:33:12:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+call of setDCpi2.sc DONE
+06/04/2023 18:33:14:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking_06Apr1833.dat	 DONE
+room to enter remarks DONE
+06/04/2023 18:33:16:	move motor	S18.axis2.piezo rotation to 1.673200deg	 DONE
+06/04/2023 18:33:20:	1	count	time	10.000000s/cts	O Det=6	H Det=151	Mon Det=103217	Aux Det=549	O+H=157	 DONE
+06/04/2023 18:33:34:	move motor	S18.axis2.piezo rotation to 1.673250deg	 DONE
+06/04/2023 18:33:37:	2	count	time	10.000000s/cts	O Det=4	H Det=202	Mon Det=101868	Aux Det=519	O+H=206	 DONE
+06/04/2023 18:33:50:	move motor	S18.axis2.piezo rotation to 1.673300deg	 DONE
+06/04/2023 18:33:54:	3	count	time	10.000000s/cts	O Det=14	H Det=238	Mon Det=100568	Aux Det=593	O+H=252	 DONE
+06/04/2023 18:34:07:	move motor	S18.axis2.piezo rotation to 1.673350deg	 DONE
+06/04/2023 18:34:11:	4	count	time	10.000000s/cts	O Det=6	H Det=161	Mon Det=50954	Aux Det=322	O+H=167	STOPPED BY USER	

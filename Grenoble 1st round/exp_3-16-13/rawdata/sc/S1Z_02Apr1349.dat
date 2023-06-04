@@ -1,0 +1,29 @@
+* begin:	02/04/2023 13:49:48
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.cfg
+*
+[STANDARD]
+		
+[S1Z]
+	created 02/04/2023   13:49
+[CALL]
+	setDCpi2.sc
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_S1X	21	Amps	0.000000	5.000000	0.250000	0.000000	0	time	100.000000			
+[ENDSCAN]
+[CALL]
+	setDCoff.sc
+[END]
+
+* remarks:	room to enter remarks
+*
+0	0.0000000	100.0	204	9053	935751	10	3763281093	9257	0.0000000	0.0000000
+0	0.2500000	100.0	199	8994	1033616	11	3763281198	9193	0.0000000	0.0000000
+0	0.5000000	100.0	334	9202	983187	15	3763281302	9536	0.0000000	0.0000000
+0	0.7500000	8.0	40	686	77261	1	3763281314	726	0.0000000	0.0000000
+* stopped by user: 02/04/2023 13:55:15

@@ -1,0 +1,9 @@
+03/04/2023 09:18:13:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.sc	 DONE
+03/04/2023 09:18:14:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking_03Apr0918.dat	 DONE
+room to enter remarks DONE
+03/04/2023 09:18:16:	move motor	S18.axis2.piezo rotation to 1.673200deg	 DONE
+03/04/2023 09:18:20:	1	count	time	10.000000s/cts	O Det=11	H Det=844	Mon Det=109588	Aux Det=733	O+H=855	 DONE
+03/04/2023 09:18:33:	move motor	S18.axis2.piezo rotation to 1.673250deg	 DONE
+03/04/2023 09:18:37:	2	count	time	10.000000s/cts	O Det=7	H Det=356	Mon Det=56319	Aux Det=333	O+H=363	STOPPED BY USER	03/04/2023 09:18:45:	close file and end scan	 DONE
+03/04/2023 09:18:46:	move motor	S18.axis2.piezo rotation to fit O PEAK30	NaNreached 1.67324  DONE
+03/04/2023 09:18:51:	END OF SCRIPT	 DONE

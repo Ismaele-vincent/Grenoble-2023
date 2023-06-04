@@ -1,0 +1,38 @@
+03/03/2023 16:14:56:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotZ.sc	 DONE
+03/03/2023 16:14:57:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotZ_03Mar1614.dat	 DONE
+room to enter remarks DONE
+03/03/2023 16:14:59:	move motor	S18.auxiliary.Robot Z to 275000.000000um	 DONE
+03/03/2023 16:15:03:	1	count	time	5.000000s/cts	O Det=729	H Det=0	Mon Det=2175	Aux Det=0	O+H=729	 DONE
+03/03/2023 16:15:11:	move motor	S18.auxiliary.Robot Z to 274500.000000um	 DONE
+03/03/2023 16:15:15:	2	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=2156	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:15:23:	move motor	S18.auxiliary.Robot Z to 274000.000000um	 DONE
+03/03/2023 16:15:28:	3	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=2199	Aux Det=0	O+H=1	 DONE
+03/03/2023 16:15:36:	move motor	S18.auxiliary.Robot Z to 273500.000000um	 DONE
+03/03/2023 16:15:40:	4	count	time	5.000000s/cts	O Det=726	H Det=1	Mon Det=2194	Aux Det=0	O+H=727	 DONE
+03/03/2023 16:15:48:	move motor	S18.auxiliary.Robot Z to 273000.000000um	 DONE
+03/03/2023 16:15:52:	5	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=2005	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:16:00:	move motor	S18.auxiliary.Robot Z to 272500.000000um	 DONE
+03/03/2023 16:16:05:	6	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=1857	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:16:13:	move motor	S18.auxiliary.Robot Z to 272000.000000um	 DONE
+03/03/2023 16:16:17:	7	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=1863	Aux Det=0	O+H=1	 DONE
+03/03/2023 16:16:25:	move motor	S18.auxiliary.Robot Z to 271500.000000um	 DONE
+03/03/2023 16:16:29:	8	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=1882	Aux Det=1	O+H=1	 DONE
+03/03/2023 16:16:37:	move motor	S18.auxiliary.Robot Z to 271000.000000um	 DONE
+03/03/2023 16:16:42:	9	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=1777	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:16:50:	move motor	S18.auxiliary.Robot Z to 270500.000000um	 DONE
+03/03/2023 16:16:54:	10	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=1815	Aux Det=0	O+H=1	 DONE
+03/03/2023 16:17:02:	move motor	S18.auxiliary.Robot Z to 270000.000000um	 DONE
+03/03/2023 16:17:06:	11	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=1666	Aux Det=0	O+H=0	 DONE
+03/03/2023 16:17:14:	move motor	S18.auxiliary.Robot Z to 269500.000000um	 DONE
+03/03/2023 16:17:18:	12	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=1706	Aux Det=1	O+H=0	 DONE
+03/03/2023 16:17:27:	move motor	S18.auxiliary.Robot Z to 269000.000000um	 DONE
+03/03/2023 16:17:31:	13	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=1641	Aux Det=1	O+H=0	 DONE
+03/03/2023 16:17:39:	move motor	S18.auxiliary.Robot Z to 268500.000000um	 DONE
+03/03/2023 16:17:43:	14	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=1713	Aux Det=0	O+H=1	 DONE
+03/03/2023 16:17:51:	move motor	S18.auxiliary.Robot Z to 268000.000000um	 DONE
+03/03/2023 16:17:55:	15	count	time	5.000000s/cts	O Det=82	H Det=179	Mon Det=68874	Aux Det=279	O+H=261	 DONE
+03/03/2023 16:18:04:	move motor	S18.auxiliary.Robot Z to 267500.000000um	 DONE
+03/03/2023 16:18:08:	16	count	time	5.000000s/cts	O Det=67	H Det=185	Mon Det=75859	Aux Det=280	O+H=252	 DONE
+03/03/2023 16:18:16:	paused
+03/03/2023 16:18:16:	close file and end scan	 DONE
+03/03/2023 16:18:17:	END OF SCRIPT	 DONE

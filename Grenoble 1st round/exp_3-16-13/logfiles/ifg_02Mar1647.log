@@ -1,0 +1,11 @@
+02/03/2023 16:47:51:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg.sc	 DONE
+02/03/2023 16:47:52:	move motor	S18.axis2.phase shifter to 107.700000deg	 DONE
+02/03/2023 16:48:13:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_02Mar1648.dat	 DONE
+room to enter remarks DONE
+02/03/2023 16:48:15:	move motor	S18.axis2.phase shifter to 107.800000deg	 DONE
+02/03/2023 16:48:20:	1	count	time	30.000000s/cts	O Det=1	H Det=53959	Mon Det=499787	Aux Det=29015	O+H=53960	 DONE
+02/03/2023 16:48:57:	move motor	S18.axis2.phase shifter to 107.875000deg	 DONE
+02/03/2023 16:49:01:	2	count	time	30.000000s/cts	O Det=0	H Det=55961	Mon Det=439017	Aux Det=28711	O+H=55961	 DONE
+02/03/2023 16:49:38:	move motor	S18.axis2.phase shifter to 107.950000deg	 DONE
+02/03/2023 16:49:42:	3	count	time	30.000000s/cts	O Det=3	H Det=12640	Mon Det=115319	Aux Det=7003	O+H=12643	STOPPED BY USER	02/03/2023 16:50:10:	close file and end scan	saving D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_02Mar1648.tif  DONE
+02/03/2023 16:50:11:	END OF SCRIPT	 DONE

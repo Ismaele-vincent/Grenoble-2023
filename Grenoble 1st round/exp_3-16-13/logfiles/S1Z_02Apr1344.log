@@ -1,0 +1,57 @@
+02/04/2023 13:44:02:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.sc	 DONE
+02/04/2023 13:44:03:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+02/04/2023 13:44:04:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+02/04/2023 13:44:05:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+02/04/2023 13:44:06:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+call of setDCpi2.sc DONE
+02/04/2023 13:44:08:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z_02Apr1344.dat	 DONE
+room to enter remarks DONE
+02/04/2023 13:44:10:	set AO_S1Z (6229/ao0) to 0.000000Amps 0.000V DONE
+02/04/2023 13:44:11:	1	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=508	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:44:19:	set AO_S1Z (6229/ao0) to 0.250000Amps 0.125V DONE
+02/04/2023 13:44:20:	2	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=484	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:44:28:	set AO_S1Z (6229/ao0) to 0.500000Amps 0.250V DONE
+02/04/2023 13:44:29:	3	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=552	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:44:37:	set AO_S1Z (6229/ao0) to 0.750000Amps 0.375V DONE
+02/04/2023 13:44:38:	4	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=536	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:44:46:	set AO_S1Z (6229/ao0) to 1.000000Amps 0.500V DONE
+02/04/2023 13:44:47:	5	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=514	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:44:56:	set AO_S1Z (6229/ao0) to 1.250000Amps 0.625V DONE
+02/04/2023 13:44:57:	6	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=521	Aux Det=1	O+H=1	 DONE
+02/04/2023 13:45:05:	set AO_S1Z (6229/ao0) to 1.500000Amps 0.750V DONE
+02/04/2023 13:45:06:	7	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=499	Aux Det=1	O+H=1	 DONE
+02/04/2023 13:45:14:	set AO_S1Z (6229/ao0) to 1.750000Amps 0.875V DONE
+02/04/2023 13:45:15:	8	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=491	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:45:23:	set AO_S1Z (6229/ao0) to 2.000000Amps 1.000V DONE
+02/04/2023 13:45:24:	9	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=505	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:45:32:	set AO_S1Z (6229/ao0) to 2.250000Amps 1.125V DONE
+02/04/2023 13:45:33:	10	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=518	Aux Det=1	O+H=2	 DONE
+02/04/2023 13:45:41:	set AO_S1Z (6229/ao0) to 2.500000Amps 1.250V DONE
+02/04/2023 13:45:42:	11	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=495	Aux Det=1	O+H=0	 DONE
+02/04/2023 13:45:51:	set AO_S1Z (6229/ao0) to 2.750000Amps 1.375V DONE
+02/04/2023 13:45:52:	12	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=528	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:46:00:	set AO_S1Z (6229/ao0) to 3.000000Amps 1.500V DONE
+02/04/2023 13:46:01:	13	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=534	Aux Det=1	O+H=1	 DONE
+02/04/2023 13:46:09:	set AO_S1Z (6229/ao0) to 3.250000Amps 1.625V DONE
+02/04/2023 13:46:10:	14	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=533	Aux Det=2	O+H=2	 DONE
+02/04/2023 13:46:18:	set AO_S1Z (6229/ao0) to 3.500000Amps 1.750V DONE
+02/04/2023 13:46:19:	15	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=505	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:46:27:	set AO_S1Z (6229/ao0) to 3.750000Amps 1.875V DONE
+02/04/2023 13:46:28:	16	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=529	Aux Det=1	O+H=2	 DONE
+02/04/2023 13:46:36:	set AO_S1Z (6229/ao0) to 4.000000Amps 2.000V DONE
+02/04/2023 13:46:37:	17	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=543	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:46:45:	set AO_S1Z (6229/ao0) to 4.250000Amps 2.125V DONE
+02/04/2023 13:46:46:	18	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=516	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:46:55:	set AO_S1Z (6229/ao0) to 4.500000Amps 2.250V DONE
+02/04/2023 13:46:56:	19	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=549	Aux Det=0	O+H=1	 DONE
+02/04/2023 13:47:04:	set AO_S1Z (6229/ao0) to 4.750000Amps 2.375V DONE
+02/04/2023 13:47:05:	20	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=506	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:47:13:	set AO_S1Z (6229/ao0) to 5.000000Amps 2.500V DONE
+02/04/2023 13:47:14:	21	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=498	Aux Det=0	O+H=0	 DONE
+02/04/2023 13:47:22:	close file and end scan	 DONE
+02/04/2023 13:47:23:	set AO_DC2Z (PXIDAQ2/ao0) to 0.000000Amps 0.000V DONE
+02/04/2023 13:47:24:	set AO_DC2Y (PXIDAQ2/ao2) to 0.000000Amps 0.000V DONE
+02/04/2023 13:47:25:	set AO_DC1Z (PXIDAQ2/ao1) to 0.000000Amps 0.000V DONE
+02/04/2023 13:47:26:	set AO_DC1Y (6229/ao1) to 0.000000Amps 0.000V DONE
+call of setDCoff.sc DONE
+02/04/2023 13:47:28:	END OF SCRIPT	 DONE

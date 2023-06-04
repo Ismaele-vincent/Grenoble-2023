@@ -1,0 +1,28 @@
+* begin:	10/04/2023 15:14:01
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S2Zneg.cfg
+*
+[STANDARD]
+		
+[S2Zneg]
+	created 10/04/2023   15:12
+[CALL]
+	setDCpi2.sc
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_S2Z	21	Amps	0.000000	-10.000000	-0.500000	0.000000	0	time	15.000000			
+[ENDSCAN]
+[CALL]
+	setDCoff.sc
+[END]
+
+* remarks:	room to enter remarks
+*
+0	0.0000000	15.0	253	1322	167921	1955	3763977261	1575	0.0000000	0.0000000
+0	-0.5000000	15.0	233	1315	171863	1999	3763977280	1548	0.0000000	0.0000000
+0	-1.0000000	9.5	162	852	108814	1243	3763977293	1014	0.0000000	0.0000000
+* stopped by user: 10/04/2023 15:14:55

@@ -1,0 +1,70 @@
+02/03/2023 15:57:58:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg.sc	 DONE
+02/03/2023 15:57:59:	move motor	S18.axis2.phase shifter to 107.700000deg	 DONE
+02/03/2023 15:58:16:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_02Mar1558.dat	 DONE
+room to enter remarks DONE
+02/03/2023 15:58:18:	move motor	S18.axis2.phase shifter to 107.800000deg	 DONE
+02/03/2023 15:58:23:	1	count	time	20.000000s/cts	O Det=896	H Det=36191	Mon Det=289283	Aux Det=19176	O+H=37087	 DONE
+02/03/2023 15:58:48:	move motor	S18.axis2.phase shifter to 107.875000deg	 DONE
+02/03/2023 15:58:53:	2	count	time	20.000000s/cts	O Det=1256	H Det=32286	Mon Det=298937	Aux Det=18442	O+H=33542	 DONE
+02/03/2023 15:59:18:	move motor	S18.axis2.phase shifter to 107.950000deg	 DONE
+02/03/2023 15:59:22:	3	count	time	20.000000s/cts	O Det=1783	H Det=27335	Mon Det=312565	Aux Det=18335	O+H=29118	 DONE
+02/03/2023 15:59:47:	move motor	S18.axis2.phase shifter to 108.025000deg	 DONE
+02/03/2023 15:59:52:	4	count	time	20.000000s/cts	O Det=2180	H Det=22057	Mon Det=312262	Aux Det=17759	O+H=24237	 DONE
+02/03/2023 16:00:16:	move motor	S18.axis2.phase shifter to 108.100000deg	 DONE
+02/03/2023 16:00:21:	5	count	time	20.000000s/cts	O Det=2709	H Det=18323	Mon Det=269749	Aux Det=17475	O+H=21032	 DONE
+02/03/2023 16:00:45:	move motor	S18.axis2.phase shifter to 108.175000deg	 DONE
+02/03/2023 16:00:50:	6	count	time	20.000000s/cts	O Det=2751	H Det=16918	Mon Det=270027	Aux Det=17237	O+H=19669	 DONE
+02/03/2023 16:01:14:	move motor	S18.axis2.phase shifter to 108.250000deg	 DONE
+02/03/2023 16:01:19:	7	count	time	20.000000s/cts	O Det=2379	H Det=19443	Mon Det=275011	Aux Det=17310	O+H=21822	 DONE
+02/03/2023 16:01:44:	move motor	S18.axis2.phase shifter to 108.325000deg	 DONE
+02/03/2023 16:01:48:	8	count	time	20.000000s/cts	O Det=1857	H Det=23372	Mon Det=261205	Aux Det=17284	O+H=25229	 DONE
+02/03/2023 16:02:13:	move motor	S18.axis2.phase shifter to 108.400000deg	 DONE
+02/03/2023 16:02:17:	9	count	time	20.000000s/cts	O Det=1265	H Det=27448	Mon Det=262858	Aux Det=16932	O+H=28713	 DONE
+02/03/2023 16:02:43:	move motor	S18.axis2.phase shifter to 108.475000deg	 DONE
+02/03/2023 16:02:47:	10	count	time	20.000000s/cts	O Det=684	H Det=30444	Mon Det=258968	Aux Det=16944	O+H=31128	 DONE
+02/03/2023 16:03:13:	move motor	S18.axis2.phase shifter to 108.550000deg	 DONE
+02/03/2023 16:03:17:	11	count	time	20.000000s/cts	O Det=504	H Det=32366	Mon Det=279954	Aux Det=17373	O+H=32870	 DONE
+02/03/2023 16:03:43:	move motor	S18.axis2.phase shifter to 108.625000deg	 DONE
+02/03/2023 16:03:48:	12	count	time	20.000000s/cts	O Det=725	H Det=29703	Mon Det=303192	Aux Det=17120	O+H=30428	 DONE
+02/03/2023 16:04:13:	move motor	S18.axis2.phase shifter to 108.700000deg	 DONE
+02/03/2023 16:04:18:	13	count	time	20.000000s/cts	O Det=1053	H Det=28008	Mon Det=272884	Aux Det=17258	O+H=29061	 DONE
+02/03/2023 16:04:43:	move motor	S18.axis2.phase shifter to 108.775000deg	 DONE
+02/03/2023 16:04:47:	14	count	time	20.000000s/cts	O Det=1805	H Det=23215	Mon Det=268073	Aux Det=17115	O+H=25020	 DONE
+02/03/2023 16:05:13:	move motor	S18.axis2.phase shifter to 108.850000deg	 DONE
+02/03/2023 16:05:17:	15	count	time	20.000000s/cts	O Det=2178	H Det=18582	Mon Det=269047	Aux Det=16904	O+H=20760	 DONE
+02/03/2023 16:05:41:	move motor	S18.axis2.phase shifter to 108.925000deg	 DONE
+02/03/2023 16:05:46:	16	count	time	20.000000s/cts	O Det=2519	H Det=16129	Mon Det=275639	Aux Det=17002	O+H=18648	 DONE
+02/03/2023 16:06:11:	move motor	S18.axis2.phase shifter to 109.000000deg	 DONE
+02/03/2023 16:06:15:	17	count	time	20.000000s/cts	O Det=2738	H Det=16187	Mon Det=294013	Aux Det=17197	O+H=18925	 DONE
+02/03/2023 16:06:40:	move motor	S18.axis2.phase shifter to 109.075000deg	 DONE
+02/03/2023 16:06:44:	18	count	time	20.000000s/cts	O Det=2290	H Det=19578	Mon Det=274019	Aux Det=17369	O+H=21868	 DONE
+02/03/2023 16:07:09:	move motor	S18.axis2.phase shifter to 109.150000deg	 DONE
+02/03/2023 16:07:14:	19	count	time	20.000000s/cts	O Det=1780	H Det=24269	Mon Det=310019	Aux Det=17215	O+H=26049	 DONE
+02/03/2023 16:07:39:	move motor	S18.axis2.phase shifter to 109.225000deg	 DONE
+02/03/2023 16:07:43:	20	count	time	20.000000s/cts	O Det=1109	H Det=29700	Mon Det=310599	Aux Det=17373	O+H=30809	 DONE
+02/03/2023 16:08:09:	move motor	S18.axis2.phase shifter to 109.300000deg	 DONE
+02/03/2023 16:08:13:	21	count	time	20.000000s/cts	O Det=684	H Det=33019	Mon Det=305279	Aux Det=17335	O+H=33703	 DONE
+02/03/2023 16:08:39:	move motor	S18.axis2.phase shifter to 109.375000deg	 DONE
+02/03/2023 16:08:43:	22	count	time	20.000000s/cts	O Det=471	H Det=34461	Mon Det=279957	Aux Det=17737	O+H=34932	 DONE
+02/03/2023 16:09:09:	move motor	S18.axis2.phase shifter to 109.450000deg	 DONE
+02/03/2023 16:09:13:	23	count	time	20.000000s/cts	O Det=890	H Det=32102	Mon Det=264670	Aux Det=17679	O+H=32992	 DONE
+02/03/2023 16:09:39:	move motor	S18.axis2.phase shifter to 109.525000deg	 DONE
+02/03/2023 16:09:43:	24	count	time	20.000000s/cts	O Det=1444	H Det=28183	Mon Det=266934	Aux Det=17690	O+H=29627	 DONE
+02/03/2023 16:10:08:	move motor	S18.axis2.phase shifter to 109.600000deg	 DONE
+02/03/2023 16:10:13:	25	count	time	20.000000s/cts	O Det=2168	H Det=22886	Mon Det=263710	Aux Det=17928	O+H=25054	 DONE
+02/03/2023 16:10:37:	move motor	S18.axis2.phase shifter to 109.675000deg	 DONE
+02/03/2023 16:10:42:	26	count	time	20.000000s/cts	O Det=2703	H Det=19049	Mon Det=266968	Aux Det=17849	O+H=21752	 DONE
+02/03/2023 16:11:06:	move motor	S18.axis2.phase shifter to 109.750000deg	 DONE
+02/03/2023 16:11:10:	27	count	time	20.000000s/cts	O Det=3011	H Det=17810	Mon Det=265389	Aux Det=18024	O+H=20821	 DONE
+02/03/2023 16:11:34:	move motor	S18.axis2.phase shifter to 109.825000deg	 DONE
+02/03/2023 16:11:39:	28	count	time	20.000000s/cts	O Det=2690	H Det=19673	Mon Det=273524	Aux Det=18308	O+H=22363	 DONE
+02/03/2023 16:12:03:	move motor	S18.axis2.phase shifter to 109.900000deg	 DONE
+02/03/2023 16:12:08:	29	count	time	20.000000s/cts	O Det=2141	H Det=24095	Mon Det=263723	Aux Det=18215	O+H=26236	 DONE
+02/03/2023 16:12:32:	move motor	S18.axis2.phase shifter to 109.975000deg	 DONE
+02/03/2023 16:12:37:	30	count	time	20.000000s/cts	O Det=1627	H Det=29294	Mon Det=276005	Aux Det=18479	O+H=30921	 DONE
+02/03/2023 16:13:01:	move motor	S18.axis2.phase shifter to 110.050000deg	 DONE
+02/03/2023 16:13:06:	31	count	time	20.000000s/cts	O Det=960	H Det=33927	Mon Det=263289	Aux Det=18368	O+H=34887	 DONE
+02/03/2023 16:13:31:	move motor	S18.axis2.phase shifter to 110.125000deg	 DONE
+02/03/2023 16:13:36:	32	count	time	20.000000s/cts	O Det=696	H Det=37056	Mon Det=261122	Aux Det=18525	O+H=37752	 DONE
+02/03/2023 16:14:01:	close file and end scan	saving D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_02Mar1558.tif  DONE
+02/03/2023 16:14:02:	END OF SCRIPT	 DONE

@@ -1,0 +1,28 @@
+03/03/2023 14:02:08:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot.sc	 DONE
+03/03/2023 14:02:09:	move motor	S18.mono.MonoRot to 32.250000deg	 DONE
+03/03/2023 14:02:14:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar1402.dat	 DONE
+room to enter remarks DONE
+03/03/2023 14:02:16:	move motor	S18.mono.MonoRot to 32.300000deg	 DONE
+03/03/2023 14:02:20:	1	count	time	10.000000s/cts	O Det=8781	H Det=1	Mon Det=141302	Aux Det=5	O+H=8782	 DONE
+03/03/2023 14:02:33:	move motor	S18.mono.MonoRot to 32.325000deg	 DONE
+03/03/2023 14:02:37:	2	count	time	10.000000s/cts	O Det=10690	H Det=1	Mon Det=141505	Aux Det=3	O+H=10691	 DONE
+03/03/2023 14:02:50:	move motor	S18.mono.MonoRot to 32.350000deg	 DONE
+03/03/2023 14:02:54:	3	count	time	10.000000s/cts	O Det=12952	H Det=1	Mon Det=143720	Aux Det=0	O+H=12953	 DONE
+03/03/2023 14:03:07:	move motor	S18.mono.MonoRot to 32.375000deg	 DONE
+03/03/2023 14:03:11:	4	count	time	10.000000s/cts	O Det=14685	H Det=1	Mon Det=141099	Aux Det=2	O+H=14686	 DONE
+03/03/2023 14:03:24:	move motor	S18.mono.MonoRot to 32.400000deg	 DONE
+03/03/2023 14:03:28:	5	count	time	10.000000s/cts	O Det=15898	H Det=2	Mon Det=142868	Aux Det=3	O+H=15900	 DONE
+03/03/2023 14:03:42:	move motor	S18.mono.MonoRot to 32.425000deg	 DONE
+03/03/2023 14:03:46:	6	count	time	10.000000s/cts	O Det=16925	H Det=1	Mon Det=144604	Aux Det=1	O+H=16926	 DONE
+03/03/2023 14:03:59:	move motor	S18.mono.MonoRot to 32.450000deg	 DONE
+03/03/2023 14:04:03:	7	count	time	10.000000s/cts	O Det=17013	H Det=3	Mon Det=146760	Aux Det=1	O+H=17016	 DONE
+03/03/2023 14:04:16:	move motor	S18.mono.MonoRot to 32.475000deg	 DONE
+03/03/2023 14:04:20:	8	count	time	10.000000s/cts	O Det=16706	H Det=0	Mon Det=144334	Aux Det=3	O+H=16706	 DONE
+03/03/2023 14:04:33:	move motor	S18.mono.MonoRot to 32.500000deg	 DONE
+03/03/2023 14:04:37:	9	count	time	10.000000s/cts	O Det=15419	H Det=0	Mon Det=143585	Aux Det=4	O+H=15419	 DONE
+03/03/2023 14:04:50:	move motor	S18.mono.MonoRot to 32.525000deg	 DONE
+03/03/2023 14:04:54:	10	count	time	10.000000s/cts	O Det=14242	H Det=3	Mon Det=138809	Aux Det=1	O+H=14245	 DONE
+03/03/2023 14:05:08:	move motor	S18.mono.MonoRot to 32.550000deg	 DONE
+03/03/2023 14:05:12:	11	count	time	10.000000s/cts	O Det=13268	H Det=0	Mon Det=137610	Aux Det=1	O+H=13268	 DONE
+03/03/2023 14:05:25:	move motor	S18.mono.MonoRot to 32.575000deg	STOPPED BY USER	03/03/2023 14:05:29:	close file and end scan	 DONE
+03/03/2023 14:05:30:	END OF SCRIPT	 DONE

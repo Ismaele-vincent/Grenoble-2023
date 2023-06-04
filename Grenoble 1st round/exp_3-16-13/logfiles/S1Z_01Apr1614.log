@@ -1,0 +1,9 @@
+01/04/2023 16:14:04:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.sc	 DONE
+01/04/2023 16:14:05:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+01/04/2023 16:14:06:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+01/04/2023 16:14:07:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+01/04/2023 16:14:08:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+01/04/2023 16:14:09:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z_01Apr1614.dat	 DONE
+room to enter remarks DONE
+01/04/2023 16:14:11:	move motor	AO_S1Z to 0.000000Amps	 DONE
+01/04/2023 16:14:14:	1	count	time	100.000000s/cts	O Det=98	H Det=641	Mon Det=78629	Aux Det=2	O+H=739	STOPPED BY USER	

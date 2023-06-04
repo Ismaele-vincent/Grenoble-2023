@@ -1,0 +1,22 @@
+* begin:	03/04/2023 11:13:06
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8.cfg
+*
+[STANDARD]
+		
+[betaS1pi8]
+	created 03/04/2023   09:56
+[SCAN]
+	file path	.
+	name		*
+	category	1_off_off_1
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.auxiliary.LinearBlue	20	mm	0.000000	95.000000	5.000000	0.010000	FALSE	time	30.000000	0.000000	0.000000	30.000000
+[IN/OUT]
+	AO_S1Z	Amps	0.521000	0.000000	0.000000	0.000000	1_off_off_1		
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*

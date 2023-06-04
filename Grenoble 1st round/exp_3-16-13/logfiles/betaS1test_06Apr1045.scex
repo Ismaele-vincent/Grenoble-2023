@@ -1,0 +1,9 @@
+START	standard		
+MS	S18.axis2.phase shifter	1	deg	FIT	H	COS0
+CALL	betaS1pi8test.sc
+CALL	betaS2pi8test.sc
+CALL	ifg_1s_3p.sc
+MS	S18.axis2.phase shifter	1	deg	FIT	H	COS180
+CALL	betaS1pi8test.sc
+CALL	betaS2pi8test.sc
+END

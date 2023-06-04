@@ -1,0 +1,21 @@
+START	standard		
+SC	AO_DC2Z	Amps	1.000000
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+I	AO_DC2Y	Amps	-1.600000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	-1.100000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	-0.600000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	-0.100000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	0.400000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	0.900000	0
+C	time	10.000000
+I	AO_DC2Y	Amps	1.400000	0
+C	time	10.000000
+E
+SC	AO_DC2Y	Amps	0.000000
+END

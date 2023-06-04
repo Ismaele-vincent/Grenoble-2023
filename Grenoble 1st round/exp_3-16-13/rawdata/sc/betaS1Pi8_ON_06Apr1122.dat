@@ -1,0 +1,26 @@
+* begin:	06/04/2023 11:22:46
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1test.cfg
+*
+[STANDARD]
+		
+[betaS1test]
+	created 06/04/2023   11:02
+[CALL]
+	ifg_1s_3p.sc
+[MOTOR]
+	S18.axis2.phase shifter	1	deg	FIT	H	COS30			
+[CALL]
+	betaS1pi8test.sc
+[CALL]
+	ifg_1s_3p.sc
+[MOTOR]
+	S18.axis2.phase shifter	1	deg	FIT	H	COS60			
+[CALL]
+	betaS1pi8test.sc
+[END]
+
+* remarks:	room to enter remarks
+*
+1	0.0000000	2.0	9	294	25037	262	3763617778	303	0.0000000	0.0000000
+2	5.0000000	2.0	18	250	24997	258	3763617801	268	0.0000000	0.0000000
+* end: 06/04/2023 11:23:22

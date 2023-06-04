@@ -1,0 +1,6 @@
+START	standard		
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.dat
+R	room to enter remarks
+E
+MS	S18.axis2.piezo rotation	1	deg	FIT	O	PEAK30
+END

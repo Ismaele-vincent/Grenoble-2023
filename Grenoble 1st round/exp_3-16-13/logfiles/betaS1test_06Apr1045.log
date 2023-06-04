@@ -1,0 +1,11 @@
+06/04/2023 10:45:09:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1test.sc	 DONE
+06/04/2023 10:45:10:	move motor	S18.axis2.phase shifter to fit H COS0	Infreached 0.00000  DONE
+06/04/2023 10:45:24:	set AO_S2Z (PXIDAQ1/ao3) to 0.000000Amps 0.000V DONE
+call of setS2Zoff.sc DONE
+06/04/2023 10:45:26:	move motor	S18.auxiliary.LinearBlue to -0.010000mm	 DONE
+06/04/2023 10:45:30:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1test_ON_06Apr1045.dat	 DONE
+06/04/2023 10:45:31:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1test_OFF_06Apr1045.dat	 DONE
+room to enter remarks DONE
+06/04/2023 10:45:33:	move motor	S18.auxiliary.LinearBlue to 0.000000mm	 DONE
+06/04/2023 10:45:37:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+06/04/2023 10:45:38:	1	count	time	30.000000s/cts	O Det=55	H Det=1597	Mon Det=118523	Aux Det=1503	O+H=1652	STOPPED BY USER	

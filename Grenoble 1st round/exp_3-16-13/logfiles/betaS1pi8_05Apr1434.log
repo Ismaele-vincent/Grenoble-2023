@@ -1,0 +1,109 @@
+05/04/2023 14:34:52:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8.sc	 DONE
+05/04/2023 14:34:53:	set AO_S2Z (PXIDAQ1/ao3) to 0.000000Amps 0.000V DONE
+call of setS2Zoff.sc DONE
+05/04/2023 14:34:55:	move motor	S18.auxiliary.LinearBlue to -0.010000mm	 DONE
+05/04/2023 14:35:08:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8_ON_05Apr1435.dat	 DONE
+05/04/2023 14:35:09:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8_OFF_05Apr1435.dat	 DONE
+room to enter remarks DONE
+05/04/2023 14:35:11:	move motor	S18.auxiliary.LinearBlue to 0.000000mm	 DONE
+05/04/2023 14:35:15:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:35:16:	1	count	time	30s/cts	O Det=390	H Det=2581	Mon Det=300006	Aux Det=3960	O+H=2971	 DONE
+05/04/2023 14:35:49:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:35:50:	2	count	time	30.000000s/cts	O Det=450	H Det=2503	Mon Det=303425	Aux Det=3987	O+H=2953	 DONE
+05/04/2023 14:36:23:	move motor	S18.auxiliary.LinearBlue to 5.000000mm	 DONE
+05/04/2023 14:36:27:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:36:28:	3	count	time	30.000000s/cts	O Det=734	H Det=2690	Mon Det=302373	Aux Det=3986	O+H=3424	 DONE
+05/04/2023 14:37:02:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:37:03:	4	count	time	30s/cts	O Det=672	H Det=2669	Mon Det=300269	Aux Det=3990	O+H=3341	 DONE
+05/04/2023 14:37:36:	move motor	S18.auxiliary.LinearBlue to 10.000000mm	 DONE
+05/04/2023 14:37:40:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:37:41:	5	count	time	30s/cts	O Det=877	H Det=2720	Mon Det=301472	Aux Det=3948	O+H=3597	 DONE
+05/04/2023 14:38:15:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:38:16:	6	count	time	30.000000s/cts	O Det=910	H Det=2654	Mon Det=305633	Aux Det=4017	O+H=3564	 DONE
+05/04/2023 14:38:49:	move motor	S18.auxiliary.LinearBlue to 15.000000mm	 DONE
+05/04/2023 14:38:53:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:38:54:	7	count	time	30.000000s/cts	O Det=932	H Det=2582	Mon Det=301237	Aux Det=4010	O+H=3514	 DONE
+05/04/2023 14:39:27:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:39:28:	8	count	time	30s/cts	O Det=910	H Det=2676	Mon Det=299778	Aux Det=4023	O+H=3586	 DONE
+05/04/2023 14:40:02:	move motor	S18.auxiliary.LinearBlue to 20.000000mm	 DONE
+05/04/2023 14:40:06:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:40:07:	9	count	time	30s/cts	O Det=753	H Det=2773	Mon Det=308284	Aux Det=3949	O+H=3526	 DONE
+05/04/2023 14:40:40:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:40:41:	10	count	time	30.000000s/cts	O Det=777	H Det=2670	Mon Det=316749	Aux Det=3970	O+H=3447	 DONE
+05/04/2023 14:41:14:	move motor	S18.auxiliary.LinearBlue to 25.000000mm	 DONE
+05/04/2023 14:41:19:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:41:20:	11	count	time	30.000000s/cts	O Det=486	H Det=2707	Mon Det=317381	Aux Det=4009	O+H=3193	 DONE
+05/04/2023 14:41:53:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:41:54:	12	count	time	30s/cts	O Det=555	H Det=2695	Mon Det=324630	Aux Det=3982	O+H=3250	 DONE
+05/04/2023 14:42:27:	move motor	S18.auxiliary.LinearBlue to 30.000000mm	 DONE
+05/04/2023 14:42:32:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:42:33:	13	count	time	30s/cts	O Det=285	H Det=2741	Mon Det=311534	Aux Det=4012	O+H=3026	 DONE
+05/04/2023 14:43:06:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:43:07:	14	count	time	30.000000s/cts	O Det=265	H Det=2678	Mon Det=301661	Aux Det=3918	O+H=2943	 DONE
+05/04/2023 14:43:40:	move motor	S18.auxiliary.LinearBlue to 35.000000mm	 DONE
+05/04/2023 14:43:45:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:43:46:	15	count	time	30.000000s/cts	O Det=65	H Det=2680	Mon Det=301180	Aux Det=4037	O+H=2745	 DONE
+05/04/2023 14:44:19:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:44:20:	16	count	time	30s/cts	O Det=87	H Det=2703	Mon Det=299005	Aux Det=3944	O+H=2790	 DONE
+05/04/2023 14:44:53:	move motor	S18.auxiliary.LinearBlue to 40.000000mm	 DONE
+05/04/2023 14:44:57:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:44:58:	17	count	time	30s/cts	O Det=66	H Det=2810	Mon Det=298876	Aux Det=3887	O+H=2876	 DONE
+05/04/2023 14:45:31:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:45:33:	18	count	time	30.000000s/cts	O Det=61	H Det=2680	Mon Det=311080	Aux Det=3957	O+H=2741	 DONE
+05/04/2023 14:46:06:	move motor	S18.auxiliary.LinearBlue to 45.000000mm	 DONE
+05/04/2023 14:46:10:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:46:11:	19	count	time	30.000000s/cts	O Det=189	H Det=2746	Mon Det=308500	Aux Det=4036	O+H=2935	 DONE
+05/04/2023 14:46:44:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:46:45:	20	count	time	30s/cts	O Det=160	H Det=2736	Mon Det=309241	Aux Det=3972	O+H=2896	 DONE
+05/04/2023 14:47:19:	move motor	S18.auxiliary.LinearBlue to 50.000000mm	 DONE
+05/04/2023 14:47:23:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:47:24:	21	count	time	30s/cts	O Det=484	H Det=2720	Mon Det=309392	Aux Det=4003	O+H=3204	 DONE
+05/04/2023 14:47:57:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:47:58:	22	count	time	30.000000s/cts	O Det=487	H Det=2725	Mon Det=347728	Aux Det=4048	O+H=3212	 DONE
+05/04/2023 14:48:31:	move motor	S18.auxiliary.LinearBlue to 55.000000mm	 DONE
+05/04/2023 14:48:36:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:48:37:	23	count	time	30.000000s/cts	O Det=713	H Det=2770	Mon Det=348850	Aux Det=4053	O+H=3483	 DONE
+05/04/2023 14:49:10:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:49:11:	24	count	time	30s/cts	O Det=744	H Det=2721	Mon Det=349205	Aux Det=3962	O+H=3465	 DONE
+05/04/2023 14:49:44:	move motor	S18.auxiliary.LinearBlue to 60.000000mm	 DONE
+05/04/2023 14:49:49:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:49:50:	25	count	time	30s/cts	O Det=850	H Det=2799	Mon Det=346402	Aux Det=3936	O+H=3649	 DONE
+05/04/2023 14:50:23:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:50:24:	26	count	time	30.000000s/cts	O Det=897	H Det=2655	Mon Det=312951	Aux Det=4103	O+H=3552	 DONE
+05/04/2023 14:50:57:	move motor	S18.auxiliary.LinearBlue to 65.000000mm	 DONE
+05/04/2023 14:51:01:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:51:02:	27	count	time	30.000000s/cts	O Det=955	H Det=2683	Mon Det=315381	Aux Det=3933	O+H=3638	 DONE
+05/04/2023 14:51:36:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:51:37:	28	count	time	30s/cts	O Det=836	H Det=2715	Mon Det=314775	Aux Det=3948	O+H=3551	 DONE
+05/04/2023 14:52:10:	move motor	S18.auxiliary.LinearBlue to 70.000000mm	 DONE
+05/04/2023 14:52:14:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:52:15:	29	count	time	30s/cts	O Det=724	H Det=2793	Mon Det=313822	Aux Det=3897	O+H=3517	 DONE
+05/04/2023 14:52:48:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:52:49:	30	count	time	30.000000s/cts	O Det=722	H Det=2736	Mon Det=307400	Aux Det=3873	O+H=3458	 DONE
+05/04/2023 14:53:23:	move motor	S18.auxiliary.LinearBlue to 75.000000mm	 DONE
+05/04/2023 14:53:27:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:53:28:	31	count	time	30.000000s/cts	O Det=391	H Det=2796	Mon Det=303683	Aux Det=3919	O+H=3187	 DONE
+05/04/2023 14:54:01:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:54:02:	32	count	time	30s/cts	O Det=442	H Det=2790	Mon Det=305362	Aux Det=3970	O+H=3232	 DONE
+05/04/2023 14:54:35:	move motor	S18.auxiliary.LinearBlue to 80.000000mm	 DONE
+05/04/2023 14:54:40:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:54:41:	33	count	time	30s/cts	O Det=158	H Det=2701	Mon Det=301865	Aux Det=3996	O+H=2859	 DONE
+05/04/2023 14:55:14:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:55:15:	34	count	time	30.000000s/cts	O Det=129	H Det=2683	Mon Det=315699	Aux Det=4055	O+H=2812	 DONE
+05/04/2023 14:55:48:	move motor	S18.auxiliary.LinearBlue to 85.000000mm	 DONE
+05/04/2023 14:55:53:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:55:54:	35	count	time	30.000000s/cts	O Det=46	H Det=2835	Mon Det=326828	Aux Det=3893	O+H=2881	 DONE
+05/04/2023 14:56:27:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:56:28:	36	count	time	30s/cts	O Det=57	H Det=2784	Mon Det=323136	Aux Det=3956	O+H=2841	 DONE
+05/04/2023 14:57:01:	move motor	S18.auxiliary.LinearBlue to 90.000000mm	 DONE
+05/04/2023 14:57:06:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:57:07:	37	count	time	30s/cts	O Det=109	H Det=2869	Mon Det=323904	Aux Det=3955	O+H=2978	 DONE
+05/04/2023 14:57:40:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:57:41:	38	count	time	30.000000s/cts	O Det=114	H Det=2736	Mon Det=324652	Aux Det=3962	O+H=2850	 DONE
+05/04/2023 14:58:14:	move motor	S18.auxiliary.LinearBlue to 95.000000mm	 DONE
+05/04/2023 14:58:18:	set AO_S1Z (6229/ao0) to 0.000000Amps	 0.000V DONE
+05/04/2023 14:58:19:	39	count	time	30.000000s/cts	O Det=360	H Det=2774	Mon Det=327323	Aux Det=3969	O+H=3134	 DONE
+05/04/2023 14:58:53:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+05/04/2023 14:58:54:	40	count	time	30s/cts	O Det=344	H Det=2799	Mon Det=328921	Aux Det=4063	O+H=3143	 DONE
+05/04/2023 14:59:27:	close file and end scan	 DONE
+05/04/2023 14:59:28:	END OF SCRIPT	 DONE

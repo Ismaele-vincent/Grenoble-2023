@@ -1,0 +1,8 @@
+03/04/2023 11:13:01:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8.sc	 DONE
+03/04/2023 11:13:02:	move motor	S18.auxiliary.LinearBlue to -0.010000mm	 DONE
+03/04/2023 11:13:06:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8_ON_03Apr1113.dat	 DONE
+03/04/2023 11:13:07:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\betaS1pi8_OFF_03Apr1113.dat	 DONE
+room to enter remarks DONE
+03/04/2023 11:13:09:	move motor	S18.auxiliary.LinearBlue to 0.000000mm	 DONE
+03/04/2023 11:13:13:	set AO_S1Z (6229/ao0) to 0.521000Amps	 0.261V DONE
+03/04/2023 11:13:14:	1	count	time	0.000000s/cts	O Det=0	H Det=0	Mon Det=0	Aux Det=0	O+H=3221	

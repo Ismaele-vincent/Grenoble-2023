@@ -1,0 +1,35 @@
+29/03/2023 11:30:17:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotDiagonal.sc	 DONE
+29/03/2023 11:30:18:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\robotDiagonal_29Mar1130.dat	 DONE
+room to enter remarks DONE
+29/03/2023 11:30:20:	move motor	S18.auxiliary.Robot Diagonal to -7000.000000um	 DONE
+29/03/2023 11:30:31:	1	count	time	20.000000s/cts	O Det=42	H Det=13	Mon Det=276012	Aux Det=399	O+H=55	 DONE
+29/03/2023 11:30:55:	move motor	S18.auxiliary.Robot Diagonal to -6000.000000um	 DONE
+29/03/2023 11:31:01:	2	count	time	20.000000s/cts	O Det=97	H Det=32	Mon Det=270686	Aux Det=650	O+H=129	 DONE
+29/03/2023 11:31:25:	move motor	S18.auxiliary.Robot Diagonal to -5000.000000um	 DONE
+29/03/2023 11:31:31:	3	count	time	20.000000s/cts	O Det=192	H Det=73	Mon Det=271858	Aux Det=1139	O+H=265	 DONE
+29/03/2023 11:31:55:	move motor	S18.auxiliary.Robot Diagonal to -4000.000000um	 DONE
+29/03/2023 11:32:01:	4	count	time	20.000000s/cts	O Det=275	H Det=99	Mon Det=277500	Aux Det=1698	O+H=374	 DONE
+29/03/2023 11:32:25:	move motor	S18.auxiliary.Robot Diagonal to -3000.000000um	 DONE
+29/03/2023 11:32:31:	5	count	time	20.000000s/cts	O Det=380	H Det=155	Mon Det=261080	Aux Det=2035	O+H=535	 DONE
+29/03/2023 11:32:55:	move motor	S18.auxiliary.Robot Diagonal to -2000.000000um	 DONE
+29/03/2023 11:33:01:	6	count	time	20.000000s/cts	O Det=453	H Det=202	Mon Det=233514	Aux Det=2284	O+H=655	 DONE
+29/03/2023 11:33:25:	move motor	S18.auxiliary.Robot Diagonal to -1000.000000um	 DONE
+29/03/2023 11:33:31:	7	count	time	20.000000s/cts	O Det=493	H Det=234	Mon Det=235783	Aux Det=2365	O+H=727	 DONE
+29/03/2023 11:33:55:	move motor	S18.auxiliary.Robot Diagonal to 0.000000um	 DONE
+29/03/2023 11:34:02:	8	count	time	20.000000s/cts	O Det=448	H Det=203	Mon Det=235191	Aux Det=2345	O+H=651	 DONE
+29/03/2023 11:34:25:	move motor	S18.auxiliary.Robot Diagonal to 1000.000000um	 DONE
+29/03/2023 11:34:32:	9	count	time	20.000000s/cts	O Det=480	H Det=222	Mon Det=236387	Aux Det=2381	O+H=702	 DONE
+29/03/2023 11:34:55:	move motor	S18.auxiliary.Robot Diagonal to 2000.000000um	 DONE
+29/03/2023 11:35:02:	10	count	time	20.000000s/cts	O Det=499	H Det=218	Mon Det=238819	Aux Det=2344	O+H=717	 DONE
+29/03/2023 11:35:25:	move motor	S18.auxiliary.Robot Diagonal to 3000.000000um	 DONE
+29/03/2023 11:35:32:	11	count	time	20.000000s/cts	O Det=471	H Det=237	Mon Det=234933	Aux Det=2333	O+H=708	 DONE
+29/03/2023 11:35:55:	move motor	S18.auxiliary.Robot Diagonal to 4000.000000um	 DONE
+29/03/2023 11:36:02:	12	count	time	20.000000s/cts	O Det=436	H Det=203	Mon Det=237259	Aux Det=2406	O+H=639	 DONE
+29/03/2023 11:36:25:	move motor	S18.auxiliary.Robot Diagonal to 5000.000000um	 DONE
+29/03/2023 11:36:32:	13	count	time	20.000000s/cts	O Det=381	H Det=196	Mon Det=239067	Aux Det=2278	O+H=577	 DONE
+29/03/2023 11:36:55:	move motor	S18.auxiliary.Robot Diagonal to 6000.000000um	 DONE
+29/03/2023 11:37:02:	14	count	time	20.000000s/cts	O Det=295	H Det=135	Mon Det=242161	Aux Det=2000	O+H=430	 DONE
+29/03/2023 11:37:25:	move motor	S18.auxiliary.Robot Diagonal to 7000.000000um	 DONE
+29/03/2023 11:37:32:	15	count	time	20.000000s/cts	O Det=211	H Det=114	Mon Det=239258	Aux Det=1693	O+H=325	 DONE
+29/03/2023 11:37:55:	close file and end scan	 DONE
+29/03/2023 11:37:56:	END OF SCRIPT	 DONE

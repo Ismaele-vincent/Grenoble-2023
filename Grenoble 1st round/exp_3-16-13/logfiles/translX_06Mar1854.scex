@@ -1,0 +1,28 @@
+START	standard		
+M	S18.auxiliary.TranslationX	mm	4.900000	FALSE
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.auxiliary.TranslationX	mm	5.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	6.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	7.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	8.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	9.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	10.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	11.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	12.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	13.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	14.000000	FALSE
+C	time	10.000000
+M	S18.auxiliary.TranslationX	mm	15.000000	FALSE
+C	time	10.000000
+E
+END

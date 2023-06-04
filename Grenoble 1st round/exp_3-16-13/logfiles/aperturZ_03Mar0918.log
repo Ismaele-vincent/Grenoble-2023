@@ -1,0 +1,28 @@
+03/03/2023 09:18:38:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\aperturZ.sc	 DONE
+03/03/2023 09:18:39:	move motor	S18.axis2.Aperture Z to -0.100000mm	 DONE
+03/03/2023 09:18:44:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\aperturZ_03Mar0918.dat	 DONE
+room to enter remarks DONE
+03/03/2023 09:18:46:	move motor	S18.axis2.Aperture Z to 0.000000mm	 DONE
+03/03/2023 09:18:49:	1	count	time	5.000000s/cts	O Det=24325	H Det=2	Mon Det=66921	Aux Det=0	O+H=24327	 DONE
+03/03/2023 09:18:58:	move motor	S18.axis2.Aperture Z to 1.000000mm	 DONE
+03/03/2023 09:19:02:	2	count	time	5.000000s/cts	O Det=24992	H Det=2	Mon Det=67853	Aux Det=1	O+H=24994	 DONE
+03/03/2023 09:19:10:	move motor	S18.axis2.Aperture Z to 2.000000mm	 DONE
+03/03/2023 09:19:14:	3	count	time	5.000000s/cts	O Det=24877	H Det=1	Mon Det=66657	Aux Det=3	O+H=24878	 DONE
+03/03/2023 09:19:22:	move motor	S18.axis2.Aperture Z to 3.000000mm	 DONE
+03/03/2023 09:19:27:	4	count	time	5.000000s/cts	O Det=24911	H Det=1	Mon Det=68407	Aux Det=3	O+H=24912	 DONE
+03/03/2023 09:19:35:	move motor	S18.axis2.Aperture Z to 4.000000mm	 DONE
+03/03/2023 09:19:39:	5	count	time	5.000000s/cts	O Det=24711	H Det=0	Mon Det=68626	Aux Det=1	O+H=24711	 DONE
+03/03/2023 09:19:47:	move motor	S18.axis2.Aperture Z to 5.000000mm	 DONE
+03/03/2023 09:19:52:	6	count	time	5.000000s/cts	O Det=24808	H Det=1	Mon Det=68581	Aux Det=4	O+H=24809	 DONE
+03/03/2023 09:20:00:	move motor	S18.axis2.Aperture Z to 6.000000mm	 DONE
+03/03/2023 09:20:04:	7	count	time	5.000000s/cts	O Det=24943	H Det=1	Mon Det=67605	Aux Det=1	O+H=24944	 DONE
+03/03/2023 09:20:12:	move motor	S18.axis2.Aperture Z to 7.000000mm	 DONE
+03/03/2023 09:20:17:	8	count	time	5.000000s/cts	O Det=24414	H Det=1	Mon Det=67865	Aux Det=1	O+H=24415	 DONE
+03/03/2023 09:20:25:	move motor	S18.axis2.Aperture Z to 8.000000mm	 DONE
+03/03/2023 09:20:29:	9	count	time	5.000000s/cts	O Det=24230	H Det=1	Mon Det=67944	Aux Det=0	O+H=24231	 DONE
+03/03/2023 09:20:37:	move motor	S18.axis2.Aperture Z to 9.000000mm	 DONE
+03/03/2023 09:20:42:	10	count	time	5.000000s/cts	O Det=23471	H Det=0	Mon Det=67069	Aux Det=1	O+H=23471	 DONE
+03/03/2023 09:20:50:	move motor	S18.axis2.Aperture Z to 10.000000mm	 DONE
+03/03/2023 09:20:54:	11	count	time	5.000000s/cts	O Det=23519	H Det=0	Mon Det=66842	Aux Det=1	O+H=23519	 DONE
+03/03/2023 09:21:02:	close file and end scan	 DONE
+03/03/2023 09:21:03:	END OF SCRIPT	 DONE

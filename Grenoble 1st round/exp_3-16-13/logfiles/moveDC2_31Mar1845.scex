@@ -1,0 +1,41 @@
+START	standard		
+SC	AO_DC2Z	Amps	0.740000
+SC	AO_DC2Y	Amps	-0.547000
+SC	AO_DC1Z	Amps	4.430000
+SC	AO_DC1Y	Amps	1.668000
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.auxiliary.LinearBlue	mm	0.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	5.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	10.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	15.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	20.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	25.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	30.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	35.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	40.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	45.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	50.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	55.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	60.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	65.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	70.000000	FALSE
+C	time	200.000000
+M	S18.auxiliary.LinearBlue	mm	75.000000	FALSE
+C	time	200.000000
+E
+END

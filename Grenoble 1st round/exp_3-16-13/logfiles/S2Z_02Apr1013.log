@@ -1,0 +1,20 @@
+02/04/2023 10:13:22:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S2Z.sc	 DONE
+02/04/2023 10:13:23:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+02/04/2023 10:13:24:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+02/04/2023 10:13:25:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+02/04/2023 10:13:26:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+02/04/2023 10:13:27:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S2Z_02Apr1013.dat	 DONE
+room to enter remarks DONE
+02/04/2023 10:13:29:	set AO_S2Z (PXIDAQ1/ao3) to 0.000000Amps 0.000V DONE
+02/04/2023 10:13:30:	1	count	time	20.000000s/cts	O Det=0	H Det=4	Mon Det=1989	Aux Det=1	O+H=4	 DONE
+02/04/2023 10:13:54:	set AO_S2Z (PXIDAQ1/ao3) to 0.250000Amps 0.250V DONE
+02/04/2023 10:13:55:	2	count	time	20.000000s/cts	O Det=0	H Det=2	Mon Det=1989	Aux Det=1	O+H=2	 DONE
+02/04/2023 10:14:18:	set AO_S2Z (PXIDAQ1/ao3) to 0.500000Amps 0.500V DONE
+02/04/2023 10:14:19:	3	count	time	20.000000s/cts	O Det=0	H Det=2	Mon Det=2012	Aux Det=0	O+H=2	 DONE
+02/04/2023 10:14:42:	set AO_S2Z (PXIDAQ1/ao3) to 0.750000Amps 0.750V DONE
+02/04/2023 10:14:43:	4	count	time	20.000000s/cts	O Det=0	H Det=3	Mon Det=1999	Aux Det=2	O+H=3	 DONE
+02/04/2023 10:15:06:	set AO_S2Z (PXIDAQ1/ao3) to 1.000000Amps 1.000V DONE
+02/04/2023 10:15:07:	5	count	time	20.000000s/cts	O Det=0	H Det=2	Mon Det=1927	Aux Det=2	O+H=2	 DONE
+02/04/2023 10:15:30:	set AO_S2Z (PXIDAQ1/ao3) to 1.250000Amps 1.250V DONE
+02/04/2023 10:15:31:	6	count	time	20.000000s/cts	O Det=1	H Det=0	Mon Det=353	Aux Det=0	O+H=1	STOPPED BY USER	02/04/2023 10:15:38:	close file and end scan	 DONE
+02/04/2023 10:15:39:	END OF SCRIPT	 DONE

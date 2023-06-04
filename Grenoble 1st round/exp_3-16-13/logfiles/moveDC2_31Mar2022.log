@@ -1,0 +1,39 @@
+31/03/2023 20:22:54:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\moveDC2.sc	 DONE
+31/03/2023 20:22:55:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+31/03/2023 20:22:56:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+31/03/2023 20:22:57:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+31/03/2023 20:22:58:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+31/03/2023 20:22:59:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\moveDC2_31Mar2022.dat	 DONE
+room to enter remarks DONE
+31/03/2023 20:23:01:	move motor	S18.auxiliary.LinearBlue to 0.000000mm	 DONE
+31/03/2023 20:23:12:	1	count	time	100.000000s/cts	O Det=456	H Det=7253	Mon Det=1049319	Aux Det=13191	O+H=7709	 DONE
+31/03/2023 20:24:55:	move motor	S18.auxiliary.LinearBlue to 4.000000mm	 DONE
+31/03/2023 20:25:00:	2	count	time	100.000000s/cts	O Det=804	H Det=7310	Mon Det=1049765	Aux Det=13124	O+H=8114	 DONE
+31/03/2023 20:26:43:	move motor	S18.auxiliary.LinearBlue to 8.000000mm	 DONE
+31/03/2023 20:26:47:	3	count	time	100.000000s/cts	O Det=1110	H Det=7198	Mon Det=1046796	Aux Det=13021	O+H=8308	 DONE
+31/03/2023 20:28:30:	move motor	S18.auxiliary.LinearBlue to 12.000000mm	 DONE
+31/03/2023 20:28:35:	4	count	time	100.000000s/cts	O Det=1412	H Det=7307	Mon Det=1052404	Aux Det=12997	O+H=8719	 DONE
+31/03/2023 20:30:18:	move motor	S18.auxiliary.LinearBlue to 16.000000mm	 DONE
+31/03/2023 20:30:22:	5	count	time	100.000000s/cts	O Det=1465	H Det=7270	Mon Det=1040931	Aux Det=13066	O+H=8735	 DONE
+31/03/2023 20:32:05:	move motor	S18.auxiliary.LinearBlue to 20.000000mm	 DONE
+31/03/2023 20:32:10:	6	count	time	100.000000s/cts	O Det=1390	H Det=7187	Mon Det=1040756	Aux Det=13141	O+H=8577	 DONE
+31/03/2023 20:33:53:	move motor	S18.auxiliary.LinearBlue to 24.000000mm	 DONE
+31/03/2023 20:33:57:	7	count	time	100.000000s/cts	O Det=1170	H Det=7281	Mon Det=1051116	Aux Det=12898	O+H=8451	 DONE
+31/03/2023 20:35:41:	move motor	S18.auxiliary.LinearBlue to 28.000000mm	 DONE
+31/03/2023 20:35:45:	8	count	time	100.000000s/cts	O Det=773	H Det=7286	Mon Det=1042183	Aux Det=13013	O+H=8059	 DONE
+31/03/2023 20:37:28:	move motor	S18.auxiliary.LinearBlue to 32.000000mm	 DONE
+31/03/2023 20:37:33:	9	count	time	100.000000s/cts	O Det=431	H Det=7254	Mon Det=1041699	Aux Det=13149	O+H=7685	 DONE
+31/03/2023 20:39:16:	move motor	S18.auxiliary.LinearBlue to 36.000000mm	 DONE
+31/03/2023 20:39:20:	10	count	time	100.000000s/cts	O Det=182	H Det=7092	Mon Det=1050226	Aux Det=12920	O+H=7274	 DONE
+31/03/2023 20:41:03:	move motor	S18.auxiliary.LinearBlue to 40.000000mm	 DONE
+31/03/2023 20:41:07:	11	count	time	100.000000s/cts	O Det=79	H Det=7186	Mon Det=1042616	Aux Det=13175	O+H=7265	 DONE
+31/03/2023 20:42:51:	move motor	S18.auxiliary.LinearBlue to 44.000000mm	 DONE
+31/03/2023 20:42:55:	12	count	time	100.000000s/cts	O Det=169	H Det=7254	Mon Det=1048363	Aux Det=12970	O+H=7423	 DONE
+31/03/2023 20:44:38:	move motor	S18.auxiliary.LinearBlue to 48.000000mm	 DONE
+31/03/2023 20:44:42:	13	count	time	100.000000s/cts	O Det=381	H Det=7145	Mon Det=1044567	Aux Det=12983	O+H=7526	 DONE
+31/03/2023 20:46:26:	move motor	S18.auxiliary.LinearBlue to 52.000000mm	 DONE
+31/03/2023 20:46:30:	14	count	time	100.000000s/cts	O Det=744	H Det=7180	Mon Det=1042781	Aux Det=12930	O+H=7924	 DONE
+31/03/2023 20:48:13:	move motor	S18.auxiliary.LinearBlue to 56.000000mm	 DONE
+31/03/2023 20:48:17:	15	count	time	100.000000s/cts	O Det=1141	H Det=6939	Mon Det=1039900	Aux Det=13042	O+H=8080	 DONE
+31/03/2023 20:50:01:	close file and end scan	 DONE
+31/03/2023 20:50:02:	END OF SCRIPT	 DONE

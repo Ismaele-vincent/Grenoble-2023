@@ -1,0 +1,15 @@
+29/03/2023 17:26:27:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\Temperatur_Box.sc	 DONE
+29/03/2023 17:26:28:	TEMPERATUR	HaakeS5P_COM6	1	20.0 DONE
+ DONE
+29/03/2023 17:26:30:	move motor	S18.axis2.phase shifter to 107.900000deg	 DONE
+29/03/2023 17:26:34:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\Temperatur_Box_29Mar1726.dat	 DONE
+room to enter remarks DONE
+29/03/2023 17:26:36:	move motor	S18.axis2.phase shifter to 108.000000deg	 DONE
+29/03/2023 17:26:41:	1	count	time	20.000000s/cts	O Det=4259	H Det=11511	Mon Det=257991	Aux Det=7446	O+H=15770	 DONE
+29/03/2023 17:27:04:	close file and end scan	 DONE
+call of ifg_20s_3p.sc DONE
+29/03/2023 17:27:06:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking_29Mar1727.dat	 DONE
+room to enter remarks DONE
+29/03/2023 17:27:08:	move motor	S18.axis2.piezo rotation to 1.672200deg	 DONE
+29/03/2023 17:27:13:	close file and end scan	 DONE
+29/03/2023 17:27:14:	move motor	S18.axis2.piezo rotation to fit SUM PEAK30	NaNreached 1.67222 STOPPED BY USER	

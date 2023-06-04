@@ -1,0 +1,48 @@
+03/03/2023 09:11:02:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot.sc	 DONE
+03/03/2023 09:11:03:	move motor	S18.mono.MonoRot to 32.100000deg	 DONE
+03/03/2023 09:11:07:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0911.dat	 DONE
+room to enter remarks DONE
+03/03/2023 09:11:09:	move motor	S18.mono.MonoRot to 32.200000deg	 DONE
+03/03/2023 09:11:13:	1	count	time	5.000000s/cts	O Det=3545	H Det=2	Mon Det=63333	Aux Det=2	O+H=3547	 DONE
+03/03/2023 09:11:21:	move motor	S18.mono.MonoRot to 32.225000deg	 DONE
+03/03/2023 09:11:25:	2	count	time	5.000000s/cts	O Det=5191	H Det=2	Mon Det=59934	Aux Det=1	O+H=5193	 DONE
+03/03/2023 09:11:34:	move motor	S18.mono.MonoRot to 32.250000deg	 DONE
+03/03/2023 09:11:38:	3	count	time	5.000000s/cts	O Det=7525	H Det=1	Mon Det=61700	Aux Det=1	O+H=7526	 DONE
+03/03/2023 09:11:46:	move motor	S18.mono.MonoRot to 32.275000deg	 DONE
+03/03/2023 09:11:50:	4	count	time	5.000000s/cts	O Det=10115	H Det=1	Mon Det=62419	Aux Det=0	O+H=10116	 DONE
+03/03/2023 09:11:58:	move motor	S18.mono.MonoRot to 32.300000deg	 DONE
+03/03/2023 09:12:02:	5	count	time	5.000000s/cts	O Det=13257	H Det=1	Mon Det=62882	Aux Det=2	O+H=13258	 DONE
+03/03/2023 09:12:10:	move motor	S18.mono.MonoRot to 32.325000deg	 DONE
+03/03/2023 09:12:14:	6	count	time	5.000000s/cts	O Det=16086	H Det=1	Mon Det=63090	Aux Det=1	O+H=16087	 DONE
+03/03/2023 09:12:23:	move motor	S18.mono.MonoRot to 32.350000deg	 DONE
+03/03/2023 09:12:27:	7	count	time	5.000000s/cts	O Det=19385	H Det=1	Mon Det=63982	Aux Det=2	O+H=19386	 DONE
+03/03/2023 09:12:35:	move motor	S18.mono.MonoRot to 32.375000deg	 DONE
+03/03/2023 09:12:39:	8	count	time	5.000000s/cts	O Det=21336	H Det=3	Mon Det=63556	Aux Det=2	O+H=21339	 DONE
+03/03/2023 09:12:47:	move motor	S18.mono.MonoRot to 32.400000deg	 DONE
+03/03/2023 09:12:51:	9	count	time	5.000000s/cts	O Det=23468	H Det=5	Mon Det=63858	Aux Det=3	O+H=23473	 DONE
+03/03/2023 09:12:59:	move motor	S18.mono.MonoRot to 32.425000deg	 DONE
+03/03/2023 09:13:04:	10	count	time	5.000000s/cts	O Det=24581	H Det=4	Mon Det=65514	Aux Det=0	O+H=24585	 DONE
+03/03/2023 09:13:12:	move motor	S18.mono.MonoRot to 32.450000deg	 DONE
+03/03/2023 09:13:16:	11	count	time	5.000000s/cts	O Det=24988	H Det=1	Mon Det=66632	Aux Det=0	O+H=24989	 DONE
+03/03/2023 09:13:24:	move motor	S18.mono.MonoRot to 32.475000deg	 DONE
+03/03/2023 09:13:28:	12	count	time	5.000000s/cts	O Det=24536	H Det=1	Mon Det=66985	Aux Det=2	O+H=24537	 DONE
+03/03/2023 09:13:36:	move motor	S18.mono.MonoRot to 32.500000deg	 DONE
+03/03/2023 09:13:40:	13	count	time	5.000000s/cts	O Det=23811	H Det=2	Mon Det=68859	Aux Det=0	O+H=23813	 DONE
+03/03/2023 09:13:48:	move motor	S18.mono.MonoRot to 32.525000deg	 DONE
+03/03/2023 09:13:53:	14	count	time	5.000000s/cts	O Det=22128	H Det=2	Mon Det=68391	Aux Det=1	O+H=22130	 DONE
+03/03/2023 09:14:01:	move motor	S18.mono.MonoRot to 32.550000deg	 DONE
+03/03/2023 09:14:05:	15	count	time	5.000000s/cts	O Det=20057	H Det=1	Mon Det=66445	Aux Det=6	O+H=20058	 DONE
+03/03/2023 09:14:13:	move motor	S18.mono.MonoRot to 32.575000deg	 DONE
+03/03/2023 09:14:17:	16	count	time	5.000000s/cts	O Det=18638	H Det=1	Mon Det=64618	Aux Det=0	O+H=18639	 DONE
+03/03/2023 09:14:25:	move motor	S18.mono.MonoRot to 32.600000deg	 DONE
+03/03/2023 09:14:29:	17	count	time	5.000000s/cts	O Det=16244	H Det=0	Mon Det=61171	Aux Det=2	O+H=16244	 DONE
+03/03/2023 09:14:37:	move motor	S18.mono.MonoRot to 32.625000deg	 DONE
+03/03/2023 09:14:41:	18	count	time	5.000000s/cts	O Det=14150	H Det=2	Mon Det=57996	Aux Det=0	O+H=14152	 DONE
+03/03/2023 09:14:50:	move motor	S18.mono.MonoRot to 32.650000deg	 DONE
+03/03/2023 09:14:54:	19	count	time	5.000000s/cts	O Det=12505	H Det=2	Mon Det=54967	Aux Det=1	O+H=12507	 DONE
+03/03/2023 09:15:02:	move motor	S18.mono.MonoRot to 32.675000deg	 DONE
+03/03/2023 09:15:06:	20	count	time	5.000000s/cts	O Det=9916	H Det=2	Mon Det=56544	Aux Det=1	O+H=9918	 DONE
+03/03/2023 09:15:14:	move motor	S18.mono.MonoRot to 32.700000deg	 DONE
+03/03/2023 09:15:18:	21	count	time	5.000000s/cts	O Det=7731	H Det=2	Mon Det=53857	Aux Det=0	O+H=7733	 DONE
+03/03/2023 09:15:27:	close file and end scan	 DONE
+03/03/2023 09:15:28:	END OF SCRIPT	 DONE

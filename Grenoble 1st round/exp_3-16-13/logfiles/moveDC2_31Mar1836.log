@@ -1,0 +1,11 @@
+31/03/2023 18:36:30:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\moveDC2.sc	 DONE
+31/03/2023 18:36:31:	set AO_DC2Z (PXIDAQ2/ao0) to 0.740000Amps 0.740V DONE
+31/03/2023 18:36:32:	set AO_DC2Y (PXIDAQ2/ao2) to -0.547000Amps -1.094V DONE
+31/03/2023 18:36:33:	set AO_DC1Z (PXIDAQ2/ao1) to 4.430000Amps 2.215V DONE
+31/03/2023 18:36:34:	set AO_DC1Y (6229/ao1) to 1.668000Amps 3.336V DONE
+31/03/2023 18:36:35:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\moveDC2_31Mar1836.dat	 DONE
+room to enter remarks DONE
+31/03/2023 18:36:37:	move motor	S18.auxiliary.LinearBlue to 0.000000mm	 DONE
+31/03/2023 18:36:41:	1	count	time	10.000000s/cts	O Det=64	H Det=821	Mon Det=104950	Aux Det=1373	O+H=885	 DONE
+31/03/2023 18:36:54:	move motor	S18.auxiliary.LinearBlue to 1.000000mm	 DONE
+31/03/2023 18:36:58:	2	count	time	10.000000s/cts	O Det=0	H Det=0	Mon Det=0	Aux Det=0	O+H=0	STOPPED BY USER	

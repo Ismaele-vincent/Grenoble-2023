@@ -1,0 +1,11 @@
+02/03/2023 12:24:56:	start execution of script D:\data\Cycle 192\test\rawdata\sc\HDet.sc	 DONE
+02/03/2023 12:24:57:	move motor	S18.auxiliary.Detector H big to -61.500000deg	 DONE
+02/03/2023 12:25:02:	create file	D:\data\Cycle 192\test\rawdata\sc\HDet_02Mar1225.dat	 DONE
+room to enter remarks DONE
+02/03/2023 12:25:04:	move motor	S18.auxiliary.Detector H big to -61.000000deg	 DONE
+02/03/2023 12:25:08:	1	count	time	5.000000s/cts	O Det=0	H Det=1881	Mon Det=68195	Aux Det=1272	O+H=1881	 DONE
+02/03/2023 12:25:17:	move motor	S18.auxiliary.Detector H big to -60.750000deg	 DONE
+02/03/2023 12:25:22:	2	count	time	5.000000s/cts	O Det=0	H Det=3715	Mon Det=65911	Aux Det=4281	O+H=3715	 DONE
+02/03/2023 12:25:30:	paused
+02/03/2023 12:25:31:	close file and end scan	saving D:\data\Cycle 192\test\rawdata\sc\HDet_02Mar1225.tif  DONE
+02/03/2023 12:25:32:	END OF SCRIPT	 DONE

@@ -1,0 +1,18 @@
+06/03/2023 19:32:16:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX.sc	 DONE
+06/03/2023 19:32:17:	move motor	S18.auxiliary.TranslationX to 7.900000mm	 DONE
+06/03/2023 19:32:22:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX_06Mar1932.dat	 DONE
+room to enter remarks DONE
+06/03/2023 19:32:24:	move motor	S18.auxiliary.TranslationX to 8.000000mm	 DONE
+06/03/2023 19:32:28:	1	count	time	10.000000s/cts	O Det=45	H Det=427	Mon Det=142921	Aux Det=1010	O+H=472	 DONE
+06/03/2023 19:32:41:	move motor	S18.auxiliary.TranslationX to 9.000000mm	 DONE
+06/03/2023 19:32:46:	2	count	time	10.000000s/cts	O Det=46	H Det=377	Mon Det=143399	Aux Det=1028	O+H=423	 DONE
+06/03/2023 19:32:59:	move motor	S18.auxiliary.TranslationX to 10.000000mm	 DONE
+06/03/2023 19:33:03:	3	count	time	10.000000s/cts	O Det=34	H Det=438	Mon Det=144179	Aux Det=997	O+H=472	 DONE
+06/03/2023 19:33:16:	move motor	S18.auxiliary.TranslationX to 11.000000mm	 DONE
+06/03/2023 19:33:20:	4	count	time	10.000000s/cts	O Det=34	H Det=409	Mon Det=142884	Aux Det=1032	O+H=443	 DONE
+06/03/2023 19:33:33:	move motor	S18.auxiliary.TranslationX to 12.000000mm	 DONE
+06/03/2023 19:33:37:	5	count	time	10.000000s/cts	O Det=19	H Det=387	Mon Det=143083	Aux Det=1002	O+H=406	 DONE
+06/03/2023 19:33:50:	move motor	S18.auxiliary.TranslationX to 13.000000mm	 DONE
+06/03/2023 19:33:54:	6	count	time	10.000000s/cts	O Det=5	H Det=394	Mon Det=143068	Aux Det=903	O+H=399	 DONE
+06/03/2023 19:34:08:	close file and end scan	 DONE
+06/03/2023 19:34:09:	END OF SCRIPT	 DONE

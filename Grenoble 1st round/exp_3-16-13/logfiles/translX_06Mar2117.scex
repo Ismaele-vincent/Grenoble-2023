@@ -1,0 +1,56 @@
+START	standard		
+M	S18.auxiliary.DC linear drive	mm	0.900000	FALSE
+F	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\*.dat
+R	room to enter remarks
+M	S18.auxiliary.DC linear drive	mm	1.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	2.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	3.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	4.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	5.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	6.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	7.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	8.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	9.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	10.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	11.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	12.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	13.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	14.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	15.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	16.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	17.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	18.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	19.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	20.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	21.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	22.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	23.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	24.000000	FALSE
+C	time	2.000000
+M	S18.auxiliary.DC linear drive	mm	25.000000	FALSE
+C	time	2.000000
+E
+END

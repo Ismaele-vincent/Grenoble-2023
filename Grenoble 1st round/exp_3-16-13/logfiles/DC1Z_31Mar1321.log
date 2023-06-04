@@ -1,0 +1,6 @@
+31/03/2023 13:21:30:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\DC1Z.sc	 DONE
+31/03/2023 13:21:31:	set AO_DC1Y (6229/ao1) to -3.560000Amps -7.120V DONE
+31/03/2023 13:21:32:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\DC1Z_31Mar1321.dat	 DONE
+room to enter remarks DONE
+31/03/2023 13:21:34:	move motor	S18.auxiliary.DC linear drive to 3.000000mm	STOPPED BY USER	31/03/2023 13:22:07:	close file and end scan	 DONE
+31/03/2023 13:22:08:	END OF SCRIPT	 DONE

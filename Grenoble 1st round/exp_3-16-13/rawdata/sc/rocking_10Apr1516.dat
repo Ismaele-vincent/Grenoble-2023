@@ -1,0 +1,30 @@
+* begin:	10/04/2023 15:16:10
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.cfg
+*
+[STANDARD]
+		
+[rocking]
+	created 06/04/2023   11:58
+[CALL]
+	setS1Zoff.sc
+[CALL]
+	setS2Zoff.sc
+[CALL]
+	setDCpi2.sc
+[SCAN]
+	file path	.
+	name		rocking
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.axis2.piezo rotation	40	deg	1.673200	1.675150	0.000050	0.000000	FALSE	time	10.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.piezo rotation	1	deg	FIT	AUX	PEAK65			
+[END]
+
+* remarks:	room to enter remarks
+*
+1	1.6732000	0.4	0	1	4758	29	3763977379	1	0.0000000	0.0000000
+* stopped by user: 10/04/2023 15:16:20

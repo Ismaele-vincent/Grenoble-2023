@@ -1,0 +1,42 @@
+06/03/2023 19:41:04:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX.sc	 DONE
+06/03/2023 19:41:05:	move motor	S18.auxiliary.DC linear drive to 0.900000mm	 DONE
+06/03/2023 19:41:11:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX_06Mar1941.dat	 DONE
+room to enter remarks DONE
+06/03/2023 19:41:13:	move motor	S18.auxiliary.DC linear drive to 1.000000mm	 DONE
+06/03/2023 19:41:16:	1	count	time	10.000000s/cts	O Det=0	H Det=393	Mon Det=140033	Aux Det=960	O+H=393	 DONE
+06/03/2023 19:41:30:	move motor	S18.auxiliary.DC linear drive to 2.000000mm	 DONE
+06/03/2023 19:41:35:	2	count	time	10.000000s/cts	O Det=0	H Det=373	Mon Det=140132	Aux Det=933	O+H=373	 DONE
+06/03/2023 19:41:49:	move motor	S18.auxiliary.DC linear drive to 3.000000mm	 DONE
+06/03/2023 19:41:54:	3	count	time	10.000000s/cts	O Det=0	H Det=354	Mon Det=141534	Aux Det=1020	O+H=354	 DONE
+06/03/2023 19:42:08:	move motor	S18.auxiliary.DC linear drive to 4.000000mm	 DONE
+06/03/2023 19:42:14:	4	count	time	10.000000s/cts	O Det=0	H Det=390	Mon Det=170611	Aux Det=1018	O+H=390	 DONE
+06/03/2023 19:42:27:	move motor	S18.auxiliary.DC linear drive to 5.000000mm	 DONE
+06/03/2023 19:42:33:	5	count	time	10.000000s/cts	O Det=0	H Det=392	Mon Det=169479	Aux Det=1017	O+H=392	 DONE
+06/03/2023 19:42:46:	move motor	S18.auxiliary.DC linear drive to 6.000000mm	 DONE
+06/03/2023 19:42:52:	6	count	time	10.000000s/cts	O Det=0	H Det=393	Mon Det=170606	Aux Det=1039	O+H=393	 DONE
+06/03/2023 19:43:05:	move motor	S18.auxiliary.DC linear drive to 7.000000mm	 DONE
+06/03/2023 19:43:11:	7	count	time	10.000000s/cts	O Det=0	H Det=367	Mon Det=168237	Aux Det=1022	O+H=367	 DONE
+06/03/2023 19:43:24:	move motor	S18.auxiliary.DC linear drive to 8.000000mm	 DONE
+06/03/2023 19:43:30:	8	count	time	10.000000s/cts	O Det=0	H Det=425	Mon Det=169696	Aux Det=958	O+H=425	 DONE
+06/03/2023 19:43:43:	move motor	S18.auxiliary.DC linear drive to 9.000000mm	 DONE
+06/03/2023 19:43:48:	9	count	time	10.000000s/cts	O Det=0	H Det=352	Mon Det=169132	Aux Det=959	O+H=352	 DONE
+06/03/2023 19:44:02:	move motor	S18.auxiliary.DC linear drive to 10.000000mm	 DONE
+06/03/2023 19:44:07:	10	count	time	10.000000s/cts	O Det=0	H Det=397	Mon Det=168777	Aux Det=973	O+H=397	 DONE
+06/03/2023 19:44:21:	move motor	S18.auxiliary.DC linear drive to 11.000000mm	 DONE
+06/03/2023 19:44:26:	11	count	time	10.000000s/cts	O Det=0	H Det=391	Mon Det=168591	Aux Det=1013	O+H=391	 DONE
+06/03/2023 19:44:40:	move motor	S18.auxiliary.DC linear drive to 12.000000mm	 DONE
+06/03/2023 19:44:45:	12	count	time	10.000000s/cts	O Det=0	H Det=398	Mon Det=159216	Aux Det=962	O+H=398	 DONE
+06/03/2023 19:44:58:	move motor	S18.auxiliary.DC linear drive to 13.000000mm	 DONE
+06/03/2023 19:45:04:	13	count	time	10.000000s/cts	O Det=0	H Det=373	Mon Det=159451	Aux Det=941	O+H=373	 DONE
+06/03/2023 19:45:17:	move motor	S18.auxiliary.DC linear drive to 14.000000mm	 DONE
+06/03/2023 19:45:23:	14	count	time	10.000000s/cts	O Det=0	H Det=384	Mon Det=160018	Aux Det=972	O+H=384	 DONE
+06/03/2023 19:45:36:	move motor	S18.auxiliary.DC linear drive to 15.000000mm	 DONE
+06/03/2023 19:45:42:	15	count	time	10.000000s/cts	O Det=0	H Det=388	Mon Det=159568	Aux Det=1000	O+H=388	 DONE
+06/03/2023 19:45:55:	move motor	S18.auxiliary.DC linear drive to 16.000000mm	 DONE
+06/03/2023 21:07:32:	16	count	time	10.000000s/cts	O Det=0	H Det=199	Mon Det=158514	Aux Det=879	O+H=199	 DONE
+06/03/2023 21:07:45:	move motor	S18.auxiliary.DC linear drive to 17.000000mm	 DONE
+06/03/2023 21:07:59:	17	count	time	10.000000s/cts	O Det=0	H Det=233	Mon Det=159496	Aux Det=896	O+H=233	 DONE
+06/03/2023 21:08:12:	move motor	S18.auxiliary.DC linear drive to 18.000000mm	 DONE
+06/03/2023 21:08:20:	18	count	time	10.000000s/cts	O Det=0	H Det=196	Mon Det=157088	Aux Det=893	O+H=196	 DONE
+06/03/2023 21:08:33:	move motor	S18.auxiliary.DC linear drive to 19.000000mm	 DONE
+06/03/2023 21:08:55:	19	count	time	10.000000s/cts	O Det=0	H Det=0	Mon Det=0	Aux Det=0	O+H=0	STOPPED BY USER	

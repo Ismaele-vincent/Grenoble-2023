@@ -1,0 +1,16 @@
+03/03/2023 09:09:28:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot.sc	 DONE
+03/03/2023 09:09:29:	move motor	S18.mono.MonoRot to 32.100000deg	 DONE
+03/03/2023 09:09:34:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0909.dat	 DONE
+room to enter remarks DONE
+03/03/2023 09:09:36:	move motor	S18.mono.MonoRot to 32.200000deg	 DONE
+03/03/2023 09:09:40:	1	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=65556	Aux Det=2	O+H=2	 DONE
+03/03/2023 09:09:49:	move motor	S18.mono.MonoRot to 32.225000deg	 DONE
+03/03/2023 09:09:53:	2	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=65200	Aux Det=1	O+H=2	 DONE
+03/03/2023 09:10:02:	move motor	S18.mono.MonoRot to 32.250000deg	 DONE
+03/03/2023 09:10:06:	3	count	time	5.000000s/cts	O Det=0	H Det=4	Mon Det=63518	Aux Det=1	O+H=4	 DONE
+03/03/2023 09:10:15:	move motor	S18.mono.MonoRot to 32.275000deg	 DONE
+03/03/2023 09:10:19:	4	count	time	5.000000s/cts	O Det=2	H Det=1	Mon Det=62828	Aux Det=2	O+H=3	 DONE
+03/03/2023 09:10:28:	move motor	S18.mono.MonoRot to 32.300000deg	 DONE
+03/03/2023 09:10:32:	5	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=64732	Aux Det=1	O+H=1	 DONE
+03/03/2023 09:10:41:	move motor	S18.mono.MonoRot to 32.325000deg	STOPPED BY USER	03/03/2023 09:10:45:	close file and end scan	saving D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0909.tif  DONE
+03/03/2023 09:10:46:	END OF SCRIPT	 DONE

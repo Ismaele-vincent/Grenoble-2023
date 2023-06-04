@@ -1,0 +1,7 @@
+29/03/2023 17:17:39:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\Temperatur_Box.sc	 DONE
+29/03/2023 17:17:40:	TEMPERATUR	HaakeS5P_COM6	1	20.0 DONE
+ DONE
+29/03/2023 17:17:42:	move motor	S18.axis2.phase shifter to 107.900000deg	 DONE
+29/03/2023 17:18:17:	paused
+29/03/2023 17:18:19:	close file and end scan	 DONE
+call of ifg_20s_3p.sc DONE

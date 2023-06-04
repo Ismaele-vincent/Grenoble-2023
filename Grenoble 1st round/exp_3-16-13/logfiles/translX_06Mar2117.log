@@ -1,0 +1,13 @@
+06/03/2023 21:17:43:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX.sc	 DONE
+06/03/2023 21:17:44:	move motor	S18.auxiliary.DC linear drive to 0.900000mm	 DONE
+06/03/2023 21:18:19:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX_06Mar2118.dat	 DONE
+room to enter remarks DONE
+06/03/2023 21:18:21:	move motor	S18.auxiliary.DC linear drive to 1.000000mm	 DONE
+06/03/2023 21:18:25:	1	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=405	Aux Det=0	O+H=0	 DONE
+06/03/2023 21:18:30:	move motor	S18.auxiliary.DC linear drive to 2.000000mm	 DONE
+06/03/2023 21:18:36:	2	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=400	Aux Det=0	O+H=0	 DONE
+06/03/2023 21:18:41:	move motor	S18.auxiliary.DC linear drive to 3.000000mm	 DONE
+06/03/2023 21:18:47:	3	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=347	Aux Det=0	O+H=0	 DONE
+06/03/2023 21:18:52:	move motor	S18.auxiliary.DC linear drive to 4.000000mm	 DONE
+06/03/2023 21:18:58:	4	count	time	2.000000s/cts	O Det=0	H Det=0	Mon Det=363	Aux Det=0	O+H=0	 DONE
+06/03/2023 21:19:03:	move motor	S18.auxiliary.DC linear drive to 5.000000mm	STOPPED BY USER	

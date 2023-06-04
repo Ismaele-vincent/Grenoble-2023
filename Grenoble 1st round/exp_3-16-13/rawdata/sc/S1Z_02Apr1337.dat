@@ -1,0 +1,23 @@
+* begin:	02/04/2023 13:37:23
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\S1Z.cfg
+*
+[STANDARD]
+		
+[S1Z]
+	created 02/04/2023   13:36
+[CALL]
+	setDCpi2.sc
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[CALL]
+	setDCoff.sc
+[END]
+
+* remarks:	room to enter remarks
+*
+* end: 02/04/2023 13:37:25

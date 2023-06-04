@@ -1,0 +1,24 @@
+* begin:	06/03/2023 21:24:06
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\translX.cfg
+*
+[STANDARD]
+		
+[translX]
+	created 06/03/2023   21:19
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.auxiliary.TranslationX	25	mm	1.000000	25.000000	1.000000	0.100000	FALSE	time	2.000000			
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+1	1.0000000	2.0	0	0	707	0	3760979056	0	0.0000000	0.0000000
+2	2.0000000	2.0	59	0	591	1	3760979065	59	0.0000000	0.0000000
+3	3.0000000	2.0	0	0	623	0	3760979075	0	0.0000000	0.0000000
+* stopped by user: 06/03/2023 21:24:40

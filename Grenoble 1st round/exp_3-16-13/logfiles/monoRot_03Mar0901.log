@@ -1,0 +1,48 @@
+03/03/2023 09:01:42:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot.sc	 DONE
+03/03/2023 09:01:43:	move motor	S18.mono.MonoRot to 32.100000deg	 DONE
+03/03/2023 09:01:47:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0901.dat	 DONE
+room to enter remarks DONE
+03/03/2023 09:01:51:	move motor	S18.mono.MonoRot to 32.200000deg	 DONE
+03/03/2023 09:01:55:	1	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=63504	Aux Det=0	O+H=2	 DONE
+03/03/2023 09:02:04:	move motor	S18.mono.MonoRot to 32.225000deg	 DONE
+03/03/2023 09:02:08:	2	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=63352	Aux Det=1	O+H=2	 DONE
+03/03/2023 09:02:17:	move motor	S18.mono.MonoRot to 32.250000deg	 DONE
+03/03/2023 09:02:21:	3	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=62805	Aux Det=1	O+H=0	 DONE
+03/03/2023 09:02:30:	move motor	S18.mono.MonoRot to 32.275000deg	 DONE
+03/03/2023 09:02:35:	4	count	time	5.000000s/cts	O Det=1	H Det=3	Mon Det=63373	Aux Det=0	O+H=4	 DONE
+03/03/2023 09:02:44:	move motor	S18.mono.MonoRot to 32.300000deg	 DONE
+03/03/2023 09:02:48:	5	count	time	5.000000s/cts	O Det=1	H Det=0	Mon Det=62683	Aux Det=1	O+H=1	 DONE
+03/03/2023 09:02:57:	move motor	S18.mono.MonoRot to 32.325000deg	 DONE
+03/03/2023 09:03:01:	6	count	time	5.000000s/cts	O Det=0	H Det=1	Mon Det=64972	Aux Det=0	O+H=1	 DONE
+03/03/2023 09:03:10:	move motor	S18.mono.MonoRot to 32.350000deg	 DONE
+03/03/2023 09:03:14:	7	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=65260	Aux Det=1	O+H=0	 DONE
+03/03/2023 09:03:23:	move motor	S18.mono.MonoRot to 32.375000deg	 DONE
+03/03/2023 09:03:27:	8	count	time	5.000000s/cts	O Det=1	H Det=5	Mon Det=66528	Aux Det=4	O+H=6	 DONE
+03/03/2023 09:03:36:	move motor	S18.mono.MonoRot to 32.400000deg	 DONE
+03/03/2023 09:03:40:	9	count	time	5.000000s/cts	O Det=1	H Det=3	Mon Det=66248	Aux Det=3	O+H=4	 DONE
+03/03/2023 09:03:49:	move motor	S18.mono.MonoRot to 32.425000deg	 DONE
+03/03/2023 09:03:53:	10	count	time	5.000000s/cts	O Det=0	H Det=3	Mon Det=67482	Aux Det=1	O+H=3	 DONE
+03/03/2023 09:04:02:	move motor	S18.mono.MonoRot to 32.450000deg	 DONE
+03/03/2023 09:04:06:	11	count	time	5.000000s/cts	O Det=1	H Det=2	Mon Det=67803	Aux Det=1	O+H=3	 DONE
+03/03/2023 09:04:16:	move motor	S18.mono.MonoRot to 32.475000deg	 DONE
+03/03/2023 09:04:20:	12	count	time	5.000000s/cts	O Det=0	H Det=3	Mon Det=70142	Aux Det=2	O+H=3	 DONE
+03/03/2023 09:04:28:	move motor	S18.mono.MonoRot to 32.500000deg	 DONE
+03/03/2023 09:04:32:	13	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=71241	Aux Det=0	O+H=0	 DONE
+03/03/2023 09:04:42:	move motor	S18.mono.MonoRot to 32.525000deg	 DONE
+03/03/2023 09:04:46:	14	count	time	5.000000s/cts	O Det=0	H Det=3	Mon Det=70795	Aux Det=0	O+H=3	 DONE
+03/03/2023 09:04:55:	move motor	S18.mono.MonoRot to 32.550000deg	 DONE
+03/03/2023 09:04:59:	15	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=69410	Aux Det=0	O+H=2	 DONE
+03/03/2023 09:05:08:	move motor	S18.mono.MonoRot to 32.575000deg	 DONE
+03/03/2023 09:05:12:	16	count	time	5.000000s/cts	O Det=1	H Det=2	Mon Det=67568	Aux Det=4	O+H=3	 DONE
+03/03/2023 09:05:21:	move motor	S18.mono.MonoRot to 32.600000deg	 DONE
+03/03/2023 09:05:25:	17	count	time	5.000000s/cts	O Det=0	H Det=2	Mon Det=63626	Aux Det=2	O+H=2	 DONE
+03/03/2023 09:05:34:	move motor	S18.mono.MonoRot to 32.625000deg	 DONE
+03/03/2023 09:05:38:	18	count	time	5.000000s/cts	O Det=1	H Det=0	Mon Det=61405	Aux Det=2	O+H=1	 DONE
+03/03/2023 09:05:47:	move motor	S18.mono.MonoRot to 32.650000deg	 DONE
+03/03/2023 09:05:51:	19	count	time	5.000000s/cts	O Det=0	H Det=0	Mon Det=58070	Aux Det=0	O+H=0	 DONE
+03/03/2023 09:06:00:	move motor	S18.mono.MonoRot to 32.675000deg	 DONE
+03/03/2023 09:06:04:	20	count	time	5.000000s/cts	O Det=1	H Det=2	Mon Det=56408	Aux Det=0	O+H=3	 DONE
+03/03/2023 09:06:13:	move motor	S18.mono.MonoRot to 32.700000deg	 DONE
+03/03/2023 09:06:17:	21	count	time	5.000000s/cts	O Det=0	H Det=3	Mon Det=54444	Aux Det=2	O+H=3	 DONE
+03/03/2023 09:06:27:	close file and end scan	saving D:\data\Cycle 192\exp_3-16-13\rawdata\sc\monoRot_03Mar0901.tif  DONE
+03/03/2023 09:06:28:	END OF SCRIPT	 DONE

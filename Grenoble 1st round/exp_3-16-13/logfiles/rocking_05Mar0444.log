@@ -1,0 +1,76 @@
+05/03/2023 04:44:30:	start execution of script D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking.sc	 DONE
+05/03/2023 04:44:31:	create file	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\rocking_05Mar0444.dat	 DONE
+room to enter remarks DONE
+05/03/2023 04:44:33:	move motor	S18.axis2.piezo rotation to 1.674200deg	 DONE
+05/03/2023 04:44:37:	1	count	time	5.000000s/cts	O Det=6	H Det=174	Mon Det=72229	Aux Det=141	O+H=180	 DONE
+05/03/2023 04:44:45:	move motor	S18.axis2.piezo rotation to 1.674250deg	 DONE
+05/03/2023 04:44:49:	2	count	time	5.000000s/cts	O Det=4	H Det=165	Mon Det=71778	Aux Det=182	O+H=169	 DONE
+05/03/2023 04:44:57:	move motor	S18.axis2.piezo rotation to 1.674300deg	 DONE
+05/03/2023 04:45:01:	3	count	time	5.000000s/cts	O Det=7	H Det=217	Mon Det=70913	Aux Det=188	O+H=224	 DONE
+05/03/2023 04:45:09:	move motor	S18.axis2.piezo rotation to 1.674350deg	 DONE
+05/03/2023 04:45:12:	4	count	time	5.000000s/cts	O Det=13	H Det=273	Mon Det=71158	Aux Det=215	O+H=286	 DONE
+05/03/2023 04:45:20:	move motor	S18.axis2.piezo rotation to 1.674400deg	 DONE
+05/03/2023 04:45:25:	5	count	time	5.000000s/cts	O Det=12	H Det=270	Mon Det=70530	Aux Det=258	O+H=282	 DONE
+05/03/2023 04:45:33:	move motor	S18.axis2.piezo rotation to 1.674450deg	 DONE
+05/03/2023 04:45:36:	6	count	time	5.000000s/cts	O Det=26	H Det=401	Mon Det=70797	Aux Det=325	O+H=427	 DONE
+05/03/2023 04:45:44:	move motor	S18.axis2.piezo rotation to 1.674500deg	 DONE
+05/03/2023 04:45:48:	7	count	time	5.000000s/cts	O Det=29	H Det=471	Mon Det=71810	Aux Det=421	O+H=500	 DONE
+05/03/2023 04:45:56:	move motor	S18.axis2.piezo rotation to 1.674550deg	 DONE
+05/03/2023 04:46:00:	8	count	time	5.000000s/cts	O Det=47	H Det=577	Mon Det=71531	Aux Det=535	O+H=624	 DONE
+05/03/2023 04:46:08:	move motor	S18.axis2.piezo rotation to 1.674600deg	 DONE
+05/03/2023 04:46:12:	9	count	time	5.000000s/cts	O Det=63	H Det=653	Mon Det=71980	Aux Det=597	O+H=716	 DONE
+05/03/2023 04:46:20:	move motor	S18.axis2.piezo rotation to 1.674650deg	 DONE
+05/03/2023 04:46:24:	10	count	time	5.000000s/cts	O Det=74	H Det=792	Mon Det=72289	Aux Det=669	O+H=866	 DONE
+05/03/2023 04:46:32:	move motor	S18.axis2.piezo rotation to 1.674700deg	 DONE
+05/03/2023 04:46:35:	11	count	time	5.000000s/cts	O Det=112	H Det=1101	Mon Det=72013	Aux Det=895	O+H=1213	 DONE
+05/03/2023 04:46:44:	move motor	S18.axis2.piezo rotation to 1.674750deg	 DONE
+05/03/2023 04:46:47:	12	count	time	5.000000s/cts	O Det=193	H Det=1323	Mon Det=70724	Aux Det=1030	O+H=1516	 DONE
+05/03/2023 04:46:55:	move motor	S18.axis2.piezo rotation to 1.674800deg	 DONE
+05/03/2023 04:46:59:	13	count	time	5.000000s/cts	O Det=340	H Det=1819	Mon Det=72481	Aux Det=1285	O+H=2159	 DONE
+05/03/2023 04:47:07:	move motor	S18.axis2.piezo rotation to 1.674850deg	 DONE
+05/03/2023 04:47:11:	14	count	time	5.000000s/cts	O Det=386	H Det=1971	Mon Det=72047	Aux Det=1363	O+H=2357	 DONE
+05/03/2023 04:47:19:	move motor	S18.axis2.piezo rotation to 1.674900deg	 DONE
+05/03/2023 04:47:22:	15	count	time	5.000000s/cts	O Det=393	H Det=2250	Mon Det=71831	Aux Det=1341	O+H=2643	 DONE
+05/03/2023 04:47:30:	move motor	S18.axis2.piezo rotation to 1.674950deg	 DONE
+05/03/2023 04:47:34:	16	count	time	5.000000s/cts	O Det=384	H Det=2326	Mon Det=71266	Aux Det=1250	O+H=2710	 DONE
+05/03/2023 04:47:42:	move motor	S18.axis2.piezo rotation to 1.675000deg	 DONE
+05/03/2023 04:47:46:	17	count	time	5.000000s/cts	O Det=354	H Det=2155	Mon Det=71192	Aux Det=1224	O+H=2509	 DONE
+05/03/2023 04:47:54:	move motor	S18.axis2.piezo rotation to 1.675050deg	 DONE
+05/03/2023 04:47:57:	18	count	time	5.000000s/cts	O Det=324	H Det=2058	Mon Det=71719	Aux Det=1139	O+H=2382	 DONE
+05/03/2023 04:48:05:	move motor	S18.axis2.piezo rotation to 1.675100deg	 DONE
+05/03/2023 04:48:09:	19	count	time	5.000000s/cts	O Det=278	H Det=1816	Mon Det=71561	Aux Det=1088	O+H=2094	 DONE
+05/03/2023 04:48:17:	move motor	S18.axis2.piezo rotation to 1.675150deg	 DONE
+05/03/2023 04:48:21:	20	count	time	5.000000s/cts	O Det=192	H Det=1579	Mon Det=70908	Aux Det=973	O+H=1771	 DONE
+05/03/2023 04:48:29:	move motor	S18.axis2.piezo rotation to 1.675200deg	 DONE
+05/03/2023 04:48:32:	21	count	time	5.000000s/cts	O Det=171	H Det=1242	Mon Det=69999	Aux Det=874	O+H=1413	 DONE
+05/03/2023 04:48:40:	move motor	S18.axis2.piezo rotation to 1.675250deg	 DONE
+05/03/2023 04:48:44:	22	count	time	5.000000s/cts	O Det=113	H Det=886	Mon Det=71899	Aux Det=654	O+H=999	 DONE
+05/03/2023 04:48:52:	move motor	S18.axis2.piezo rotation to 1.675300deg	 DONE
+05/03/2023 04:48:56:	23	count	time	5.000000s/cts	O Det=93	H Det=791	Mon Det=71577	Aux Det=587	O+H=884	 DONE
+05/03/2023 04:49:04:	move motor	S18.axis2.piezo rotation to 1.675350deg	 DONE
+05/03/2023 04:49:07:	24	count	time	5.000000s/cts	O Det=62	H Det=622	Mon Det=72118	Aux Det=487	O+H=684	 DONE
+05/03/2023 04:49:16:	move motor	S18.axis2.piezo rotation to 1.675400deg	 DONE
+05/03/2023 04:49:19:	25	count	time	5.000000s/cts	O Det=35	H Det=503	Mon Det=71345	Aux Det=428	O+H=538	 DONE
+05/03/2023 04:49:27:	move motor	S18.axis2.piezo rotation to 1.675450deg	 DONE
+05/03/2023 04:49:31:	26	count	time	5.000000s/cts	O Det=21	H Det=407	Mon Det=71721	Aux Det=339	O+H=428	 DONE
+05/03/2023 04:49:39:	move motor	S18.axis2.piezo rotation to 1.675500deg	 DONE
+05/03/2023 04:49:42:	27	count	time	5.000000s/cts	O Det=15	H Det=313	Mon Det=72443	Aux Det=335	O+H=328	 DONE
+05/03/2023 04:49:51:	move motor	S18.axis2.piezo rotation to 1.675550deg	 DONE
+05/03/2023 04:49:54:	28	count	time	5.000000s/cts	O Det=11	H Det=279	Mon Det=71694	Aux Det=247	O+H=290	 DONE
+05/03/2023 04:50:02:	move motor	S18.axis2.piezo rotation to 1.675600deg	 DONE
+05/03/2023 04:50:06:	29	count	time	5.000000s/cts	O Det=8	H Det=226	Mon Det=71376	Aux Det=227	O+H=234	 DONE
+05/03/2023 04:50:14:	move motor	S18.axis2.piezo rotation to 1.675650deg	 DONE
+05/03/2023 04:50:18:	30	count	time	5.000000s/cts	O Det=12	H Det=212	Mon Det=71874	Aux Det=184	O+H=224	 DONE
+05/03/2023 04:50:26:	move motor	S18.axis2.piezo rotation to 1.675700deg	 DONE
+05/03/2023 04:50:30:	31	count	time	5.000000s/cts	O Det=4	H Det=189	Mon Det=70891	Aux Det=148	O+H=193	 DONE
+05/03/2023 04:50:38:	move motor	S18.axis2.piezo rotation to 1.675750deg	 DONE
+05/03/2023 04:50:41:	32	count	time	5.000000s/cts	O Det=6	H Det=131	Mon Det=70040	Aux Det=126	O+H=137	 DONE
+05/03/2023 04:50:49:	move motor	S18.axis2.piezo rotation to 1.675800deg	 DONE
+05/03/2023 04:50:53:	33	count	time	5.000000s/cts	O Det=6	H Det=151	Mon Det=71220	Aux Det=128	O+H=157	 DONE
+05/03/2023 04:51:01:	move motor	S18.axis2.piezo rotation to 1.675850deg	 DONE
+05/03/2023 04:51:05:	34	count	time	5.000000s/cts	O Det=3	H Det=146	Mon Det=70569	Aux Det=120	O+H=149	 DONE
+05/03/2023 04:51:13:	move motor	S18.axis2.piezo rotation to 1.675900deg	 DONE
+05/03/2023 04:51:16:	35	count	time	5.000000s/cts	O Det=6	H Det=142	Mon Det=72168	Aux Det=116	O+H=148	 DONE
+05/03/2023 04:51:25:	close file and end scan	 DONE
+05/03/2023 04:51:26:	move motor	S18.axis2.piezo rotation to fit SUM PEAK30	1.674963reached 1.67497  DONE
+05/03/2023 04:51:29:	END OF SCRIPT	 DONE

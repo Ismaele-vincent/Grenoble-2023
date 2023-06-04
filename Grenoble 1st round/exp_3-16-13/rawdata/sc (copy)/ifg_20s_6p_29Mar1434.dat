@@ -1,0 +1,19 @@
+* begin:	29/03/2023 14:34:06
+* script file:	D:\data\Cycle 192\exp_3-16-13\rawdata\sc\ifg_20s_6p.cfg
+*
+[STANDARD]
+		
+[ifg_20s_6p]
+	created 29/03/2023   14:31
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.axis2.phase shifter	58	deg	106.800000	111.075000	0.075000	0.100000	FALSE	time	20.000000			
+[ENDSCAN]
+[END]
+
+* stopped by user: 29/03/2023 14:34:07
