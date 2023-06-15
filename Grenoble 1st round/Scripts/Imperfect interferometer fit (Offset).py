@@ -48,7 +48,7 @@ def I_mx_in(beta, chi, eta, alpha, gamma):
     e=(beta**2+gamma**2)**0.5
     return eta*(np.sin(d/2)**2+(a2/a1)**2*np.sin(e/2)**2)/4
 
-inf_file_name="path1pi4cb_g_13Apr1502"
+inf_file_name="path1pi8cb_g_09Apr1441"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 cleandata=sorted_fold_path+"/Cleantxt" 
 beta_fold_clean=cleandata+"/Beta"
@@ -65,9 +65,9 @@ for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
             data=np.loadtxt(os.path.join(root, name))
             tot_data = np.vstack((tot_data, data))
 ps_pos=tot_data[::len(c_pos),-1]
-ps_i=109
-ps_f=ps_pos[-1]
-ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2] 
+# ps_i=109
+# ps_f=ps_pos[-1]
+# ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2] 
 matrix=np.zeros((len(ps_pos),len(c_pos)))
 matrix_err=np.zeros((len(ps_pos),len(c_pos)))
 w=np.zeros(len(ps_pos))
@@ -88,6 +88,7 @@ x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 # ax.vlines(p[-1],0,fit_cos(p[-1], *p),ls="dashed")
 w_ps=p[-2]
 ps_0=p[-1]
+print(p[1]/p[0])
 print(ps_0)
 
 c_data=np.sum(matrix,axis=0)
@@ -107,33 +108,33 @@ c_0=p[-1]
 # chi=np.linspace(-3*np.pi,3*np.pi,500)#ps_pos.copy()#
 beta=w_c*c_pos-c_0
 chi=w_ps*ps_pos-ps_0
-alpha=0#np.pi/8
+alpha=np.pi/8
 gamma=0
 C=0.8
 eta=1-C
 
-def fit_I_px(x, beta0, chi0, w_c, w_ps, C, eta):
+def fit_I_px(x, beta0, chi0, w_c, w_ps, C, eta, A):
     beta=w_c*c_pos-beta0
     chi=w_ps*ps_pos-chi0
     beta, chi = np.meshgrid(beta, chi)
-    fit_I_px=I_px_co(beta, chi, C, alpha, 0) + I_px_in(beta, chi, eta, alpha, 0)
+    fit_I_px=A+I_px_co(beta, chi, C, alpha, 0) + I_px_in(beta, chi, eta, alpha, 0)
     # print(fit_I_px)
     return fit_I_px.ravel()
 
-P0=(c_0, ps_0, w_c, w_ps, 1, 1)
-B0=([0,700,0,7,0,0],[1000,1000,0.3,10,np.inf,np.inf])
+P0=(c_0, ps_0, w_c, w_ps, 1, 1,0.1)
+B0=([0,700,0,7,0,0,0],[1000,1000,0.3,10,np.inf,np.inf,0.5])
 p,cov= fit(fit_I_px,range(len(matrix.ravel())),matrix.ravel()/np.amax(matrix.ravel()), bounds=B0) 
 print(p)
 fig = plt.figure(figsize=(5,5))
 ax = fig.add_subplot(111)
 ax.plot(fit_I_px(0,*p), "b")
 ax.plot(matrix.ravel()/np.amax(matrix.ravel()), "r--")
-ax.set_xlim([0,150])
-def I_px(x, beta0, chi0, w_c, w_ps, C, eta):
+
+def I_px(x, beta0, chi0, w_c, w_ps, C, eta,A):
     beta=w_c*c_pos-beta0
     chi=w_ps*ps_pos-chi0
     beta, chi = np.meshgrid(beta, chi)
-    fit_I_px=I_px_co(beta, chi, C, alpha, 0) + I_px_in(beta, chi, eta, alpha, 0)
+    fit_I_px=A+I_px_co(beta, chi, C, alpha, 0) + I_px_in(beta, chi, eta, alpha, 0)
     # print(fit_I_px)
     return fit_I_px
 
@@ -150,3 +151,4 @@ ax.set_ylabel('$\chi$')
 ax.set_zlabel('z')
 ax.view_init(40, 45)
 plt.show()
+
