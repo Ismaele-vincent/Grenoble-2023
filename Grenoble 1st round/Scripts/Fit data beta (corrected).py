@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr  7 10:55:48 2023
+Created on Sat Jun 17 15:07:43 2023
 
 @author: aaa
 """
+
 import os
 import numpy as np
 import shutil
@@ -15,7 +16,7 @@ plt.rcParams.update({'figure.max_open_warning': 0})
 from PIL import Image as im
 from scipy.optimize import curve_fit as fit
 
-alpha=45
+alpha=22.5
 w_ps=8.002
 a21=2
 def fit_w1p(x,A,th,x0):
@@ -33,9 +34,9 @@ def fit_cos(x,A,B,C,D):
 rad=np.pi/180
 inf_file_name="path1pi8cb_g_09Apr1441"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
-cleandata=sorted_fold_path+"/Cleantxt" 
-beta_fold_clean=cleandata+"/Beta"
-plots_fold=sorted_fold_path+"/Plots/"
+correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name
+beta_fold_clean=correct_fold_path+"/Beta"
+
 i=0
 for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
     files=np.sort(files)
@@ -83,7 +84,6 @@ for i in range(len(ps_pos)):
     # ax.set_ylim([0, P0[1]+P0[1]/10])
     # ax.plot(x_plt,fit_cos(x_plt, p[0],p[1],*fit_res0[2:]), "r")
     # ax.legend(loc=4)
-    # plt.savefig(plots_fold+str(i)+".png",dpi=200)
 
 ps_data=np.sum(matrix,axis=1)
 P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]+0.5]
@@ -99,7 +99,7 @@ w_ps=p[-2]
 # fig = plt.figure(figsize=(5,5))
 # ax = fig.add_subplot(111)
 # ax.plot(ps_pos,max_c_pos)
-P01=[1,1,0.5]
+P01=[1,1,np.pi/2]
 B0=([-1,0.5,0],[1,1.5,2*np.pi])
 p1,cov1=fit(fit_w1p,ps_pos,beta, p0=P01, bounds=B0, sigma=err_b/alpha)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
@@ -122,12 +122,12 @@ ax[0].legend()
 # print("max-min=",np.amax(beta)-np.amin(beta))
 # print("max=",np.amax(beta),"\nmin=",np.amin(beta))
 print("period=",2*np.pi/np.average(w))
-fit_param_names= ["off=","$\\theta$=","$\omega x_0$="]
-text = "Fit results:\t"
-for i in range(len(p1)):
-    text+= fit_param_names[i]+str("%.4f"%(p1[i],))+"\t"
-text=text[:-2]
-ax[-1].text(0.5,0.5,text,va="center", ha="center")
+# fit_param_names= ["off=","$\\theta$=","$\omega x_0$="]
+# text = "Fit results:\t"
+# for i in range(len(p1)):
+#     text+= fit_param_names[i]+str("%.4f"%(p1[i],))+"\t"
+# text=text[:-2]
+# ax[-1].text(0.5,0.5,text,va="center", ha="center")
 # fig = plt.figure()
 # ax = plt.axes(projection='3d')
 # Z=matrix
@@ -142,14 +142,3 @@ ax[-1].text(0.5,0.5,text,va="center", ha="center")
 print("avg err=",np.average(err_b))
 print("max err=",np.amax(err_b))
 print("min err=",np.amin(err_b))
-
-# with open(cleandata+"/Matrix_beta_chi.txt", "w") as f:
-#     np.savetxt(f, matrix)
-# matr=np.loadtxt(cleandata+"/Matrix_beta_chi.txt")
-# with open(cleandata+"/coil_pos.txt", "w") as f:
-#     np.savetxt(f, c_pos)
-# with open(cleandata+"/ps_pos_beta.txt", "w") as f:
-#     np.savetxt(f, ps_pos)
-# fig = plt.figure()
-# plt.imshow(matr)
-# plt.show()

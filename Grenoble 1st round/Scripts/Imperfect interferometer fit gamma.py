@@ -48,11 +48,20 @@ def I_mx_in(beta, chi, eta, alpha, gamma):
     e=(beta**2+gamma**2)**0.5
     return eta*(np.sin(d/2)**2+(a2/a1)**2*np.sin(e/2)**2)/4
 
-inf_file_name="path1pi4cb_g_08Apr1819"#"path1pi4cb_g_13Apr1502"
+inf_file_name="path1pi4cb_g_08Apr1819"#
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 cleandata=sorted_fold_path+"/Cleantxt" 
 gamma_fold_clean=cleandata+"/Gamma"
 plots_fold=sorted_fold_path+"/Plots/"
+correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name+"/Gamma"
+
+if not os.path.exists(correct_fold_path):
+    os.makedirs(correct_fold_path)
+else:
+    shutil.rmtree(correct_fold_path)
+    os.makedirs(correct_fold_path)
+
+
 i=0
 for root, dirs, files in os.walk(gamma_fold_clean, topdown=False):
     files=np.sort(files)
@@ -115,37 +124,57 @@ def fit_I_px(x, gamma0, chi0, w_c, w_ps, C, eta):
     gamma=w_c*c_amp-gamma0
     chi=w_ps*ps_pos-chi0
     gamma, chi = np.meshgrid(gamma, chi)
-    fit_I_px=I_px_co(gamma, chi, C, alpha, 0) + I_px_in(gamma, chi, eta, alpha, 0)
+    fit_I_px=(I_px_co(beta, chi, C, alpha, gamma) + I_px_in(beta, chi, C, alpha, gamma))
     # print(fit_I_px)
     return fit_I_px.ravel()
 
-P0=(c_0, ps_0, w_c, w_ps, 1, 1)
-B0=([0,0,1,7,0,0],[1000,1000,5,10,np.inf,np.inf])
+P0=(c_0, ps_0, w_c, w_ps, 1,1)
+B0=([0,0,0,7,0,0],[1000,1000,5,10,10,10])
 p,cov= fit(fit_I_px,range(len(matrix.ravel())),matrix.ravel()/np.amax(matrix.ravel()), bounds=B0) 
 print(p)
 fig = plt.figure(figsize=(5,5))
 ax = fig.add_subplot(111)
 ax.plot(fit_I_px(0,*p), "b")
-ax.plot(matrix.ravel()/np.amax(matrix.ravel()), "r--")
+ax.plot(matrix.ravel()/np.amax(matrix.ravel()), "r--", lw=1)
 # ax.set_xlim([0,150])
-def I_px(x, gamma0, chi0, w_c, w_ps, C, eta):
+def I_px(gamma0, chi0, w_c, w_ps, C, eta):
     gamma=w_c*c_amp-gamma0
     chi=w_ps*ps_pos-chi0
     gamma, chi = np.meshgrid(gamma, chi)
-    fit_I_px=I_px_co(0, chi, C, alpha, gamma) + I_px_in(0, chi, eta, alpha, gamma)
+    fit_I_px=I_px_co(beta, chi, C, alpha, gamma) +I_px_in(beta, chi, C, alpha, gamma)
     # print(fit_I_px)
     return fit_I_px
 
-fig = plt.figure(figsize=(10,10))
+def I_px_new(gamma0, chi0, w_c, w_ps, C, eta):
+    gamma = w_c*c_amp-gamma0
+    chi = w_ps*ps_pos-chi0
+    gamma, chi = np.meshgrid(gamma, chi)
+    fit_I_px = I_px_co(beta, chi, C, alpha, gamma)
+    # print(fit_I_px)
+    return fit_I_px
+
+fig = plt.figure(figsize=(10, 10))
 ax = plt.axes(projection='3d')
 gamma, chi = np.meshgrid(gamma, chi)
-Z= matrix
-Z1= I_px(0,*p)*np.amax(matrix)
-# Z=I_px_co(gamma, chi, C, alpha, gamma)+I_px_in(gamma, chi, eta, alpha, gamma)
-ax.contour3D(gamma, chi, Z, 30, cmap='binary')
-ax.contour3D(gamma, chi, Z1, 30, cmap='plasma')#cmap='Blues')
+Z = matrix
+Z1 = I_px(*p)*np.amax(matrix)
+Z2=I_px_new(*p)*np.amax(matrix)
+ax.contour3D(gamma, chi, Z, 40, cmap='binary')
+ax.contour3D(gamma, chi, Z1, 40, cmap='plasma')  # cmap='Blues')
+# ax.contour3D(gamma, chi, Z2, 40, cmap='plasma')
 ax.set_xlabel('$\\gamma$')
 ax.set_ylabel('$\chi$')
 ax.set_zlabel('z')
 ax.view_init(40, 45)
 plt.show()
+
+corrected_matrix=Z1#I_px_new(*p)*np.amax(matrix)
+corrected_matrix_err=np.sqrt(corrected_matrix)
+for i in range(len(ps_pos)):
+    data_txt=np.array([c_amp, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(c_amp))*ps_pos[i]])
+    with open(correct_fold_path+"/gamma_ps_"+str("%02d" % (i,))+".txt", 'w') as f:
+        np.savetxt(f, np.transpose(data_txt),  header= "Current(A) O-Beam err ps_pos", fmt='%.7f %.7f %.7f %.7f' )
+
+
+
+

@@ -48,11 +48,19 @@ def I_mx_in(beta, chi, eta, alpha, gamma):
     e=(beta**2+gamma**2)**0.5
     return eta*(np.sin(d/2)**2+(a2/a1)**2*np.sin(e/2)**2)/4
 
-inf_file_name="path1pi4cb_g_13Apr1502"
+inf_file_name="path1pi8cb_g_09Apr1441"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 cleandata=sorted_fold_path+"/Cleantxt" 
 beta_fold_clean=cleandata+"/Beta"
 plots_fold=sorted_fold_path+"/Plots/"
+correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name+"/Beta"
+
+if not os.path.exists(correct_fold_path):
+    os.makedirs(correct_fold_path)
+else:
+    shutil.rmtree(correct_fold_path)
+    os.makedirs(correct_fold_path)
+
 i=0
 for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
     files=np.sort(files)
@@ -65,9 +73,9 @@ for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
             data=np.loadtxt(os.path.join(root, name))
             tot_data = np.vstack((tot_data, data))
 ps_pos=tot_data[::len(c_pos),-1]
-ps_i=109
-ps_f=ps_pos[-1]
-ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2] 
+# ps_i=109
+# ps_f=ps_pos[-1]
+# ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2] 
 matrix=np.zeros((len(ps_pos),len(c_pos)))
 matrix_err=np.zeros((len(ps_pos),len(c_pos)))
 w=np.zeros(len(ps_pos))
@@ -107,7 +115,7 @@ c_0=p[-1]
 # chi=np.linspace(-3*np.pi,3*np.pi,500)#ps_pos.copy()#
 beta=w_c*c_pos-c_0
 chi=w_ps*ps_pos-ps_0
-alpha=0#np.pi/8
+alpha=np.pi/8
 gamma=0
 C=0.8
 eta=1-C
@@ -128,7 +136,7 @@ fig = plt.figure(figsize=(5,5))
 ax = fig.add_subplot(111)
 ax.plot(fit_I_px(0,*p), "b")
 ax.plot(matrix.ravel()/np.amax(matrix.ravel()), "r--")
-ax.set_xlim([0,150])
+# ax.set_xlim([0,150])
 def I_px(x, beta0, chi0, w_c, w_ps, C, eta):
     beta=w_c*c_pos-beta0
     chi=w_ps*ps_pos-chi0
@@ -150,3 +158,11 @@ ax.set_ylabel('$\chi$')
 ax.set_zlabel('z')
 ax.view_init(40, 45)
 plt.show()
+
+corrected_matrix=Z1#I_px_new(*p)*np.amax(matrix)
+corrected_matrix_err=np.sqrt(corrected_matrix)
+for i in range(len(ps_pos)):
+    data_txt=np.array([c_pos, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(c_pos))*ps_pos[i]])
+    with open(correct_fold_path+"/beta_ps_"+str("%02d" % (i,))+".txt", 'w') as f:
+        np.savetxt(f, np.transpose(data_txt),  header= "Coil_pos O-Beam err ps_pos", fmt='%.7f %.7f %.7f %.7f' )
+
