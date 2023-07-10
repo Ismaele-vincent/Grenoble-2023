@@ -1,0 +1,138 @@
+* begin:	28/06/2023 12:44:47
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\DC2Z_test.cfg
+*
+[STANDARD]
+		
+[DC2Z_test]
+	created 28/06/2023   12:23
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-5.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_0
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-4.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_1
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-3.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_2
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-2.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_3
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	-1.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_4
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	0.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_5
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	1.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_6
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	2.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_7
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	3.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_8
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	4.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_9
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker2	1	mm	absolute	5.00000				
+[SCAN]
+	file path	.
+	name		SC2Z_test_rock_10
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Z	5	Amps	0.000000	5.500000	1.375000	0.000000	0	time	120.000000			
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+0	0.0000000	120.0	1502	13600	745355	28	3770794011	15102	0.0000000	0.0000000
+0	1.3750000	120.0	1538	13695	748660	27	3770794134	15233	0.0000000	0.0000000
+0	2.7500000	120.0	1479	13775	747845	21	3770794258	15254	0.0000000	0.0000000
+0	4.1250000	120.0	1519	13746	746735	25	3770794381	15265	0.0000000	0.0000000
+0	5.5000000	120.0	1419	13780	745176	23	3770794504	15199	0.0000000	0.0000000
+* end: 28/06/2023 12:55:05

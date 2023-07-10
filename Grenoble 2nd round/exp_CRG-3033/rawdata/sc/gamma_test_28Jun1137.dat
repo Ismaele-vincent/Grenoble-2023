@@ -1,0 +1,298 @@
+* begin:	28/06/2023 11:37:01
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\test.cfg
+*
+[STANDARD]
+		
+[test]
+	created 23/06/2023   15:31
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[CURRENT]
+	AO_H	Amps	0.100000	
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.10000				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_0
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.09293				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_1
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.08587				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_2
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.07880				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_3
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.07174				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_4
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.06467				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_5
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.05760				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_6
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.05054				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_7
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.04347				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_8
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.03641				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_9
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.02934				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_10
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.02227				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_11
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.01521				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_12
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.00814				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_13
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	-0.00108				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_14
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.00599				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_15
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.01306				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_16
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.02012				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_17
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.02719				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_18
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.03425				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_19
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.04132				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_20
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.04839				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_21
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.05545				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_22
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.06252				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_23
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.06958				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_24
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.07665				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_25
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.08372				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_26
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.09078				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_27
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.09785				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_28
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.auxiliary.Rocker1	1	mm	absolute	0.10491				
+[SCAN]
+	file path	.
+	name		beta_alpi8off_chi_29
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-0.6000000	3.0	26	323	18526	1	3770789827	349	0.0000000	0.0000000
+0	-0.4000000	3.0	36	377	18543	0	3770789834	413	0.0000000	0.0000000
+0	-0.2000000	3.0	21	343	18428	1	3770789840	364	0.0000000	0.0000000
+0	0.0000000	3.0	22	367	18403	1	3770789846	389	0.0000000	0.0000000
+0	0.2000000	3.0	11	375	18720	1	3770789852	386	0.0000000	0.0000000
+0	0.4000000	3.0	6	318	18495	1	3770789859	324	0.0000000	0.0000000
+0	0.6000000	3.0	13	349	18558	1	3770789865	362	0.0000000	0.0000000
+* end: 28/06/2023 11:37:46

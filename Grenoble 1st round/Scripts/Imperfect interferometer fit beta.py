@@ -16,12 +16,13 @@ plt.rcParams.update({'figure.max_open_warning': 0})
 from PIL import Image as im
 from scipy.optimize import curve_fit as fit
 import warnings
+from scipy.stats import chisquare
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning) 
 
 w_ps=8.002
 
-a1=1/5**0.5
-a2=2*a1
+a1=1/5**0.5#0.588#
+a2=2*a1#0.808#
 
 def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*x-D)
@@ -64,7 +65,7 @@ else:
 i=0
 for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
     files=np.sort(files)
-    for name in files[:-1]:
+    for name in files:
         if i==0:
             tot_data=np.loadtxt(os.path.join(root, name))
             c_pos=tot_data[:,0]
@@ -128,8 +129,8 @@ def fit_I_px(x, beta0, chi0, w_c, w_ps, C, eta):
     # print(fit_I_px)
     return fit_I_px.ravel()
 
-P0=(c_0, ps_0, w_c, w_ps, 1, 1)
-B0=([0,700,0,7,0,0],[1000,1000,0.3,10,np.inf,np.inf])
+P0=(c_0, ps_0, w_c, w_ps, 2, 1)
+B0=([0,700,0,7,0,0],[10,1000,0.3,10,5,5])
 p,cov= fit(fit_I_px,range(len(matrix.ravel())),matrix.ravel()/np.amax(matrix.ravel()), bounds=B0) 
 print(p)
 fig = plt.figure(figsize=(5,5))
@@ -137,6 +138,10 @@ ax = fig.add_subplot(111)
 ax.plot(fit_I_px(0,*p), "b")
 ax.plot(matrix.ravel()/np.amax(matrix.ravel()), "r--")
 # ax.set_xlim([0,150])
+# f_obs=matrix.ravel()
+# f_exp=fit_I_px(0,*p)*np.amax(matrix.ravel())
+# print(chisquare(f_obs=np.round(f_obs,3), f_exp=np.round(f_exp,3)))
+
 def I_px(x, beta0, chi0, w_c, w_ps, C, eta):
     beta=w_c*c_pos-beta0
     chi=w_ps*ps_pos-chi0
@@ -145,11 +150,29 @@ def I_px(x, beta0, chi0, w_c, w_ps, C, eta):
     # print(fit_I_px)
     return fit_I_px
 
+def I_px_corr_co(x, beta0, chi0, w_c, w_ps, C, eta):
+    beta = w_c*c_pos-beta0
+    chi = w_ps*ps_pos-chi0
+    beta, chi = np.meshgrid(beta, chi)
+    fit_I_px = I_px_co(beta, chi, C, alpha, 0) 
+    # print(fit_I_px)
+    return fit_I_px
+
+def I_px_corr_in(x, beta0, chi0, w_c, w_ps, C, eta):
+    beta = w_c*c_pos-beta0
+    chi = w_ps*ps_pos-chi0
+    beta, chi = np.meshgrid(beta, chi)
+    fit_I_px = I_px_in(beta, chi, eta, alpha, 0)
+    # print(fit_I_px)
+    return fit_I_px
+
 fig = plt.figure(figsize=(10,10))
 ax = plt.axes(projection='3d')
 beta, chi = np.meshgrid(beta, chi)
 Z= matrix
 Z1= I_px(0,*p)*np.amax(matrix)
+Z2 = I_px_corr_co(0, *p)*np.amax(matrix)
+Z3 = Z - I_px_corr_in(0, *p)*np.amax(matrix)
 # Z=I_px_co(beta, chi, C, alpha, gamma)+I_px_in(beta, chi, eta, alpha, gamma)
 ax.contour3D(beta, chi, Z, 30, cmap='binary')
 ax.contour3D(beta, chi, Z1, 30, cmap='plasma')#cmap='Blues')
@@ -160,7 +183,7 @@ ax.view_init(40, 45)
 plt.show()
 
 corrected_matrix=Z1#I_px_new(*p)*np.amax(matrix)
-corrected_matrix_err=np.sqrt(corrected_matrix)
+corrected_matrix_err=matrix_err#np.sqrt(corrected_matrix)
 for i in range(len(ps_pos)):
     data_txt=np.array([c_pos, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(c_pos))*ps_pos[i]])
     with open(correct_fold_path+"/beta_ps_"+str("%02d" % (i,))+".txt", 'w') as f:

@@ -1,0 +1,28 @@
+START	standard		
+SC	AO_DC1Y	Amps	3.610000
+F	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\*.dat
+R	room to enter remarks
+I	AO_DC1Z	Amps	5.000000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.050000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.100000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.150000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.200000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.250000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.300000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.350000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.400000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.450000	0
+C	time	60.000000
+I	AO_DC1Z	Amps	5.500000	0
+C	time	60.000000
+E
+END

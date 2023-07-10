@@ -1,0 +1,26 @@
+* begin:	23/06/2023 13:06:40
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\DC2Y.cfg
+*
+[STANDARD]
+		
+[DC2Y]
+	created 22/06/2023   15:35
+[CURRENT]
+	AO_DC2Z	Amps	0.750000	
+[SCAN]
+	file path	.
+	name		DC2Y
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC2Y	15	Amps	-1.400000	1.400000	0.200000	0.000000	0	time	60.000000			
+[ENDSCAN]
+[CURRENT]
+	AO_DC2Y	Amps	0.000000	
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-1.4000000	13.5	260	1420	82939	2260	3770363217	1680	0.0000000	0.0000000
+* stopped by user: 23/06/2023 13:06:58

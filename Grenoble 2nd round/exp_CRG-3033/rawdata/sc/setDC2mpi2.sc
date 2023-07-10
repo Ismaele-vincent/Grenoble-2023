@@ -1,0 +1,4 @@
+START	standard		
+SC	AO_DC2Z	Amps	0.725000
+SC	AO_DC2Y	Amps	-0.554000
+END

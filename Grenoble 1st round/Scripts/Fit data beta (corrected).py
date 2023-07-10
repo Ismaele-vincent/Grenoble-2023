@@ -16,9 +16,9 @@ plt.rcParams.update({'figure.max_open_warning': 0})
 from PIL import Image as im
 from scipy.optimize import curve_fit as fit
 
-alpha=22.5
+alpha=45#22.5
 w_ps=8.002
-a21=2
+a21=1#/2# 2#1.375
 def fit_w1p(x,A,th,x0):
     return alpha*(A+(1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).real
 
@@ -32,7 +32,7 @@ def fit_cos(x,A,B,C,D):
 #     return A+B*1/8*(2+np.cos(w_b*(x-x0))+np.cos(alpha+w_b*(x-x0))+2*np.cos(g)*np.sin(alpha/2)*np.sin(alpha/2+w_b*(x-x0))+2*eta*(np.cos(alpha/2)+np.cos(alpha/2+w_b*(x-x0)))*np.cos(w_ps*chi)*np.sin(g))
 
 rad=np.pi/180
-inf_file_name="path1pi8cb_g_09Apr1441"
+inf_file_name="path1pi4_noIn_cb_g_14Apr1720"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name
 beta_fold_clean=correct_fold_path+"/Beta"
@@ -49,17 +49,20 @@ for root, dirs, files in os.walk(beta_fold_clean, topdown=False):
             data=np.loadtxt(os.path.join(root, name))
             tot_data = np.vstack((tot_data, data))
 ps_pos=tot_data[::len(c_pos),-1]
+# ps_i=109
+# ps_f=ps_pos[-10]
+# ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2]
 # print(tot_data)
 matrix=np.zeros((len(ps_pos),len(c_pos)))
 max_c_pos=np.zeros(len(ps_pos))
 beta=np.zeros(len(ps_pos))
 w=np.zeros(len(ps_pos))
 err_b=np.zeros(len(ps_pos))
-fit_res0=[2.31111864e+03, 2.07213380e+03, 1.30490949e-01, 14.15]#[2.20354126e+02,  1.95310536e+02,  1.31182401e-01, 1.37265133e+01]#
+fit_res0=[2.31111864e+03, 2.07213380e+03, 1.30490949e-01, 14.0]#[2.20354126e+02,  1.95310536e+02,  1.31182401e-01, 1.37265133e+01]#
 err_res0=[2.77104601e+01, 3.96757459e+01, 6.26339602e-04, 2.07305597e-01]
 max0=fit_res0[-1]
 for i in range(len(ps_pos)):
-    matrix[i]=tot_data[:,2][tot_data[:,-1]==ps_pos[i]]
+    matrix[i]=tot_data[:,1][tot_data[:,-1]==ps_pos[i]]
 for i in range(len(ps_pos)):
     P0=[5, np.amax(matrix[i]), 0.1,0]
     # print(P0)
@@ -106,19 +109,18 @@ x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 fig = plt.figure(figsize=(5,5))
 gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
 gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
-ax = [fig.add_subplot(gs_t[:-1]), 
-      fig.add_subplot(gs_b[-1])]
-ax[-1].tick_params(axis="x", labelbottom=False, bottom = False)
-ax[-1].tick_params(axis="y", labelleft=False, left = False)
+ax = [fig.add_subplot(gs_t[:])]
+# ax[-1].tick_params(axis="x", labelbottom=False, bottom = False)
+# ax[-1].tick_params(axis="y", labelleft=False, left = False)
 ax[0].set_title(inf_file_name)
 ax[0].set_xlabel("$\chi$ ($\pi$)")
 # ax[0].set_ylim([-1,1])
 # ax[0].plot(ps_pos,beta/alpha, "ko")
-ax[0].errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi,beta/alpha, yerr=err_b/alpha,fmt="ko",capsize=5)
+ax[0].errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi,beta/alpha, yerr=err_b/alpha/10,fmt="ko",capsize=5)
 # ax[0].plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1)/alpha,"b", label="Fit Re{"+"$\omega_{1+}$}")
 ax[0].plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1])/alpha,"g", label="Exp Re{"+"$\omega_{1+}$}")
 ax[0].legend()
-
+chi=(ps_pos-ps_pos[0]-p1[-1])*w_ps
 # print("max-min=",np.amax(beta)-np.amin(beta))
 # print("max=",np.amax(beta),"\nmin=",np.amin(beta))
 print("period=",2*np.pi/np.average(w))
@@ -142,3 +144,14 @@ print("period=",2*np.pi/np.average(w))
 print("avg err=",np.average(err_b))
 print("max err=",np.amax(err_b))
 print("min err=",np.amin(err_b))
+
+datatxt= np.array([chi,beta/alpha,err_b/alpha])
+# print(datatxt)
+with open("/home/aaa/Desktop/path1pi8cb_g_09Apr1441.txt","w") as f:
+    np.savetxt(f,np.transpose(datatxt), header="chi w+ err", fmt='%.7f %.7f %.7f')
+    
+# data=np.loadtxt("/home/aaa/Desktop/path1pi8cb_g_09Apr1441.txt")
+
+# fig = plt.figure(figsize=(5,5))
+# ax = fig.add_subplot(111)
+# ax.errorbar(data[:,0],data[:,1],yerr=data[:,2], fmt="o")

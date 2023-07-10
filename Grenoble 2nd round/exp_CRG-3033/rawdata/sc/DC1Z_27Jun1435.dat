@@ -1,0 +1,24 @@
+* begin:	27/06/2023 14:35:09
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\DC1Z.cfg
+*
+[STANDARD]
+		
+[DC1Z]
+	created 27/06/2023   14:34
+[CURRENT]
+	AO_DC1Z	Amps	1.110000	
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_DC1Z	7	Amps	5.200000	5.500000	0.050000	0.000000	0	time	60.000000			
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+0	5.2000000	35.1	392	3816	221038	6	3770714148	4208	0.0000000	0.0000000
+* stopped by user: 27/06/2023 14:35:49

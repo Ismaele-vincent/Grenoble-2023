@@ -1,0 +1,25 @@
+* begin:	17/06/2023 13:42:00
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\HZ.cfg
+*
+[STANDARD]
+		
+[HZ]
+	created 17/06/2023   12:04
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_H	21	Amps	-0.100000	0.100000	0.010000	0.000000	0	time	20.000000			
+[ENDSCAN]
+[CURRENT]
+	AO_H	Amps	0.000000	
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-0.1000000	20.0	632	3723	120242	3381	3769846945	4355	0.0000000	0.0000000
+0	-0.0900000	15.7	369	2887	94846	2601	3769846965	3256	0.0000000	0.0000000
+* stopped by user: 17/06/2023 13:42:46

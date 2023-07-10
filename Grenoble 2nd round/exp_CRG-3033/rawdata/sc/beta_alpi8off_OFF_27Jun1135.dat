@@ -1,0 +1,28 @@
+* begin:	27/06/2023 11:35:57
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\beta_alpi8off.cfg
+*
+[STANDARD]
+		
+[beta_alpi8off]
+	created 23/06/2023   15:53
+[SCAN]
+	file path	.
+	name		*
+	category	1_off_1_off
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	AO_H	31	Amps	-0.100000	0.111980	0.007066	0.000000	0	time	60.000000	60		
+[IN/OUT]
+	AO_S2Z	Amps	0.480000	0.000000	0.000000	0.000000	1_off_1_off		
+[ENDSCAN]
+[CURRENT]
+	AO_H	Amps	-0.005600	
+[END]
+
+* remarks:	room to enter remarks
+*
+0	-0.1000000	2.0	0	0	219	0	3770703368	0	0.0000000	0.0000000
+0	-0.0929340	2.0	0	0	215	0	3770703379	0	0.0000000	0.0000000
+0	-0.0858680	0.0	0	0	0	0	3770703388	0	0.0000000	0.0000000
+* end: 27/06/2023 11:36:29

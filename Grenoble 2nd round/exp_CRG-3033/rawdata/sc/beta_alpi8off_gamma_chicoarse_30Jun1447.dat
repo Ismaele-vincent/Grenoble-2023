@@ -1,0 +1,230 @@
+* begin:	30/06/2023 14:47:19
+* script file:	D:\data\Cycle 193\exp_CRG-3033\rawdata\sc\beta_alpi8off_gamma_chicoarse.cfg
+*
+[STANDARD]
+		
+[beta_alpi8off_gamma_chicoarse]
+	created 30/06/2023   14:30
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-1.00000				
+[SCAN]
+	file path	.
+	name		test_0
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.87000				
+[SCAN]
+	file path	.
+	name		test_1
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.74000				
+[SCAN]
+	file path	.
+	name		test_2
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.61000				
+[SCAN]
+	file path	.
+	name		test_3
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.48000				
+[SCAN]
+	file path	.
+	name		test_4
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.35000				
+[SCAN]
+	file path	.
+	name		test_5
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.22000				
+[SCAN]
+	file path	.
+	name		test_6
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	-0.09000				
+[SCAN]
+	file path	.
+	name		test_7
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.04000				
+[SCAN]
+	file path	.
+	name		test_8
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.17000				
+[SCAN]
+	file path	.
+	name		test_9
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.30000				
+[SCAN]
+	file path	.
+	name		test_10
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.43000				
+[SCAN]
+	file path	.
+	name		test_11
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.56000				
+[SCAN]
+	file path	.
+	name		test_12
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.69000				
+[SCAN]
+	file path	.
+	name		test_13
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.82000				
+[SCAN]
+	file path	.
+	name		test_14
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	0.95000				
+[SCAN]
+	file path	.
+	name		test_15
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	1.08000				
+[SCAN]
+	file path	.
+	name		test_16
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	1.21000				
+[SCAN]
+	file path	.
+	name		test_17
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	1.34000				
+[SCAN]
+	file path	.
+	name		test_18
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[MOTOR]
+	S18.axis2.phaseshifter 1	1	mm	absolute	1.47000				
+[SCAN]
+	file path	.
+	name		test_19
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+1	-2.9992676	20.0	432	2381	125034	3380	3770974068	2813	0.0000000	0.0000000
+2	-2.8015137	20.0	369	2622	124785	3365	3770974094	2991	0.0000000	0.0000000
+3	-2.6147461	20.0	323	2888	124983	3376	3770974121	3211	0.0000000	0.0000000
+4	-2.3840332	20.0	210	3376	125191	3362	3770974147	3586	0.0000000	0.0000000
+5	-2.1862793	20.0	166	3515	125093	3387	3770974174	3681	0.0000000	0.0000000
+6	-1.9885254	20.0	165	3531	124974	3387	3770974200	3696	0.0000000	0.0000000
+7	-1.8017578	20.0	224	3362	125065	3330	3770974227	3586	0.0000000	0.0000000
+8	-1.6149902	20.0	315	3043	125061	3438	3770974253	3358	0.0000000	0.0000000
+9	-1.4062500	20.0	405	2630	124654	3442	3770974279	3035	0.0000000	0.0000000
+10	-1.1975098	20.0	509	2334	124606	3279	3770974306	2843	0.0000000	0.0000000
+11	-1.0107422	20.0	470	2321	124988	3290	3770974332	2791	0.0000000	0.0000000
+12	-0.8020020	20.0	396	2509	124813	3408	3770974358	2905	0.0000000	0.0000000
+13	-0.6042480	20.0	332	2837	124919	3371	3770974385	3169	0.0000000	0.0000000
+14	-0.3955078	20.0	226	3228	125004	3503	3770974411	3454	0.0000000	0.0000000
+15	-0.1977539	20.0	191	3474	124656	3460	3770974438	3665	0.0000000	0.0000000
+16	-0.0109863	20.0	160	3585	124551	3363	3770974464	3745	0.0000000	0.0000000
+17	0.1867676	20.0	180	3438	125070	3384	3770974490	3618	0.0000000	0.0000000
+18	0.3845215	20.0	283	3115	124751	3352	3770974517	3398	0.0000000	0.0000000
+19	0.5932617	20.0	360	2694	124294	3352	3770974543	3054	0.0000000	0.0000000
+20	0.8020020	20.0	417	2384	125198	3395	3770974570	2801	0.0000000	0.0000000
+21	0.9887695	20.0	452	2314	124900	3355	3770974596	2766	0.0000000	0.0000000
+22	1.1975098	20.0	441	2363	125306	3363	3770974623	2804	0.0000000	0.0000000
+23	1.3952637	20.0	382	2690	124764	3359	3770974649	3072	0.0000000	0.0000000
+24	1.5930176	20.0	266	3058	125068	3454	3770974675	3324	0.0000000	0.0000000
+25	1.8017578	20.0	211	3548	124400	3348	3770974702	3759	0.0000000	0.0000000
+26	1.9995117	20.0	153	3571	124859	3284	3770974728	3724	0.0000000	0.0000000
+27	2.1972656	20.0	190	3544	124586	3407	3770974754	3734	0.0000000	0.0000000
+28	2.3950195	20.0	237	3153	124955	3407	3770974781	3390	0.0000000	0.0000000
+29	2.6037598	20.0	347	2699	124269	3496	3770974808	3046	0.0000000	0.0000000
+30	2.7905273	20.0	430	2498	124365	3412	3770974834	2928	0.0000000	0.0000000
+31	2.9992676	20.0	494	2274	124616	3397	3770974860	2768	0.0000000	0.0000000
+* end: 30/06/2023 15:01:01
