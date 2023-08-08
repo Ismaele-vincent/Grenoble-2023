@@ -1,0 +1,36 @@
+START	standard		
+CALL	RobotZ.sc
+G	GPIB1::8	fn2=SIN	am2=0.86	fr2=60000	ph2=0	of2=0
+F	D:\data\Cycle 190\exp_CRG-2887\rawdata\sc\*.dat
+R	room to enter remarks
+I	PXIDAQ2/ao1	Amps	0.000000	0
+C	time	180.000000
+G	GPIB1::8	start2
+I	PXIDAQ2/ao1	Amps	0.500000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	0.625000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	0.750000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	1.00000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	1.100000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	1.250000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	1.500000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	1.750000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	2.00000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	2.250000	0
+C	time	180.000000
+I	PXIDAQ2/ao1	Amps	2.500000	0
+C	time	180.000000
+
+
+G	GPIB1::8	stop2
+I	PXIDAQ2/ao1	Amps	0.00000	0
+E
+END

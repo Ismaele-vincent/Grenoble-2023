@@ -28,7 +28,7 @@ def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*x-D)
 
 rad=np.pi/180
-inf_file_name="beta_alpi8off_gamma_chi_GAMMA_03Jul1445"
+inf_file_name="beta_alpi8off_gamma_chicoarse_GAMMA_02Jul1638"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 2nd round/exp_CRG-3033/Sorted data/"+inf_file_name
 cleandata=sorted_fold_path+"/Cleantxt"
 gamma_fold_clean=cleandata+"/Gamma"
@@ -84,6 +84,19 @@ for i in range(len(ps_pos)):
 # ax = fig.add_subplot(111)
 # ax.plot(ps_pos,g)
 
+ps_data=np.sum(matrix,axis=1)
+P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 3,-3]
+B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
+p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0,bounds=B0)
+x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
+fig = plt.figure(figsize=(5,5))
+ax = fig.add_subplot(111)
+ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
+ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
+# print(p)
+w_ps=p[-2]
+
 fig = plt.figure(figsize=(10, 10))
 ax = plt.axes(projection='3d')
 Z=matrix
@@ -97,9 +110,9 @@ ax.set_zlabel('z')
 ax.view_init(45, 20)
 
 
-P0=[1,1,0.5]
-B0=([-1,0.5,0],[1,1.5,2*np.pi])
-p1,cov1=fit(fit_w1p,ps_pos,gamma, p0=P0, bounds=B0, sigma=err_g/alpha)
+P0=[0,0.01,1.5]
+B0=([-1,0.01,0],[1,1.5,2*np.pi])
+p1,cov1=fit(fit_w1p,ps_pos,-gamma + np.average(gamma), p0=P0, bounds=B0, sigma=err_g/alpha)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 fig = plt.figure(figsize=(5,5))
 gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
@@ -110,6 +123,6 @@ ax.set_xlabel("$\chi$ ($\pi$)")
 # ax.set_ylim([-1,1])
 # ax.plot(ps_pos,gamma/alpha, "ko")
 ax.errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi,-gamma + np.average(gamma), yerr=err_g,fmt="ko",capsize=5)
-# ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1)/alpha,"b", label="Fit Re{"+"$\omega_{1+}$}")
-# ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1]),"g", label="Exp Re{"+"$\omega_{1+}$}")
+# ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1),"b", label="Fit Re{"+"$\omega_{1+}$}")
+ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1]),"g", label="Exp Re{"+"$\omega_{1+}$}")
 ax.legend()

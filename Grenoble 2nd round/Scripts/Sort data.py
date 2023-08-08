@@ -15,7 +15,7 @@ fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 2nd round/exp_CRG-3033/raw
 Beta scan sorting
 """
 
-inf_file_name="beta_alpi8off_chi_26Jun1028ff"#"path1pi8_noIn_cb_g_17Apr1557"
+inf_file_name="beta_alpi8off_gamma_chi_BETA_03Jul1445" #"path1pi8_noIn_cb_g_17Apr1557"
 inf_path = fold_path+inf_file_name+".inf"
 
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 2nd round/exp_CRG-3033/Sorted data/"+inf_file_name
@@ -54,7 +54,7 @@ if (not os.path.exists(alphaOFF_fold_raw)) or (not os.path.exists(alphaOFF_fold_
 
 inf_files = np.genfromtxt(inf_path, dtype=str,usecols=(0,2))
 ps_num=np.array([range(len(inf_files[::2,0])),inf_files[::2,1].astype(float)])
-print(ps_num)
+# print(ps_num)
 for root, dirs, files in os.walk(fold_path, topdown=False):
     i=0
     for name in files:
@@ -81,46 +81,46 @@ for root, dirs, files in os.walk(fold_path, topdown=False):
 Gamma scan sorting
 """
 
-# inf_file_name="beta_alpi8off_gamma_chicoarse_GAMMA_30Jun1447"
-# inf_path = fold_path+inf_file_name+".inf"
-# sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 2nd round/exp_CRG-3033/Sorted data/"+inf_file_name
-# if not os.path.exists(sorted_fold_path):
-#     os.makedirs(sorted_fold_path)
+inf_file_name="beta_alpi8off_gamma_chi_GAMMA_03Jul1445"
+inf_path = fold_path+inf_file_name+".inf"
+sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 2nd round/exp_CRG-3033/Sorted data/"+inf_file_name
+if not os.path.exists(sorted_fold_path):
+    os.makedirs(sorted_fold_path)
 
-# rawdata=sorted_fold_path+"/Rawdata" 
-# if not os.path.exists(rawdata):
-#     os.makedirs(rawdata)
+rawdata=sorted_fold_path+"/Rawdata" 
+if not os.path.exists(rawdata):
+    os.makedirs(rawdata)
 
-# cleandata=sorted_fold_path+"/Cleantxt" 
-# if not os.path.exists(cleandata):
-#     os.makedirs(cleandata)
+cleandata=sorted_fold_path+"/Cleantxt" 
+if not os.path.exists(cleandata):
+    os.makedirs(cleandata)
     
-# plots=sorted_fold_path+"/Plots" 
-# if not os.path.exists(plots):
-#     os.makedirs(plots)
+plots=sorted_fold_path+"/Plots" 
+if not os.path.exists(plots):
+    os.makedirs(plots)
 
-# gamma_fold_raw=rawdata+"/Gamma"
-# gamma_fold_clean=cleandata+"/Gamma"
-# if (not os.path.exists(gamma_fold_raw)) or (not os.path.exists(gamma_fold_clean)):
-#     os.makedirs(gamma_fold_raw)
-#     os.makedirs(gamma_fold_clean)
+gamma_fold_raw=rawdata+"/Gamma"
+gamma_fold_clean=cleandata+"/Gamma"
+if (not os.path.exists(gamma_fold_raw)) or (not os.path.exists(gamma_fold_clean)):
+    os.makedirs(gamma_fold_raw)
+    os.makedirs(gamma_fold_clean)
 
-# inf_files = np.genfromtxt(inf_path, dtype=str,usecols=(0,2))
-# ps_num=np.array([range(len(inf_files[:,0])),inf_files[:,1].astype(float)])
-# # print(ps_num)
+inf_files = np.genfromtxt(inf_path, dtype=str,usecols=(0,2))
+ps_num=np.array([range(len(inf_files[:,0])),inf_files[:,1].astype(float)])
+# print(ps_num)
 
-# for root, dirs, files in os.walk(fold_path, topdown=False):
-#     i=0
-#     for name in files:
-#         if (name in inf_files[:,0]):
-#             print(name)
-#             shutil.copy(os.path.join(root, name), gamma_fold_raw+"/"+name)
-#             txt=np.loadtxt(os.path.join(root, name), skiprows=6, comments="*", delimiter="\t")[:,1:]
-#             ps=inf_files[:,1][inf_files[:,0]==name].astype(float) #phashifter position
-#             # print(ps)
-#             cleantxt =np.hstack((txt,np.ones((len(txt[:,0]),1))*ps[0]))
-#             with open(gamma_fold_clean+"/gamma_ps_"+str("%02d" % (ps_num[0][ps_num[1]==ps][0],)[0])+".txt", 'w') as f:
-#                 np.savetxt(f, cleantxt,  header= "Current(Amp) exposure_time(s) O-Beam H-Beam Monitor H2-Beam time(s) O+H encod1 encod2 phaseshif_pos", fmt='%.7f %.1f %i %i %i %i %i %i %.7f %.7f %.7f' )
+for root, dirs, files in os.walk(fold_path, topdown=False):
+    i=0
+    for name in files:
+        if (name in inf_files[:,0]):
+            print(name)
+            shutil.copy(os.path.join(root, name), gamma_fold_raw+"/"+name)
+            txt=np.loadtxt(os.path.join(root, name), comments="*", delimiter="\t")[:,1:]
+            ps=inf_files[:,1][inf_files[:,0]==name].astype(float) #phashifter position
+            # print(ps)
+            cleantxt =np.hstack((txt,np.ones((len(txt[:,0]),1))*ps[0]))
+            with open(gamma_fold_clean+"/gamma_ps_"+str("%02d" % (ps_num[0][ps_num[1]==ps][0],)[0])+".txt", 'w') as f:
+                np.savetxt(f, cleantxt,  header= "Current(Amp) exposure_time(s) O-Beam H-Beam Monitor H2-Beam time(s) O+H encod1 encod2 phaseshif_pos", fmt='%.7f %.1f %i %i %i %i %i %i %.7f %.7f %.7f' )
 
 
 """

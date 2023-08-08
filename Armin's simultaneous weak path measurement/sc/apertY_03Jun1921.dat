@@ -1,0 +1,22 @@
+* begin:	03.06.2021 19:21:31
+* script file:	D:\data\Cycle 190\exp_CRG-2887\rawdata\sc\apertY.cfg
+*
+[STANDARD]
+		
+[apertY]
+	created 03.06.2021   19:17
+[SCAN]
+	file path	.
+	name		*
+	category	standard
+	# repeats	1
+	notes		room to enter remarks
+[SUBSCAN]
+	S18.axis2.Aperture Y	7	mm	-3.000000	3.000000	1.000000	0.100000	FALSE	time	20.000000			
+[ENDSCAN]
+[END]
+
+* remarks:	room to enter remarks
+*
+1	-3.0000000	20.0	0	5848	115894	7685	3705585720	5848	0.0000000	0.0000000
+* stopped by user: 03.06.2021 19:22:05

@@ -21,24 +21,24 @@ warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 w_ps = 8.002
 
-a1 = 1/5**0.5#0.808#
-a2 = 2*a1#0.588#
+a2 = 1/5**0.5#0.808#
+a1 = 2*a2#0.588#
 
 
 def fit_cos(x, A, B, C, D):
     return A+B*np.cos(C*x-D)
 
-
 def I_px_co(beta, chi, C, alpha, gamma):
-    d = ((alpha+beta)**2+gamma**2)**0.5
-    e = (beta**2+gamma**2)**0.5
-    return C*((a1*np.cos(d/2))**2+(a2*np.cos(e/2))**2+2*a1*a2*np.cos(d/2)*np.cos(e/2)*np.cos(chi))/4
+    px=((a1*(np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2))+a2*np.exp(-1j*chi)*(np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2))))/(2**0.5)
+    return C*np.abs(px)**2
 
-
+# def I_px_in(beta, chi, eta, alpha, gamma):
+#     return eta*(np.cos((alpha+beta)/2)**2+(a2/a1)**2*np.cos(beta/2)**2)/4
 def I_px_in(beta, chi, eta, alpha, gamma):
-    d = ((alpha+beta)**2+gamma**2)**0.5
-    e = (beta**2+gamma**2)**0.5
-    return eta*(np.cos(d/2)**2+(a2/a1)**2*np.cos(e/2)**2)/4
+    px1=np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2)
+    px2=np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2)
+    return eta*(np.abs(px1)**2+(a2/a1)**2*np.abs(px2)**2)/4
+
 
 
 def I_mx_co(beta, chi, C, alpha, gamma):
@@ -55,7 +55,7 @@ def I_mx_in(beta, chi, eta, alpha, gamma):
     return eta*(np.sin(d/2)**2+(a2/a1)**2*np.sin(e/2)**2)/4
 
 
-inf_file_name = "path1pi8cb_g_09Apr1441"
+inf_file_name = "path2pi8cb_g_12Apr1724"
 sorted_fold_path = "/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 cleandata = sorted_fold_path+"/Cleantxt"
 beta_fold_clean = cleandata+"/Beta"
@@ -147,14 +147,14 @@ ax = fig.add_subplot(111)
 ax.plot(fit_I_px(0, *p)*np.amax(matrix.ravel()), "b")
 ax.plot(matrix.ravel(), "r--")
 # ax.errorbar(np.arange(len(matrix.ravel())),matrix.ravel(), yerr=matrix_err.ravel(), fmt="ko", capsize=3, lw=1)
-ax.set_xlim([0,200])
+# ax.set_xlim([0,100])
 f_obs=matrix.ravel()
 f_exp=fit_I_px(0,*p)*np.amax(matrix.ravel())
 
 # f_obs/=np.sum(f_obs)
 # f_exp/=np.sum(f_exp)
 
-print((np.sum(f_obs)-np.sum(f_exp))/np.sum(f_obs))
+# print((np.sum(f_obs)-np.sum(f_exp))/np.sum(f_obs))
 print(chisquare(f_obs=f_obs, f_exp=f_exp, ddof=7))
 
 def I_px(x, beta0, chi0, w_c, w_ps, C, eta, A):
@@ -177,7 +177,7 @@ def I_px_corr_in(x, beta0, chi0, w_c, w_ps, C, eta, A):
     beta = w_c*c_pos-beta0
     chi = w_ps*ps_pos-chi0
     beta, chi = np.meshgrid(beta, chi)
-    fit_I_px = eta/4*A*(0.5+0*a1*a2*np.cos(chi))+I_px_in(beta, chi, eta, alpha, 0)
+    fit_I_px = eta/4*A+I_px_in(beta, chi, eta, alpha, 0)
     # print(fit_I_px)
     return fit_I_px
 
@@ -189,7 +189,7 @@ Z1 = I_px(0, *p)*np.amax(matrix)
 Z2 = I_px_corr_co(0, *p)*np.amax(matrix)
 Z3 = Z-I_px_corr_in(0, *p)*np.amax(matrix)
 # Z=I_px_co(beta, chi, C, alpha, beta)+I_px_in(beta, chi, eta, alpha, beta)
-# ax.contour3D(beta, chi, Z, 40, cmap='binary')
+ax.contour3D(beta, chi, Z, 40, cmap='binary')
 ax.contour3D(beta, chi, Z1, 40, cmap='plasma')  # cmap='Blues')
 ax.set_xlabel('$\\beta$')
 ax.set_ylabel('$\chi$')
@@ -197,12 +197,11 @@ ax.set_zlabel('z')
 ax.view_init(40, 45)
 plt.show()
 
-# print(Z3[Z3<0])
-# Z3[Z3<0]==0
-# corrected_matrix=Z2#I_px_new(*p)*np.amax(matrix)
-# corrected_matrix_err=np.sqrt(corrected_matrix)
-# for i in range(len(ps_pos)):
-#     data_txt=np.array([c_pos, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(c_pos))*ps_pos[i]])
-#     with open(correct_fold_path+"/beta_ps_"+str("%02d" % (i,))+".txt", 'w') as f:
-#         np.savetxt(f, np.transpose(data_txt),  header= "Coil_pos O-Beam err ps_pos", fmt='%.7f %.7f %.7f %.7f' )
+
+corrected_matrix=Z-(Z1-Z2)#
+corrected_matrix_err=matrix_err
+for i in range(len(ps_pos)):
+    data_txt=np.array([c_pos, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(c_pos))*ps_pos[i]])
+    with open(correct_fold_path+"/beta_ps_"+str("%02d" % (i,))+".txt", 'w') as f:
+        np.savetxt(f, np.transpose(data_txt),  header= "Coil_pos O-Beam err ps_pos", fmt='%.7f %.7f %.7f %.7f' )
 

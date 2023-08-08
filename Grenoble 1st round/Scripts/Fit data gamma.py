@@ -24,7 +24,7 @@ def exp_w1p(x,x0):
     return alpha*((1/(1+a21*np.exp(-1j*(w_ps*(x-x0)))))).imag
 
 def fit_cos(x,A,B,C,D):
-    return A+B*np.cos(C*(x-D))
+    return A+B*np.cos(C*x-D)
 
 rad=np.pi/180
 inf_file_name="path1pi4cb_g_13Apr1502"
@@ -89,35 +89,47 @@ ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)
 ax.plot(x_plt,fit_cos(x_plt, *p), "b")
 ax.vlines(p[-1],0,fit_cos(p[-1], *p),ls="dashed")
 w_ps=p[-2]
+# print(p)
+c_data=np.average(matrix,axis=0)
+P0=[0, np.amax(matrix[i]), 3,-0.6]
+p,cov=fit(fit_cos,c_amp,c_data, p0=P0)
+x_plt = np.linspace(c_amp[0], c_amp[-1],100)
+fig = plt.figure(figsize=(5,5))
+ax = fig.add_subplot(111)
+ax.errorbar(c_amp,c_data,yerr=np.sqrt(c_data),fmt="ko",capsize=5)  
+ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+ax.vlines(p[-1],0,fit_cos(p[-1], *p),ls="dashed")
+w_c=p[-2]
 print(p)
+print(np.diag(cov)**0.5)
 # fig = plt.figure(figsize=(5,5))
 # ax = fig.add_subplot(111)
 # ax.plot(ps_pos,max_c_pos)
-# P01=[1,0]
-# B0=([0.1,0],[2,2*np.pi])
-# p1,cov1=fit(fit_w1p,ps_pos,gamma, p0=P01, bounds=B0)
-# # alpha=p[0]
-# x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
-# fig = plt.figure(figsize=(5,5),dpi=200)
-# gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
-# gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
-# ax = [fig.add_subplot(gs_t[:-1]), 
-#       fig.add_subplot(gs_b[-1])]
-# ax[-1].tick_params(axis="x", labelbottom=False, bottom = False)
-# ax[-1].tick_params(axis="y", labelleft=False, left = False)
-# ax[0].set_title(inf_file_name)
-# ax[0].set_xlabel("$\chi$ ($\pi$)")
-# ax[0].set_ylim([-1,1])
-# x_plt_pi=(x_plt-x_plt[0]+p1[-1])*w_ps/np.pi
-# # ax[0].plot(ps_pos,gamma/alpha, "ko")
-# ax[0].errorbar((ps_pos-ps_pos[0]+p1[-1])*w_ps/np.pi,gamma/alpha, yerr=err_g/alpha,fmt="ko",capsize=5)
-# ax[0].plot(x_plt_pi,exp_w1p(x_plt, p1[-1])/alpha,"g", label="Exp Im{"+"$\omega_{+}$}")
-# ax[0].plot(x_plt_pi,fit_w1p(x_plt, *p1)/alpha,"b", label="Fit Im{"+"$\omega_{+}$}")
-# # ax[0].plot(x_plt_pi,np.average(exp_w1p(x_plt[x_plt_pi<6], p1[-1])/alpha)+x_plt*0,"r", label="Avg")
-# ax[0].legend()
-# # print("max-min=",np.amax(gamma)-np.amin(gamma))
-# # print("max=",np.amax(gamma),"\nmin=",np.amin(gamma))
-# # print("period=",2*np.pi/np.average(w))
+P01=[1,0]
+B0=([0.1,0],[2,2*np.pi])
+p1,cov1=fit(fit_w1p,ps_pos,gamma, p0=P01, bounds=B0)
+# alpha=p[0]
+x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
+fig = plt.figure(figsize=(5,5),dpi=200)
+gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
+gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
+ax = [fig.add_subplot(gs_t[:-1]), 
+      fig.add_subplot(gs_b[-1])]
+ax[-1].tick_params(axis="x", labelbottom=False, bottom = False)
+ax[-1].tick_params(axis="y", labelleft=False, left = False)
+ax[0].set_title(inf_file_name)
+ax[0].set_xlabel("$\chi$ ($\pi$)")
+ax[0].set_ylim([-1,1])
+x_plt_pi=(x_plt-x_plt[0]+p1[-1])*w_ps/np.pi
+# ax[0].plot(ps_pos,gamma/alpha, "ko")
+ax[0].errorbar((ps_pos-ps_pos[0]+p1[-1])*w_ps/np.pi,gamma/alpha, yerr=err_g/alpha,fmt="ko",capsize=5)
+ax[0].plot(x_plt_pi,exp_w1p(x_plt, p1[-1])/alpha,"g", label="Exp Im{"+"$\omega_{+}$}")
+ax[0].plot(x_plt_pi,fit_w1p(x_plt, *p1)/alpha,"b", label="Fit Im{"+"$\omega_{+}$}")
+# ax[0].plot(x_plt_pi,np.average(exp_w1p(x_plt[x_plt_pi<6], p1[-1])/alpha)+x_plt*0,"r", label="Avg")
+ax[0].legend()
+# print("max-min=",np.amax(gamma)-np.amin(gamma))
+# print("max=",np.amax(gamma),"\nmin=",np.amin(gamma))
+# print("period=",2*np.pi/np.average(w))
 # fit_param_names= ["$\\theta$=","$\omega x_0$="]
 # text = "Fit results:\t"
 # for i in range(len(p1)):
@@ -129,23 +141,23 @@ print(p)
 # # ax.set_yticklabels(ps_pos)
 # # ax.imshow(matrix,cmap='plasma')
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-Z=matrix
-x=c_amp
-y=ps_pos
-X, Y = np.meshgrid(x, y)
-ax.contour3D(X, Y, Z/100, 30, cmap='binary')
-ax.set_xlabel('Coil')
-ax.set_ylabel('PS')
-ax.set_zlabel('z')
-ax.view_init(60, 35)
-with open(cleandata+"/Matrix_gamma_chi.txt", "w") as f:
-    np.savetxt(f, matrix)
-with open(cleandata+"/coil_current.txt", "w") as f:
-    np.savetxt(f, c_amp)
-with open(cleandata+"/ps_pos_gamma.txt", "w") as f:
-    np.savetxt(f, ps_pos)
+# fig = plt.figure()
+# ax = plt.axes(projection='3d')
+# Z=matrix
+# x=c_amp
+# y=ps_pos
+# X, Y = np.meshgrid(x, y)
+# ax.contour3D(X, Y, Z/100, 30, cmap='binary')
+# ax.set_xlabel('Coil')
+# ax.set_ylabel('PS')
+# ax.set_zlabel('z')
+# ax.view_init(60, 35)
+# with open(cleandata+"/Matrix_gamma_chi.txt", "w") as f:
+#     np.savetxt(f, matrix)
+# with open(cleandata+"/coil_current.txt", "w") as f:
+#     np.savetxt(f, c_amp)
+# with open(cleandata+"/ps_pos_gamma.txt", "w") as f:
+#     np.savetxt(f, ps_pos)
 # print("avg err=",np.average(err_g/alpha))
 # print("max err=",np.amax(err_g/alpha))
 # print("min err=",np.amin(err_g/alpha))

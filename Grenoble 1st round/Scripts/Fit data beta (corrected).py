@@ -15,24 +15,22 @@ from matplotlib.gridspec import GridSpec
 plt.rcParams.update({'figure.max_open_warning': 0})
 from PIL import Image as im
 from scipy.optimize import curve_fit as fit
-
-alpha=45#22.5
+plt.rcParams.update(plt.rcParamsDefault)
+alpha=22.5
 w_ps=8.002
-a21=1#/2# 2#1.375
+a21=2#1.375
 def fit_w1p(x,A,th,x0):
-    return alpha*(A+(1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).real
+    return alpha*(A+1-(1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).real
 
 def exp_w1p(x,x0):
-    return alpha*((1/(1+a21*np.exp(-1j*(w_ps*(x-x0)))))).real
+    return alpha*(1-(1/(1+a21*np.exp(-1j*(w_ps*(x-x0)))))).real
 
 def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*(x-D))
 
-# def fit_cos1(x,A,B,x0,D,w_b):
-#     return A+B*1/8*(2+np.cos(w_b*(x-x0))+np.cos(alpha+w_b*(x-x0))+2*np.cos(g)*np.sin(alpha/2)*np.sin(alpha/2+w_b*(x-x0))+2*eta*(np.cos(alpha/2)+np.cos(alpha/2+w_b*(x-x0)))*np.cos(w_ps*chi)*np.sin(g))
 
 rad=np.pi/180
-inf_file_name="path1pi4_noIn_cb_g_14Apr1720"
+inf_file_name="path2pi8cb_g_12Apr1724"
 sorted_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
 correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name
 beta_fold_clean=correct_fold_path+"/Beta"
@@ -65,8 +63,7 @@ for i in range(len(ps_pos)):
     matrix[i]=tot_data[:,1][tot_data[:,-1]==ps_pos[i]]
 for i in range(len(ps_pos)):
     P0=[5, np.amax(matrix[i]), 0.1,0]
-    # print(P0)
-    p,cov=fit(fit_cos,c_pos,matrix[i], p0=P0, sigma=np.sqrt(matrix[i]))
+    p,cov=fit(fit_cos,c_pos,matrix[i], p0=P0)
     err=np.diag(cov)**0.5
     # print(p[3], err[3])
     x_plt = np.linspace(c_pos[0], c_pos[-1],100)
@@ -102,54 +99,31 @@ w_ps=p[-2]
 # fig = plt.figure(figsize=(5,5))
 # ax = fig.add_subplot(111)
 # ax.plot(ps_pos,max_c_pos)
-P01=[1,1,np.pi/2]
-B0=([-1,0.5,0],[1,1.5,2*np.pi])
-p1,cov1=fit(fit_w1p,ps_pos,beta, p0=P01, bounds=B0, sigma=err_b/alpha)
+# fig = plt.figure(figsize=(5,5))
+# ax = fig.add_subplot(111)
+# ax.plot(ps_pos,b)
+
+P0=[0,1,1]
+B0=([0,0.5,0],[1,1.5,2*np.pi])
+p1,cov1=fit(fit_w1p,ps_pos, beta, p0=P0, bounds=B0)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 fig = plt.figure(figsize=(5,5))
-gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
-gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
-ax = [fig.add_subplot(gs_t[:])]
-# ax[-1].tick_params(axis="x", labelbottom=False, bottom = False)
-# ax[-1].tick_params(axis="y", labelleft=False, left = False)
-ax[0].set_title(inf_file_name)
-ax[0].set_xlabel("$\chi$ ($\pi$)")
-# ax[0].set_ylim([-1,1])
-# ax[0].plot(ps_pos,beta/alpha, "ko")
-ax[0].errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi,beta/alpha, yerr=err_b/alpha/10,fmt="ko",capsize=5)
-# ax[0].plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1)/alpha,"b", label="Fit Re{"+"$\omega_{1+}$}")
-ax[0].plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1])/alpha,"g", label="Exp Re{"+"$\omega_{1+}$}")
-ax[0].legend()
-chi=(ps_pos-ps_pos[0]-p1[-1])*w_ps
-# print("max-min=",np.amax(beta)-np.amin(beta))
-# print("max=",np.amax(beta),"\nmin=",np.amin(beta))
-print("period=",2*np.pi/np.average(w))
-# fit_param_names= ["off=","$\\theta$=","$\omega x_0$="]
-# text = "Fit results:\t"
-# for i in range(len(p1)):
-#     text+= fit_param_names[i]+str("%.4f"%(p1[i],))+"\t"
-# text=text[:-2]
-# ax[-1].text(0.5,0.5,text,va="center", ha="center")
-# fig = plt.figure()
-# ax = plt.axes(projection='3d')
-# Z=matrix
-# x=c_pos
-# y=ps_pos
-# X, Y = np.meshgrid(x, y)
-# ax.contour3D(X, Y, Z/100, 30, cmap='binary')
-# ax.set_xlabel('Coil')
-# ax.set_ylabel('PS')
-# ax.set_zlabel('z')
-# ax.view_init(45, 40)
-print("avg err=",np.average(err_b))
-print("max err=",np.amax(err_b))
-print("min err=",np.amin(err_b))
+ax = fig.add_subplot()
 
-datatxt= np.array([chi,beta/alpha,err_b/alpha])
-# print(datatxt)
-with open("/home/aaa/Desktop/path1pi8cb_g_09Apr1441.txt","w") as f:
+ax.set_title(inf_file_name)
+ax.set_xlabel("$\chi$ ($\pi$)")
+# ax.set_ylim([-1,1])
+# ax.plot(ps_pos,beta/alpha, "ko")
+ax.errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi, beta, yerr=err_b,fmt="ko",capsize=5)
+# ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1),"b", label="Fit Re{"+"$\omega_{1+}$}")
+ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1]),"g", label="Exp Re{"+"$\omega_{1+}$}")
+ax.set_ylim([10,50])
+chi=(ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi
+datatxt= np.array([chi,beta,err_b])
+# # print(datatxt)
+with open(correct_fold_path+"Beta_corrected.txt","w") as f:
     np.savetxt(f,np.transpose(datatxt), header="chi w+ err", fmt='%.7f %.7f %.7f')
-    
+
 # data=np.loadtxt("/home/aaa/Desktop/path1pi8cb_g_09Apr1441.txt")
 
 # fig = plt.figure(figsize=(5,5))

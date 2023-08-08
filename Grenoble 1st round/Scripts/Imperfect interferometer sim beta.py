@@ -28,10 +28,21 @@ a2=2*a1
 def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*x-D)
 
+# def I_px_co(beta, chi, C, alpha, gamma):
+#     d=((alpha+beta)**2+gamma**2)**0.5
+#     e=(beta**2+gamma**2)**0.5
+#     return C*((a1*np.cos(d/2))**2+(a2*np.cos(e/2))**2+2*a1*a2*np.cos(d/2)*np.cos(e/2)*np.cos(chi))/4
+
 def I_px_co(beta, chi, C, alpha, gamma):
-    d=((alpha+beta)**2+gamma**2)**0.5
-    e=(beta**2+gamma**2)**0.5
-    return C*((a1*np.cos(d/2))**2+(a2*np.cos(e/2))**2+2*a1*a2*np.cos(d/2)*np.cos(e/2)*np.cos(chi))/4
+    d=(alpha+beta)
+    e=beta
+    return C*((a1*np.cos(d/2))**2+(a2*np.cos(e/2))**2+2*a1*a2*np.cos(d/2)*np.cos(e/2)*np.cos(chi))/2
+
+
+def I_px_co1(beta, chi, C, alpha, gamma):
+    # beta*=-1
+    # alpha*=-1
+    return C/8*(2+2*np.cos(alpha/2)*np.cos(chi)*a2+np.cos(gamma)*(np.cos(beta)+np.cos(alpha+beta)-2*a1*np.sin(alpha/2)*np.sin(alpha/2+beta)+2*np.cos(alpha/2+beta)*np.cos(chi)*a2)+2*np.sin(alpha/2)*a2*np.sin(gamma)*np.sin(chi))
 
 def I_px_in(beta, chi, eta, alpha, gamma):
     d=((alpha+beta)**2+gamma**2)**0.5
@@ -52,13 +63,21 @@ def I_mx_in(beta, chi, eta, alpha, gamma):
 gamma=0
 b=np.linspace(-2*np.pi,2*np.pi,100)
 c=np.linspace(0,2*np.pi,25)
-alpha=np.pi/2
+alpha=np.pi/4
 
 def I_px(x, beta0, chi0, C, eta):
     beta=b-beta0
     chi=c-chi0
     beta, chi = np.meshgrid(beta, chi)
     fit_I_px=I_px_co(beta, chi, C, alpha, 0) #+ I_px_in(beta, chi, eta, alpha, 0)
+    # print(fit_I_px)
+    return fit_I_px
+
+def I_px1(x, beta0, chi0, C, eta):
+    beta=b-beta0
+    chi=c-chi0
+    beta, chi = np.meshgrid(beta, chi)
+    fit_I_px=I_px_co1(beta, chi, C, alpha, 0) #+ I_px_in(beta, chi, eta, alpha, 0)
     # print(fit_I_px)
     return fit_I_px
 
@@ -74,6 +93,7 @@ p=[0,0,1,0]
 
 # Z= (I_px(0,*p)-I_mx(0,*p))/(I_px(0,*p)+I_mx(0,*p))
 Z= I_px(0,*p)
+Z1= I_px1(0,*p)
 # fig = plt.figure(figsize=(10,10))
 # ax = plt.axes(projection='3d')
 # x, y = np.meshgrid(g, c)
@@ -86,8 +106,10 @@ w_im=np.zeros((len(c)))
 for i in range(len(c)):
     fig = plt.figure(figsize=(5,5))
     ax = fig.add_subplot(111)
-    ax.plot(b,Z[0])
-    ax.plot(b,Z[i])
+    ax.plot(b,Z[0],"r")
+    ax.plot(b,Z[i],"g")
+    ax.plot(b,Z1[0], "b")
+    ax.plot(b,Z1[i], "k")
     # ax.set_ylim([0,0.05])
     # w_im[i]=(np.amax(Z[i])-np.amin(Z[i]))/2
 # fig = plt.figure(figsize=(5,5))
