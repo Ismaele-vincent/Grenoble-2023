@@ -29,8 +29,6 @@ def I_px_co(beta, chi, C, alpha, gamma):
     px=((a1*(np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2))+a2*np.exp(-1j*chi)*(np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2))))/(2**0.5)
     return C*np.abs(px)**2
 
-# def I_px_in(beta, chi, eta, alpha, gamma):
-#     return eta*(np.cos((alpha+beta)/2)**2+(a2/a1)**2*np.cos(beta/2)**2)/4
 def I_px_in(beta, chi, eta, alpha, gamma):
     px1=np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2)
     px2=np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2)
@@ -74,20 +72,25 @@ for i in range(len(ps_pos)):
     matrix[i]=tot_data[:,2][tot_data[:,-2]==ps_pos[i]]
     matrix_err[i]=tot_data[:,2][tot_data[:,-2]==ps_pos[i]]**0.5
 
-ps_data=np.sum(matrix,axis=1)
-P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]*8+0.7]
-B0=([0,5000,0,0],[np.inf,np.inf,np.inf,np.inf])
-p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0, bounds=B0)
-x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
-fig = plt.figure(figsize=(5,5))
-ax = fig.add_subplot(111)
-ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
-ax.plot(x_plt,fit_cos(x_plt, *p), "b")
-ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
-w_ps=p[-2]
-ps_0=p[-1]
-print(w_ps)
-print(ps_0)
+w_pss=np.zeros(len(coil))
+ps_0s=np.zeros(len(coil))
+for i in range(len(coil)):
+    ps_data=matrix[:,i]
+    P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]*8+0.7]
+    B0=([0,10,0,0],[np.inf,np.inf,np.inf,np.inf])
+    p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0, bounds=B0)
+    x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
+    fig = plt.figure(figsize=(5,5))
+    ax = fig.add_subplot(111)
+    ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
+    ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+    ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
+    w_pss[i]=p[-2]
+    ps_0s[i]=p[-1]
+w_ps=np.average(w_pss)
+ps_0=np.average(ps_0s)
+print(w_ps,ps_0)
+
 
 c_data=np.sum(matrix,axis=0)
 P0=[(np.amax(c_data)+np.amin(c_data))/2, np.amax(c_data)-np.amin(c_data), 3,0]

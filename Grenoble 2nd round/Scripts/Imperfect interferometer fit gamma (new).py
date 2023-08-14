@@ -21,10 +21,10 @@ warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 rad=np.pi/180
 w_ps =1
 
-a1 = 1/5**0.5
-a2 = 2*a1
+a2 = 1/5**0.5
+a1 = 2*a2
 
-alpha=-np.pi/8
+alpha=np.pi/8
 a21=1/2
 
 def exp_w1p(x):
@@ -123,7 +123,7 @@ gamma=w_c*coil-c_0
 chi=w_ps*ps_pos-ps_0
 # gamma=coil
 # chi=ps_pos
-C=0.65
+C=0.72
 
 eta=1-C
 

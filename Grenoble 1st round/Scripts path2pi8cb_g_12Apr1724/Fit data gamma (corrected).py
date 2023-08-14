@@ -1,54 +1,36 @@
-import warnings
-from scipy.optimize import curve_fit as fit
-from PIL import Image as im
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr  7 15:56:35 2023
+
+@author: aaa
+"""
 import os
 import numpy as np
 import shutil
 import matplotlib.pyplot as plt
-from mpl_toolkits import mplot3d
 from matplotlib.gridspec import GridSpec
-from scipy.stats import chisquare
 plt.rcParams.update({'figure.max_open_warning': 0})
-warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
+from PIL import Image as im
+from scipy.optimize import curve_fit as fit
 
-rad=np.pi/180
-w_ps=8
-a1 = 1/5**0.5
-a2 = 2*a1
-
-alpha=np.pi/8
+alpha=22.5
+w_ps=8.0
 a21=2
 
-def exp_w1p(x):
-    return alpha*(1-1/(1+a21*np.exp(-1j*x))).real
+def fit_w1p(x,th,x0):
+    return alpha*(1-(1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).imag
 
-def fit_cos(x, A, B, C, D):
+def exp_w1p(x,x0):
+    return alpha*(1-(1/(1+a21*np.exp(-1j*((x-x0)))))).imag
+
+def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*x-D)
 
-def I_px_co(beta, chi, C, alpha, gamma):
-    px=((a1*(np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2))+a2*np.exp(-1j*chi)*(np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2))))/(2**0.5)
-    return C*np.abs(px)**2
-
-# def I_px_in(beta, chi, eta, alpha, gamma):
-#     return eta*(np.cos((alpha+beta)/2)**2+(a2/a1)**2*np.cos(beta/2)**2)/4
-def I_px_in(beta, chi, eta, alpha, gamma):
-    px1=np.cos(gamma/2)*np.cos((alpha+beta)/2)+1j*np.sin(gamma/2)*np.sin((alpha+beta)/2)
-    px2=np.cos(gamma/2)*np.cos(beta/2)+1j*np.sin(gamma/2)*np.sin(beta/2)
-    return eta*((a1)**2*np.abs(px1)**2+(a2)**2*np.abs(px2)**2)/2
-
-
-inf_file_name = "path2pi8cb_g_12Apr1724"
-sorted_fold_path = "/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Sorted data/"+inf_file_name
-cleandata = sorted_fold_path+"/Cleantxt"
-gamma_fold_clean = cleandata+"/Gamma"
-plots_fold = sorted_fold_path+"/Plots/"
-correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name+"/Gamma"
-
-if not os.path.exists(correct_fold_path):
-    os.makedirs(correct_fold_path)
-else:
-    shutil.rmtree(correct_fold_path)
-    os.makedirs(correct_fold_path)
+rad=np.pi/180
+inf_file_name="path2pi8cb_g_12Apr1724"
+correct_fold_path="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name
+gamma_fold_clean=correct_fold_path+"/Gamma"
 
 i=0
 for root, dirs, files in os.walk(gamma_fold_clean, topdown=False):
@@ -61,147 +43,85 @@ for root, dirs, files in os.walk(gamma_fold_clean, topdown=False):
         else:
             data=np.loadtxt(os.path.join(root, name))
             tot_data = np.vstack((tot_data, data))
-ps_pos=tot_data[::len(coil),-2]
-print(ps_pos)
-# ps_i=109
-# ps_f=ps_pos[-1]
-# ps_pos=ps_pos[abs(ps_pos-(ps_i+ps_f)/2)<(ps_f-ps_i)/2] 
+ps_pos=tot_data[::len(coil),-1]
+# print(tot_data)
 matrix=np.zeros((len(ps_pos),len(coil)))
 matrix_err=np.zeros((len(ps_pos),len(coil)))
+gamma=np.zeros(len(ps_pos))
 w=np.zeros(len(ps_pos))
-err_b=np.zeros(len(ps_pos))
+g=np.zeros(len(ps_pos))
+err_g=np.zeros(len(ps_pos))
+fit_res0=[961.4558113, 875.76646424, 2.79906513, -1.59503217]
+err_res0=[1.76711614, 2.32618945, 0.00305353, 0.00299253]
 for i in range(len(ps_pos)):
-    matrix[i]=tot_data[:,2][tot_data[:,-2]==ps_pos[i]]
-    matrix_err[i]=tot_data[:,2][tot_data[:,-2]==ps_pos[i]]**0.5
+    matrix[i]=tot_data[:,1][tot_data[:,-1]==ps_pos[i]]
+    matrix_err[i]=tot_data[:,2][tot_data[:,-1]==ps_pos[i]]
+for i in range(len(ps_pos)):
+    P0=[(np.amax(matrix[i])+np.amin(matrix[i]))/2, np.amax(matrix[i])-np.amin(matrix[i]),3,-1.56]
+    B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
+    # print(P0)
+    p,cov=fit(fit_cos,coil,matrix[i], p0=P0, bounds=B0, sigma=matrix_err[i])
+    err=np.diag(cov)**0.5
+    # print(p[3], err[3])
+    x_plt = np.linspace(coil[0], coil[-1],100)
+    w[i]=p[2]
+    #x_plt1[fit_cos(x_plt1, *p)==np.amax(fit_cos(x_plt1, *p))]
+    g[i]=p[3]
+    err_g[i]=(err[3]**2+err_res0[3]**2)**0.5/rad
+    # err_g[i]=((w[i]*err_eps)**2 +(eps*err_res0[2])**2)**0.5/rad
+    gamma[i]=(fit_res0[-1]-g[i])/rad
+    # fig = plt.figure(figsize=(5,5))
+    # ax = fig.add_subplot(111)
+    # fig.suptitle("ps_pos="+str(ps_pos[i]))
+    # ax.errorbar(coil,matrix[i],yerr=matrix_err[i],fmt="ko",capsize=5)
+    # ax.vlines(g[i]/w[i],0,fit_cos(g[i]/w[i], *p),ls="dashed",color="b",label="$\\gamma$="+str("%.3f" % (g[i]/w[i]),))
+    # # ax.vlines(g0[i]/w0[i],0,fit_cos(g0[i]/w0[i], p[0],p[1],*p0[2:]),ls="dashed",color="r",label="$\\gamma_0$="+str("%.3f" % (g0[i]/w0[i]),))
+    # ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+    # ax.set_ylim([0, P0[1]+P0[1]/10])
+    # # ax.plot(x_plt,fit_cos(x_plt, p[0],p[1],*p0[2:]), "r")
+    # ax.legend(loc=4)
 
 ps_data=np.sum(matrix,axis=1)
-P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]*8+0.7]
-B0=([0,5000,0,0],[np.inf,np.inf,np.inf,np.inf])
-p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0, bounds=B0)
+P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]*8]
+B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
+p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0,bounds=B0)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
-fig = plt.figure(figsize=(5,5))
-ax = fig.add_subplot(111)
-ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
-ax.plot(x_plt,fit_cos(x_plt, *p), "b")
-ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
+# fig = plt.figure(figsize=(5,5))
+# ax = fig.add_subplot(111)
+# ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
+# ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+# ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
+# print(p)
 w_ps=p[-2]
 ps_0=p[-1]
 print(w_ps)
-print(ps_0)
+# fig = plt.figure(figsize=(10, 10))
+# ax = plt.axes(projection='3d')
+# Z=matrix
+# x=coil
+# y=ps_pos
+# X, Y = np.meshgrid(x, y)
+# ax.contour3D(X, Y, Z, 30, cmap='binary')
+# ax.set_xlabel('Coil')
+# ax.set_ylabel('Phase Shifter')
+# ax.set_zlabel('z')
+# ax.view_init(45, 20)
 
-c_data=np.sum(matrix,axis=0)
-P0=[(np.amax(c_data)+np.amin(c_data))/2, np.amax(c_data)-np.amin(c_data), 3,0]
-B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
-p,cov=fit(fit_cos,coil,c_data, p0=P0, bounds=B0)
-print(p)
-print(np.diag(cov)**0.5)
-x_plt = np.linspace(coil[0], coil[-1],100)
+chi=(ps_pos*w_ps-ps_0)
+x_plt = np.linspace(chi[0], chi[-1],100)
 fig = plt.figure(figsize=(5,5))
+gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
+gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
 ax = fig.add_subplot(111)
-ax.errorbar(coil,c_data,yerr=np.sqrt(c_data),fmt="ko",capsize=5)  
-ax.plot(x_plt,fit_cos(x_plt, *p), "b")
-ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
-w_c=p[-2]
-print("w_c=",w_c)
-print("contrast gamma=",p[1]/p[0])
-c_0=p[-1]
-print(c_0)
-# gamma=np.linspace(-3*np.pi,3*np.pi,500)#coil.copy()#
-# chi=np.linspace(-3*np.pi,3*np.pi,500)#ps_pos.copy()#
-gamma=w_c*coil-c_0
-chi=w_ps*ps_pos-ps_0
-# gamma=coil
-# chi=ps_pos
-C=0.67
+ax.set_title(inf_file_name)
+ax.set_xlabel("$\chi$ ($\pi$)")
+# ax.set_ylim([-1,1])
+ax.errorbar(chi/np.pi, - gamma , yerr=err_g,fmt="ko",capsize=5)
+ax.plot(x_plt/np.pi,exp_w1p(x_plt, 0),"g", label="Exp Re{"+"$\omega_{1+}$}")
+ax.legend()
 
-eta=1-C
-
-# def fit_I_px(x, gamma0, chi0, w_c, w_ps, C, eta, A):
-#     gamma = w_c*coil-gamma0
-#     chi = w_ps*ps_pos-chi0
-#     gamma, chi = np.meshgrid(gamma, chi)
-#     fit_I_px = I_px_co(0, chi, C, alpha, gamma) + eta/4*A + I_px_in(0, chi, eta, alpha, gamma)
-#     # print(fit_I_px)
-#     return fit_I_px.ravel()
-
-def fit_I_px(x, gamma0, chi0, w_c, A, B):
-    gamma = -1*(w_c*coil-gamma0)
-    chi = w_ps*ps_pos-chi0
-    # gamma, chi = np.meshgrid(gamma, chi)
-    beta=exp_w1p(chi)
-    for i in range(len(chi)):
-        if i==0:
-            fit_I_px = A*(I_px_co(beta[i], chi[i], C, alpha, gamma) + I_px_in(beta[i], chi[i], eta, alpha, gamma)) + B
-        else:
-            fit_I_px = np.vstack((fit_I_px, A*(I_px_co(beta[i], chi[i], C, alpha, gamma) + I_px_in(beta[i], chi[i], eta, alpha, gamma)) + B))
-    # print(fit_I_px)
-    return fit_I_px.ravel()
-
-
-P0=(c_0, ps_0, w_c, 0.5, 0)
-B0=([-5,700,0.01,0,0],[5,1000,4,5,10])
-p, cov = fit(fit_I_px, range(len(matrix.ravel())), matrix.ravel()/np.amax(matrix.ravel()), bounds=B0)
-fig = plt.figure(figsize=(5, 5))
-ax = fig.add_subplot(111)
-ax.plot(fit_I_px(0, *p)*np.amax(matrix.ravel()), "b")
-ax.plot(matrix.ravel(), "r--", lw=1)
-# ax.errorbar(np.arange(len(matrix.ravel())),matrix.ravel(), yerr=matrix_err.ravel(), fmt="ko", capsize=3, lw=1)
-# ax.set_xlim([50,150])
-f_obs=matrix.ravel()
-f_exp=fit_I_px(0,*p)*np.amax(matrix.ravel())
-
-# f_obs/=np.sum(f_obs)
-# f_exp/=np.sum(f_exp)
-
-# print((np.sum(f_obs[:])-np.sum(f_exp[:]))/(np.sum(f_obs[:])))
-# print(chisquare(f_obs=f_obs, f_exp=f_exp, ddof=7))
-# ax.set_xlim([0,150])
-# ax.set_ylim([0,0.2])
-
-def I_px(x, gamma0, chi0, w_c, A, B):
-    gamma = -1*(w_c*coil-gamma0)
-    chi = w_ps*ps_pos-chi0
-    # gamma, chi = np.meshgrid(gamma, chi)
-    beta=exp_w1p(chi)
-    for i in range(len(chi)):
-        if i==0:
-            fit_I_px = A*(I_px_co(beta[i], chi[i], C, alpha, gamma) + I_px_in(beta[i], chi[i], eta, alpha, gamma)) + B
-        else:
-            fit_I_px = np.vstack((fit_I_px, A*(I_px_co(beta[i], chi[i], C, alpha, gamma) + I_px_in(beta[i], chi[i], eta, alpha, gamma)) + B))
-    # print(fit_I_px)
-    return fit_I_px
-
-def I_px_corr(x, gamma0, chi0, w_c, A, B):
-    gamma = -1*(w_c*coil-gamma0)
-    chi = w_ps*ps_pos-chi0
-    # gamma, chi = np.meshgrid(gamma, chi)
-    beta=exp_w1p(chi)
-    for i in range(len(chi)):
-        if i==0:
-            fit_I_px = I_px_co(beta[i], chi[i], C, alpha, gamma) 
-        else:
-            fit_I_px = np.vstack((fit_I_px, I_px_co(beta[i], chi[i], C, alpha, gamma)))
-    # print(fit_I_px)
-    return fit_I_px
-
-fig = plt.figure(figsize=(10, 10))
-ax = plt.axes(projection='3d')
-gamma, chi = np.meshgrid(gamma, chi)
-Z = matrix
-Z1 = I_px(0, *p)*np.amax(matrix)
-Z2 = I_px_corr(0, *p)*np.amax(matrix)
-ax.contour3D(gamma, chi, Z, 40, cmap='binary')
-ax.contour3D(gamma, chi, Z1, 40, cmap='plasma')  # cmap='Blues')
-ax.set_xlabel('$\\gamma$')
-ax.set_ylabel('$\chi$')
-ax.set_zlabel('z')
-ax.view_init(40, 45)
 plt.show()
-
-corrected_matrix=Z-(Z1-Z2)#Z2#
-corrected_matrix_err=matrix_err
-for i in range(len(ps_pos)):
-    data_txt=np.array([coil, corrected_matrix[i], corrected_matrix_err[i], np.ones(len(coil))*ps_pos[i]])
-    with open(correct_fold_path+"/gamma_ps_"+str("%02d" % (i,))+".txt", 'w') as f:
-        np.savetxt(f, np.transpose(data_txt),  header= "Coil O-Beam err ps_pos", fmt='%.7f %.7f %.7f %.7f' )
-
+datatxt= np.array([chi,-gamma,err_g])
+# # print(datatxt)
+with open(correct_fold_path+"/"+inf_file_name[:8]+"_Gamma_corrected.txt","w") as f:
+    np.savetxt(f,np.transpose(datatxt), header="chi w+ err", fmt='%.7f %.7f %.7f')

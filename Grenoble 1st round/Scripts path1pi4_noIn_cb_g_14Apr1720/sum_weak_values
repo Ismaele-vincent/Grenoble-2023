@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jul 28 13:09:18 2023
+
+@author: aaa
+"""
+
+import os
+import numpy as np
+import shutil
+import matplotlib.pyplot as plt
+from matplotlib.gridspec import GridSpec
+plt.rcParams.update({'figure.max_open_warning': 0})
+from PIL import Image as im
+from scipy.optimize import curve_fit as fit
+
+alpha=22.5
+w_ps=8.0
+a21=2
+
+
+def fit_w1p(x,th,x0):
+    return alpha*((1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).imag
+
+def exp_w1p(x,x0):
+    return alpha*((1/(1+a21*np.exp(-1j*(w_ps*(x-x0)))))).imag
+
+def fit_cos(x,A,B,C,D):
+    return A+B*np.cos(C*x-D)
+
+rad=np.pi/180
+inf_file_name1="path1pi8cb_g_09Apr1441"
+correct_fold_path1="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name1
+gamma_path1=correct_fold_path1+"/Gamma_corrected.txt"
+gamma_data1=np.loadtxt(gamma_path1, comments="#")
+
+
+inf_file_name2="path2pi8cb_g_12Apr1724"
+correct_fold_path2="/home/aaa/Desktop/Fisica/PhD/2023/Grenoble 1st round/exp_3-16-13/Corrected data/"+inf_file_name2
+gamma_path2=correct_fold_path2+"/Gamma_corrected.txt"
+gamma_data2=np.loadtxt(gamma_path2, comments="#")
+
+print(gamma_data1)
+print(gamma_data2)
+gamma_sum=gamma_data1[2:,1]+gamma_data2[:-2,1]
+gamma_sum_err=gamma_data1[2:,2]+gamma_data2[:-2,2]
+
+
+plt.errorbar(gamma_data1[:,0],gamma_data1[:,1], yerr=gamma_data1[:,1],fmt="b", label="same path")
+plt.errorbar(gamma_data1[:,0],gamma_data2[:,1], yerr=gamma_data2[:,1],fmt="r", label="different path")
+plt.legend()
+
+plt.errorbar(gamma_data1[2:,0],gamma_sum, yerr=gamma_sum_err)

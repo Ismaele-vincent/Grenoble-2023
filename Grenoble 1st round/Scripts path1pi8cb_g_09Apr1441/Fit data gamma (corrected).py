@@ -18,11 +18,8 @@ alpha=22.5
 w_ps=8.0
 a21=2
 
-def fit_w1p(x,th,x0):
-    return alpha*((1/(1+a21*np.tan(th*np.pi/4)**2*np.exp(-1j*(w_ps*(x-x0)))))).imag
-
 def exp_w1p(x,x0):
-    return alpha*((1/(1+a21*np.exp(-1j*(w_ps*(x-x0)))))).imag
+    return alpha*(1/(1+a21*np.exp(-1j*(x)))).imag
 
 def fit_cos(x,A,B,C,D):
     return A+B*np.cos(C*x-D)
@@ -67,7 +64,7 @@ for i in range(len(ps_pos)):
     w[i]=p[2]
     #x_plt1[fit_cos(x_plt1, *p)==np.amax(fit_cos(x_plt1, *p))]
     g[i]=p[3]
-    err_g[i]=(err[3]**2+err_res0[3]**2)**0.5*w[i]/rad
+    err_g[i]=(err[3]**2+err_res0[3]**2)**0.5/rad
     # err_g[i]=((w[i]*err_eps)**2 +(eps*err_res0[2])**2)**0.5/rad
     gamma[i]=(fit_res0[-1]-g[i])/rad
     # fig = plt.figure(figsize=(5,5))
@@ -81,22 +78,20 @@ for i in range(len(ps_pos)):
     # # ax.plot(x_plt,fit_cos(x_plt, p[0],p[1],*p0[2:]), "r")
     # ax.legend(loc=4)
 
-fig = plt.figure(figsize=(5,5))
-ax = fig.add_subplot(111)
-ax.plot(ps_pos,gamma)
+
 ps_data=np.sum(matrix,axis=1)
 P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 8,ps_pos[0]*8]
 B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
 p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0,bounds=B0)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
-fig = plt.figure(figsize=(5,5))
-ax = fig.add_subplot(111)
-ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
-ax.plot(x_plt,fit_cos(x_plt, *p), "b")
-ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
+# fig = plt.figure(figsize=(5,5))
+# ax = fig.add_subplot(111)
+# ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
+# ax.plot(x_plt,fit_cos(x_plt, *p), "b")
+# ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
 # print(p)
 w_ps=p[-2]
-print(w_ps)
+ps_0=p[-1]
 # fig = plt.figure(figsize=(10, 10))
 # ax = plt.axes(projection='3d')
 # Z=matrix
@@ -109,11 +104,8 @@ print(w_ps)
 # ax.set_zlabel('z')
 # ax.view_init(45, 20)
 
-
-P0=[1,0.5]
-B0=([0.01,0],[1.5,2*np.pi])
-p1,cov1=fit(fit_w1p,ps_pos, - gamma, p0=P0, bounds=B0, sigma=err_g)
-x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
+chi=(ps_pos*w_ps-ps_0)
+x_plt = np.linspace(chi[0], chi[-1],100)
 fig = plt.figure(figsize=(5,5))
 gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
 gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
@@ -121,14 +113,10 @@ ax = fig.add_subplot(111)
 ax.set_title(inf_file_name)
 ax.set_xlabel("$\chi$ ($\pi$)")
 # ax.set_ylim([-1,1])
-# ax.plot(ps_pos,gamma/alpha, "ko")
-ax.errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi, - gamma +np.average(gamma) , yerr=err_g,fmt="ko",capsize=5)
-# ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1),"b", label="Fit Re{"+"$\omega_{1+}$}")
-ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1]),"g", label="Exp Re{"+"$\omega_{1+}$}")
+ax.errorbar(chi/np.pi, (- gamma), yerr=err_g,fmt="ko",capsize=5)
+ax.plot(x_plt/np.pi,exp_w1p(x_plt, 0),"g", label="Exp Re{"+"$\omega_{1+}$}")
 ax.legend()
-
-chi=(ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi
-datatxt= np.array([chi,- gamma + np.average(gamma),err_g/alpha])
-# # print(datatxt)
-with open(correct_fold_path+"/Gamma_corrected.txt","w") as f:
+plt.show()
+datatxt= np.array([chi,-gamma,err_g])
+with open(correct_fold_path+"/"+inf_file_name[:8]+"_Gamma_corrected.txt","w") as f:
     np.savetxt(f,np.transpose(datatxt), header="chi w+ err", fmt='%.7f %.7f %.7f')

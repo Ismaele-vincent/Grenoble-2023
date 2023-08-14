@@ -22,9 +22,7 @@ from multiprocessing import Pool
 from scipy.stats import norm
 from scipy.stats import cosine
 from scipy.stats import exponnorm
-fit_name="bcr_1_2_phi_no_zeta_0"
-p_name=["$(b_c \\rho)_1$","$(b_c \\rho)_2$", "$\mu$", "$\sigma$","$\\tau$", "$x_0$","$\phi$"]
-p_units=[" $1/\mu m^2$"," $1/\mu m^2$"," nm", " nm", "", " deg", "$ \pi$"]
+fit_name="bcr_1_2_no_zeta_0"
 
 pi=np.pi
 rad=pi/180
@@ -45,21 +43,19 @@ integ_m2[0]=tilt
 for k in krange:
     print(foldername[k])
     data_analysis = sorted_fold_path+foldername[k]+"/Data Analysis/"
-    diff_eff =  np.loadtxt(data_analysis+foldername[k]+"_diff_eff_new.mpa",skiprows=1)
-    fit_res =  np.loadtxt(data_analysis+foldername[k]+"_fit_results_"+fit_name+".mpa",skiprows=1)
-    p=fit_res[0]
-    th=np.linspace(diff_eff[0,0],diff_eff[-1,0],100)
+    diff_eff =  np.loadtxt(data_analysis+"_data_fit_"+fit_name+".txt",skiprows=1)
+    th=diff_eff[:,0]
     fig = plt.figure(figsize=(5,5),dpi=200)
-    for i in range(1,len(diff_eff[0,:])//2):
-        spl=UnivariateSpline(diff_eff[:,0], diff_eff[:,2*i],k=5,s=0)
+    for i in range(1,len(diff_eff[0,:])):
+        spl=UnivariateSpline(diff_eff[:,0], diff_eff[:,i],k=5,s=0)
         ax = fig.add_subplot(111)
         ax.set_title(str(tilt[k])+" deg")
         ax.plot(th, spl(th))
-        ax.plot(diff_eff[:,0], diff_eff[:,2*i], "k.")
-        ax.set_xlim([-0.7,0.7])
-        if i==2:
+        ax.plot(diff_eff[:,0], diff_eff[:,i], "k--")
+        # ax.set_xlim([-0.7,0.7])
+        if i==3:
             integ_m1[1,k]=spl.antiderivative()(th)[-1]
-        if i==1:
+        if i==2:
             integ_m2[1,k]=spl.antiderivative()(th)[-1]
         plt.savefig("/home/aaa/Desktop/Thesis2/Paper/Plot int intensities/"+str(tilt[k])+"deg.png")
 fig = plt.figure(figsize=(5,5), dpi=200)
@@ -67,6 +63,7 @@ ax = fig.add_subplot(111)
 ax.plot(integ_m1[0],integ_m1[1], "k^-", label="Int. intensities -1")
 ax.plot(integ_m2[0],integ_m2[1], "r^-", label="Int. intensities -2")
 ax.legend()
+data_txt =
 plt.savefig("/home/aaa/Desktop/Thesis2/Paper/Plot int intensities/Pendel.png")
         
         

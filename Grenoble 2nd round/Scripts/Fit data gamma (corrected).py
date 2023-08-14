@@ -15,7 +15,7 @@ plt.rcParams.update({'figure.max_open_warning': 0})
 from PIL import Image as im
 from scipy.optimize import curve_fit as fit
 
-alpha=-22.5
+alpha=22.5
 w_ps=3
 a21=1/2
 def fit_w1p(x,A,th,x0):
@@ -88,13 +88,14 @@ for i in range(len(ps_pos)):
 # ax.plot(ps_pos,g)
 
 ps_data=np.sum(matrix,axis=1)
+ps_data_err=np.sum(matrix_err,axis=1)
 P0=[(np.amax(ps_data)+np.amin(ps_data))/2, np.amax(ps_data)-np.amin(ps_data), 3,-3]
 B0=([0,0,0,-10],[np.inf,np.inf,np.inf,np.inf])
 p,cov=fit(fit_cos,ps_pos,ps_data, p0=P0,bounds=B0)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 fig = plt.figure(figsize=(5,5))
 ax = fig.add_subplot(111)
-ax.errorbar(ps_pos,ps_data,yerr=np.sqrt(ps_data),fmt="ko",capsize=5)  
+ax.errorbar(ps_pos,ps_data,yerr=ps_data_err,fmt="ko",capsize=5)  
 ax.plot(x_plt,fit_cos(x_plt, *p), "b")
 ax.vlines(p[-1]/p[-2],0,fit_cos(p[-1]/p[-2], *p),ls="dashed")
 # print(p)
@@ -115,7 +116,7 @@ ax.view_init(45, 20)
 
 P0=[1,0.4,1]
 B0=([-1,-1.5,-2*np.pi],[1,1.5,2*np.pi])
-p1,cov1=fit(fit_w1p,ps_pos, gamma - np.average(gamma), p0=P0, bounds=B0, sigma=err_g/alpha)
+p1,cov1=fit(fit_w1p,ps_pos, -gamma + np.average(gamma), p0=P0, bounds=B0, sigma=err_g/alpha)
 x_plt = np.linspace(ps_pos[0], ps_pos[-1],100)
 fig = plt.figure(figsize=(5,5))
 gs_t = GridSpec(4,1, figure=fig,hspace=0, bottom=0.1,top=0.98)
@@ -123,9 +124,9 @@ gs_b =GridSpec(4,1, figure=fig, wspace=0, top=0.5)
 ax = fig.add_subplot(111)
 ax.set_title(inf_file_name)
 ax.set_xlabel("$\chi$ ($\pi$)")
-# ax.set_ylim([-1,1])
+ax.set_ylim([-30,30])
 # ax.plot(ps_pos,gamma/alpha, "ko")
-ax.errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi, gamma - np.average(gamma), yerr=err_g,fmt="ko",capsize=5)
+ax.errorbar((ps_pos-ps_pos[0]-p1[-1])*w_ps/np.pi, -gamma + np.average(gamma), yerr=err_g,fmt="ko",capsize=5)
 # ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,fit_w1p(x_plt, *p1),"b", label="Fit Re{"+"$\omega_{1+}$}")
 ax.plot((x_plt-x_plt[0]-p1[-1])*w_ps/np.pi,exp_w1p(x_plt, p1[-1]),"g", label="Exp Re{"+"$\omega_{1+}$}")
 ax.legend()
