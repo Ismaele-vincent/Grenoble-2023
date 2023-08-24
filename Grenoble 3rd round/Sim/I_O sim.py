@@ -18,7 +18,7 @@ def alpha(T,f,B):
     w=f*2*np.pi
     return mu_N*B/(hbar*w)*2*np.sin(w*T*1e-3/2)
 
-t = np.linspace(0, 1000, 1000)
+t = np.linspace(0, 2000, 1000)
 
 # Define initial parameters
 T_0=19.4 #\mu s
@@ -35,7 +35,7 @@ a2=alpha(T_0,f2_0, B2_0)
 
 # Create the figure and the line that we will manipulate
 fig = plt.figure(figsize=(16,9))
-title=fig.suptitle("$\\alpha1=$"+str("%.3f"%(alpha(T_0, f1_0, B1_0),))+"\n$\\alpha2=$"+str("%.3f"%(alpha(T_0, f2_0, B2_0),)))
+title=fig.suptitle("$\\alpha_1=$"+str("%.3f"%(alpha(T_0, f1_0, B1_0),))+"\t$(\\alpha_1/2)^2=$"+str("%.3f"%((alpha(T_0, f1_0, B1_0)/2)**2,))+"\n$\\alpha_2=$"+str("%.3f"%(alpha(T_0, f2_0, B2_0),))+"\t$(\\alpha_2/2)^2=$"+str("%.3f"%((alpha(T_0, f2_0, B2_0)/2)**2,)))
 gst = GridSpec(2,3, figure=fig, hspace=0, wspace=0)#,hspace=0, bottom=0,top=0)
 gsb = GridSpec(2,3, figure=fig, hspace=0, wspace=0)
 axs = [fig.add_subplot(gst[:,:-1]),
@@ -137,7 +137,7 @@ chi_slider = Slider(
 
 # The function to be called anytime a slider"s value changes
 def update(val):
-    title.set_text("$\\alpha=$"+str("%.3f"%(alpha(T_slider.val, f1_slider.val, B1_slider.val),))+"\n$\\alpha2=$"+str("%.3f"%(alpha(T_slider.val, f2_slider.val, B2_slider.val),)))
+    title.set_text("$\\alpha_1=$"+str("%.3f"%(alpha(T_slider.val, f1_slider.val, B1_slider.val),))+"\t$(\\alpha_1/2)^2=$"+str("%.3f"%((alpha(T_slider.val, f1_slider.val, B1_slider.val)/2)**2,))+"\n$\\alpha_2=$"+str("%.3f"%(alpha(T_slider.val, f2_slider.val, B2_slider.val),))+"\t$(\\alpha_2/2)^2=$"+str("%.3f"%((alpha(T_slider.val, f2_slider.val, B2_slider.val)/2)**2,)))
     xi1=phi1+(2*np.pi*f1_slider.val*1e-3*T_slider.val+np.pi)/2-2*np.pi*f1_slider.val*1e3/(v0)
     xi2=phi2+(2*np.pi*f2_slider.val*1e-3*T_slider.val+np.pi)/2-2*np.pi*f2_slider.val*1e3/(v0)
     a1=alpha(T_slider.val, f1_slider.val, B1_slider.val)

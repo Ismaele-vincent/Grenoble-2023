@@ -18,7 +18,7 @@ def alpha(T,f1,B1):
 
 
 
-T0=19.4 #\mu s
+T0=10 #\mu s
 T = np.linspace(0, 100, 10000)
 
 # Define initial parameters
